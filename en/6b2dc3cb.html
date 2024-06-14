@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_xiaomai/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_xiaomai/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_xiaomai/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/favicon_xiaomai/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"kezhi.tech","root":"/","images":"/images","scheme":"Gemini","darkmode":"auto","version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="This is an automatically translated post by LLM. The original post is in Chinese. If you find any translation errors, please leave a comment to help me improve the translation. Thanks!  Introducti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Crawling all anime data from Bilibili and conducting data analysis.">
+<meta property="og:url" content="https://kezhi.tech/en/6b2dc3cb.html">
+<meta property="og:site_name" content="Kezhi&#39;s Blog">
+<meta property="og:description" content="This is an automatically translated post by LLM. The original post is in Chinese. If you find any translation errors, please leave a comment to help me improve the translation. Thanks!  Introducti">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://download.kezhi.tech/img/20201124160340.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/20201124160804.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/20201124160900.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/20201124162738.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/20201124163322.png?x-oss-process=style/webp">
+<meta property="article:published_time" content="2020-10-14T16:24:39.000Z">
+<meta property="article:modified_time" content="2024-04-20T12:30:12.910Z">
+<meta property="article:author" content="Yu Zhao">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Crawler">
+<meta property="article:tag" content="Big Data">
+<meta property="article:tag" content="Aprior Algorithm">
+<meta property="article:tag" content="K-Means">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://download.kezhi.tech/img/20201124160340.png?x-oss-process=style/webp">
+
+
+<link rel="canonical" href="https://kezhi.tech/en/6b2dc3cb.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://kezhi.tech/en/6b2dc3cb.html","path":"en/6b2dc3cb.html","title":"Crawling all anime data from Bilibili and conducting data analysis."}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Crawling all anime data from Bilibili and conducting data analysis. | Kezhi's Blog</title>
+  
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="https://server.kezhi.tech:8361/">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Kezhi's Blog" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Kezhi's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">102</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">7</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">117</span></a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>Guestbook</a></li><li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fa fa-camera fa-fw"></i>Gallery</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>Links</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>rss</a></li><li class="menu-item menu-item-anime"><a href="/bangumis/" rel="section"><i class="fa fa-tv fa-fw"></i>anime</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#data-collection"><span class="nav-text">Data Collection</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#page-analysis"><span class="nav-text">Page Analysis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spider-construction"><span class="nav-text">Spider Construction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#data-analysis"><span class="nav-text">Data Analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#data-cleaning-and-filtering"><span class="nav-text">Data Cleaning and Filtering</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#frequent-itemset-mining-using-apriori-algorithm"><span class="nav-text">Frequent
+Itemset Mining using Apriori Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#association-rules"><span class="nav-text">Association Rules</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#algorithm-flow"><span class="nav-text">Algorithm Flow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#programming-implementation"><span class="nav-text">Programming Implementation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#k-means-clustering-algorithm"><span class="nav-text">K-means Clustering Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#algorithm-introduction"><span class="nav-text">Algorithm Introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#data-mapping"><span class="nav-text">Data Mapping</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#k-means-programming-implementation"><span class="nav-text">K-means Programming
+Implementation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#algorithm-results-and-evaluation"><span class="nav-text">Algorithm Results and
+Evaluation</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yu Zhao"
+      src="/images/%E5%B0%8F%E5%9F%8B.jpg">
+  <p class="site-author-name" itemprop="name">Yu Zhao</p>
+  <div class="site-description" itemprop="description">知识因被记录而产生价值</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/KezhiAdore" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KezhiAdore" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yuzhao@163.com" title="E-Mail → mailto:yuzhao@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+      
+      
+      
+      
+      <div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Yrta9qQDj8isri1_KNjhT7WenyEDA1dzZcv9bkzWhMw"></script>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://gwyxjtu.github.io/" title="https:&#x2F;&#x2F;gwyxjtu.github.io&#x2F;" rel="noopener" target="_blank">果果的博客</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://zchsakura.github.io/" title="https:&#x2F;&#x2F;zchsakura.github.io" rel="noopener" target="_blank">周小天的博客</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="/linux-command/" title="&#x2F;linux-command&#x2F;">Linux命令查询</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.foreverblog.cn/go.html" title="https:&#x2F;&#x2F;www.foreverblog.cn&#x2F;go.html" rel="noopener" target="_blank">虫洞</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://uptime.kezhi.tech/status/web" title="https:&#x2F;&#x2F;uptime.kezhi.tech&#x2F;status&#x2F;web" rel="noopener" target="_blank">网站监控</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kezhi.tech/en/6b2dc3cb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E5%B0%8F%E5%9F%8B.jpg">
+      <meta itemprop="name" content="Yu Zhao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kezhi's Blog">
+      <meta itemprop="description" content="知识因被记录而产生价值">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Crawling all anime data from Bilibili and conducting data analysis. | Kezhi's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Crawling all anime data from Bilibili and conducting data analysis.
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-10-15 00:24:39" itemprop="dateCreated datePublished" datetime="2020-10-15T00:24:39+08:00">2020-10-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-04-20 20:30:12" itemprop="dateModified" datetime="2024-04-20T20:30:12+08:00">2024-04-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Project/" itemprop="url" rel="index"><span itemprop="name">Project</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline: </span>
+  
+    <a title="waline" href="/en/6b2dc3cb.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/en/6b2dc3cb.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>16k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>15 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><div class="note info"><p>This is an automatically translated post by LLM. The <a
+href="https://kezhi.tech/6b2dc3cb.html">original post</a> is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Bilibili (referred to as B station) has a large number of anime
+copyrights, with a total of 3161 as of now. Each anime can be found with
+its <mark class="label primary">play count</mark>, <mark class="label success">follow count</mark>, <mark class="label info">barrage count</mark>, and other playback
+data. In addition, each anime has its corresponding tags (such as "comic
+adaptation", "hot-blooded", "comedy"). This project aims to analyze the
+relationship between anime playback data and anime tags, and it is also
+a data analysis project that uses APriori frequent itemset mining for
+analysis.</p>
+<p>GitHub address: <a
+target="_blank" rel="noopener" href="https://github.com/KezhiAdore/BilibiliAnimeData_Analysis">https://github.com/KezhiAdore/BilibiliAnimeData_Analysis</a></p>
+<p>Gitee address: <a
+target="_blank" rel="noopener" href="https://gitee.com/KezhiAdore/BilibiliAnimeData_Analysis">https://gitee.com/KezhiAdore/BilibiliAnimeData_Analysis</a></p>
+<span id="more"></span>
+<h2 id="data-collection">Data Collection</h2>
+<p>First, we need to obtain all the data we need, which are all the
+anime playback information and tag information on B station. We use web
+crawlers to crawl the data, and here we use <code>scrapy</code> in
+Python to write the crawler to crawl the data.</p>
+<h3 id="page-analysis">Page Analysis</h3>
+<p>First, go to the anime index page on B station<img
+src="https://download.kezhi.tech/img/20201014232024.png?x-oss-process=style/webp" /></p>
+<p>Click on a certain anime on this page to enter its details page</p>
+<p><img
+src="https://download.kezhi.tech/img/20201014232257.png?x-oss-process=style/webp" /></p>
+<p>You can see that the required anime playback data and anime tags are
+available on this page.</p>
+<p>Analyze the HTML of this page to find the xpath path where the data
+is located, taking tags as an example:</p>
+<p><img
+src="https://download.kezhi.tech/img/20201014232605.png?x-oss-process=style/webp" /></p>
+<p>The xpath paths corresponding to all the data are:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Tags: //span[@class=&quot;media-tag&quot;]</span><br><span class="line">Total Plays: //span[@class=&quot;media-info-count-item media-info-count-item-play&quot;]/em</span><br><span class="line">Follow Count: //span[@class=&quot;media-info-count-item media-info-count-item-fans&quot;]/em</span><br><span class="line">Barrage Count: //span[@class=&quot;media-info-count-item media-info-count-item-review&quot;]/em</span><br></pre></td></tr></table></figure>
+<p>So far, we can loop through all the anime list pages, enter the
+details page from this page, and parse each anime details page to save
+the data. However, there is a problem at this point. After crawling the
+anime list page, the corresponding place in the web page data is:</p>
+<p><img
+src="https://download.kezhi.tech/img/20201014233531.png?x-oss-process=style/webp" /></p>
+<p>Directly accessing this page cannot obtain detailed anime list
+information. Therefore, we need to analyze the files received by the
+page and find the anime list information obtained by this page.</p>
+<p><img
+src="https://download.kezhi.tech/img/20201014235022.png?x-oss-process=style/webp" /></p>
+<p>Accessing this URL will get the following information:</p>
+<p><img
+src="https://download.kezhi.tech/img/20201014235127.png?x-oss-process=style/webp" /></p>
+<p>Analyzing this API URL, it can be found that the <code>page=1</code>
+controls the page number information, and by changing this information,
+different anime list pages can be accessed.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://api.bilibili.com/pgc/season/index/result?season_version=-1&amp;area=-1&amp;is_finish=-1&amp;copyright=-1&amp;season_status=-1&amp;season_month=-1&amp;year=-1&amp;style_id=-1&amp;order=3&amp;st=1&amp;sort=0&amp;page=1&amp;season_type=1&amp;pagesize=20&amp;type=1</span><br></pre></td></tr></table></figure>
+<p>The information obtained from this page is a JSON file, and the
+information format is as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20201014235500.png?x-oss-process=style/webp" /></p>
+<p>By comparing with the URL of the anime details page <a
+target="_blank" rel="noopener" href="https://www.bilibili.com/bangumi/media/md22718131">https://www.bilibili.com/bangumi/media/md22718131</a>,
+it can be found that the <code>media_id</code> data in the JSON file is
+the identifier of each anime details page. Therefore, the logic of
+crawling information is basically established.</p>
+<ol type="1">
+<li>Access the initial API page (page=1), parse its content, and get the
+<code>media_id</code> of all anime on this page.</li>
+<li>Use <code>media_id</code> to construct the link to access the anime
+details page, crawl this page for parsing, and get the data of an
+anime.</li>
+<li>Access the next API page and repeat the above steps.</li>
+</ol>
+<h3 id="spider-construction">Spider Construction</h3>
+<p>First, initialize the spider</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject anime_data</span><br><span class="line">scrapy genspider anime &quot;&quot;</span><br></pre></td></tr></table></figure>
+<p>The file tree is as follows</p>
+<p><img
+src="https://download.kezhi.tech/img/20201015000820.png?x-oss-process=style/webp" /></p>
+<p>Open <code>items.py</code> and create the data object that needs to
+be saved</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AnimeDataItem</span>(scrapy.Item):</span><br><span class="line">    <span class="comment"># define the fields for your item here like:</span></span><br><span class="line">    name = scrapy.Field()   <span class="comment"># Anime name</span></span><br><span class="line">    play=scrapy.Field()     <span class="comment"># Total play count</span></span><br><span class="line">    fllow=scrapy.Field()    <span class="comment"># Follow count</span></span><br><span class="line">    barrage=scrapy.Field()  <span class="comment"># Barrage count</span></span><br><span class="line">    tags=scrapy.Field()     <span class="comment"># Anime tags, in list format</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+<p>Then open the newly created <code>anime.py</code>, access the page,
+parse it, and save the data as follows</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> anime_data.items <span class="keyword">import</span> AnimeDataItem</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AnimeSpider</span>(scrapy.Spider):</span><br><span class="line">    name = <span class="string">&#x27;anime&#x27;</span></span><br><span class="line">    <span class="comment">#allowed_domains = [&#x27;https://www.bilibili.com&#x27;]</span></span><br><span class="line">    <span class="comment"># Anime information table API</span></span><br><span class="line">    url_head=<span class="string">&quot;https://api.bilibili.com/pgc/season/index/result?season_version=-1&amp;area=-1&amp;is_finish=-1&amp;copyright=-1&amp;season_status=-1&amp;season_month=-1&amp;year=-1&amp;style_id=-1&amp;order=3&amp;st=1&amp;sort=0&amp;season_type=1&amp;pagesize=20&amp;type=1&quot;</span></span><br><span class="line">    start_urls = [url_head+<span class="string">&quot;&amp;page=1&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">## Recursive parsing of anime information table</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse</span>(<span class="params">self, response</span>):</span><br><span class="line">        data=json.loads(response.text)</span><br><span class="line">        next_index=<span class="built_in">int</span>(response.url[response.url.rfind(<span class="string">&quot;=&quot;</span>)+<span class="number">1</span>:])+<span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> data[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;size&#x27;</span>]==<span class="number">20</span>:</span><br><span class="line">            next_url=self.url_head+<span class="string">&quot;&amp;page=&quot;</span>+<span class="built_in">str</span>(next_index)</span><br><span class="line">            <span class="keyword">yield</span> scrapy.Request(next_url,callback=self.parse)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> data[<span class="string">&#x27;data&#x27;</span>][<span class="string">&#x27;list&#x27;</span>]:</span><br><span class="line">            media_id=i[<span class="string">&#x27;media_id&#x27;</span>]</span><br><span class="line">            detail_url=(<span class="string">&quot;https://www.bilibili.com/bangumi/media/md&quot;</span>+<span class="built_in">str</span>(media_id))</span><br><span class="line">            <span class="keyword">yield</span> scrapy.Request(detail_url,callback=self.parse_detail)</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## Parse anime details page</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">parse_detail</span>(<span class="params">self,response</span>):</span><br><span class="line">        item=AnimeDataItem()</span><br><span class="line">        <span class="comment"># Anime name</span></span><br><span class="line">        item[<span class="string">&#x27;name&#x27;</span>]=response.xpath(<span class="string">&#x27;//span[@class=&quot;media-info-title-t&quot;]/text()&#x27;</span>).extract()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># Play count</span></span><br><span class="line">        item[<span class="string">&#x27;play&#x27;</span>]=response.xpath(<span class="string">&#x27;//span[@class=&quot;media-info-count-item media-info-count-item-play&quot;]/em/text()&#x27;</span>).extract()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># Follow count</span></span><br><span class="line">        item[<span class="string">&#x27;fllow&#x27;</span>]=response.xpath(<span class="string">&#x27;//span[@class=&quot;media-info-count-item media-info-count-item-fans&quot;]/em/text()&#x27;</span>).extract()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># Barrage count</span></span><br><span class="line">        item[<span class="string">&#x27;barrage&#x27;</span>]=response.xpath(<span class="string">&#x27;//span[@class=&quot;media-info-count-item media-info-count-item-review&quot;]/em/text()&#x27;</span>).extract()[<span class="number">0</span>]</span><br><span class="line">        <span class="comment"># Anime tags</span></span><br><span class="line">        item[<span class="string">&#x27;tags&#x27;</span>]=response.xpath(<span class="string">&#x27;//span[@class=&quot;media-tag&quot;]/text()&#x27;</span>).extract()</span><br><span class="line">        <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+<h2 id="data-analysis">Data Analysis</h2>
+<h3 id="data-cleaning-and-filtering">Data Cleaning and Filtering</h3>
+<p>The collected data cannot be used directly and needs to be cleaned
+and filtered, which can be divided into two steps:</p>
+<ol type="1">
+<li>Remove data without tag information</li>
+<li>Convert quantity information in the data to numbers (e.g., convert
+"10,000" to "10000")</li>
+</ol>
+<p>For the first step, since the data volume is small, you can quickly
+complete it using the filtering function in Excel.</p>
+<p>For the second step, write the following function to convert the
+data:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Convert text data to numbers</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">trans</span>(<span class="params">string</span>):</span><br><span class="line">    <span class="keyword">if</span> string[-<span class="number">1</span>]==<span class="string">&#x27;万&#x27;</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">int</span>(<span class="built_in">float</span>(string[<span class="number">0</span>:-<span class="number">1</span>])*<span class="number">1e4</span>)</span><br><span class="line">    <span class="keyword">elif</span> string[-<span class="number">1</span>]==<span class="string">&#x27;亿&#x27;</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">int</span>(<span class="built_in">float</span>(string[<span class="number">0</span>:-<span class="number">1</span>])*<span class="number">1e8</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">int</span>(string)</span><br></pre></td></tr></table></figure>
+<h3 id="frequent-itemset-mining-using-apriori-algorithm">Frequent
+Itemset Mining using Apriori Algorithm</h3>
+<blockquote>
+<ol type="1">
+<li>Itemsets and Datasets</li>
+</ol>
+<p>Let the set of all items appearing in the data be <span
+class="math inline">\(U=\left\{I_1,I_2,...,I_n\right\}\)</span>, and let
+the data to be mined for frequent itemsets be the set of transactions in
+the database <span class="math inline">\(D\)</span>. The data in <span
+class="math inline">\(D\)</span> are itemsets, and each itemset <span
+class="math inline">\(T\subseteq U\)</span>.</p>
+<ol start="2" type="1">
+<li>Association Rules (Support and Confidence)</li>
+</ol>
+<p>Let <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> be two itemsets, <span
+class="math inline">\(A\subset U,B\subset U, A\neq \emptyset，B\neq
+\emptyset，A\cap B=\emptyset\)</span>.</p>
+<p>An association rule is in the form of <span
+class="math inline">\(A\Rightarrow B\)</span>, and its
+<strong>support</strong> in the transaction set <span
+class="math inline">\(D\)</span> is denoted as <span
+class="math inline">\(s\)</span>, where <span
+class="math inline">\(s\)</span> is the percentage of transactions in
+the transaction set <span class="math inline">\(D\)</span> that contain
+<span class="math inline">\(A\cup B\)</span>.</p>
+<p>Its <strong>confidence</strong> in the transaction set <span
+class="math inline">\(D\)</span> is denoted as <span
+class="math inline">\(c\)</span>, which is the percentage of
+transactions in the transaction set <span
+class="math inline">\(D\)</span> that contain <span
+class="math inline">\(B\)</span> among the transactions that contain
+<span class="math inline">\(A\)</span>, i.e., <span
+class="math inline">\(P(A|B)\)</span>. <span class="math display">\[
+c=P(B|A)=\frac{P(A\cup B)}{P(A)}=\frac{support(A\cup
+B)}{support(A)}=\frac{support\text{_}count(A\cup
+B)}{support\text{_}count(A)}
+\]</span></p>
+<ol start="3" type="1">
+<li>Frequent Itemsets</li>
+</ol>
+<p>When mining frequent itemsets, set the minimum confidence and minimum
+support, and rules that satisfy both the minimum support and minimum
+confidence are called strong rules, and itemsets that satisfy such
+strong rules are called frequent itemsets.</p>
+</blockquote>
+<h4 id="association-rules">Association Rules</h4>
+<p>Each anime has a certain number of <code>tags</code> to roughly
+describe its content. The tags used to describe the same anime are
+usually descriptions in different dimensions. Taking "Miss Kobayashi's
+Dragon Maid" as an example, its tags are
+<code>[moe, comedy, daily life, comic adaptation]</code>, and the four
+tags describe four different characteristics of this anime. By analyzing
+the anime <code>tag</code> data on B station, find the combinations of
+<code>tags</code> with the highest relevance.</p>
+<h4 id="algorithm-flow">Algorithm Flow</h4>
+<p>Data set: The <code>tag</code> data set of all anime, each data is
+the <code>tag</code> of an anime</p>
+<p>The flow of the Apriori algorithm is as follows:</p>
+<ol type="1">
+<li><p>Construct 1-itemsets -&gt; Count the frequency of 1-itemsets
+-&gt; Calculate support and confidence -&gt; Pruning -&gt; Frequent
+1-itemsets</p></li>
+<li><p>Construct k-itemsets using k-1-itemsets -&gt; Count the frequency
+of k-itemsets -&gt; Calculate support and confidence -&gt; Pruning -&gt;
+Frequent k-itemsets</p></li>
+<li><p>Repeat step 2 until there are no itemsets that meet the strong
+rules</p></li>
+</ol>
+<h4 id="programming-implementation">Programming Implementation</h4>
+<p>First, read the processed data and convert the <code>tag</code> data,
+which is originally a string, into a list:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">filepath=<span class="string">&#x27;data_processed.csv&#x27;</span></span><br><span class="line">df=pd.read_csv(filepath)</span><br><span class="line">tags=df[<span class="string">&#x27;tags&#x27;</span>].to_list()</span><br></pre></td></tr></table></figure>
+<p>The data in <code>tags</code> is a string rather than a list, such
+as: <code>"恋爱,推理,校园,日常"</code>, which needs to be converted into
+a list. The implementation is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Convert comma-separated strings to lists using commas as separators</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">str_to_list</span>(<span class="params">str_data</span>):</span><br><span class="line">    <span class="keyword">for</span> index,data <span class="keyword">in</span> <span class="built_in">enumerate</span>(str_data):</span><br><span class="line">        tmp,start,end=[],<span class="number">0</span>,<span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> end!=<span class="built_in">len</span>(data):</span><br><span class="line">            <span class="keyword">if</span> data[start:].find(<span class="string">&#x27;,&#x27;</span>)==-<span class="number">1</span>:</span><br><span class="line">                end=<span class="built_in">len</span>(data)</span><br><span class="line">                tmp.append(data[start:end])</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            end=start+data[start:].find(<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line">            tmp.append(data[start:end])</span><br><span class="line">            start=end+<span class="number">1</span></span><br><span class="line">        str_data[index]=tmp</span><br></pre></td></tr></table></figure>
+<p>Construct k-itemsets using k-1-itemsets:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Apriori algorithm connection step, implemented step by step</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">merge_list</span>(<span class="params">l1,l2</span>):</span><br><span class="line">    length=<span class="built_in">len</span>(l1)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(length-<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> l1[i]!=l2[i]:</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&#x27;nope&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> l1[-<span class="number">1</span>]&lt;l2[-<span class="number">1</span>]:</span><br><span class="line">        l=l1.copy()</span><br><span class="line">        l.append(l2[-<span class="number">1</span>])</span><br><span class="line">        <span class="keyword">return</span> l</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;nope&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>Determine the inclusion relationship between lists:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Determine if l2 is included in l1</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_exist</span>(<span class="params">l1,l2</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> l2:</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> l1:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>Pruning operation:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Prune using min_sup and min_conf, that is, minimum support and minimum confidence, L_last is the frequent k-1-itemset</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">prune</span>(<span class="params">L=[],L_last=<span class="number">0</span>,min_sup=<span class="number">0</span>,min_conf=<span class="number">0</span></span>):</span><br><span class="line">    tmp_L=[]</span><br><span class="line">    <span class="keyword">if</span> L_last==<span class="number">0</span> <span class="keyword">or</span> min_conf==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">for</span> index,l <span class="keyword">in</span> <span class="built_in">enumerate</span>(L):</span><br><span class="line">            <span class="keyword">if</span> l[<span class="number">1</span>]&lt;min_sup:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            tmp_L.append(l)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">for</span> index,l <span class="keyword">in</span> <span class="built_in">enumerate</span>(L):</span><br><span class="line">            <span class="keyword">if</span> l[<span class="number">1</span>]&lt;min_sup:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="keyword">for</span> ll <span class="keyword">in</span> L_last:</span><br><span class="line">                <span class="keyword">if</span> l[<span class="number">0</span>][:-<span class="number">1</span>]==ll[<span class="number">0</span>]:</span><br><span class="line">                    <span class="keyword">if</span> l[<span class="number">1</span>]/ll[<span class="number">1</span>]&gt;=min_conf:</span><br><span class="line">                        tmp_L.append(l)</span><br><span class="line">    <span class="keyword">return</span> tmp_L</span><br></pre></td></tr></table></figure>
+<p>Apriori algorithm main body:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">Apriori</span>(<span class="params">data,min_sup,min_conf</span>):</span><br><span class="line">    <span class="comment"># C: Temporary storage for k-itemsets  L: Temporary storage for frequent k-itemsets  L_save: Save frequent 1-k-itemsets</span></span><br><span class="line">    C,L,L_save=[],[],[]</span><br><span class="line">    <span class="comment"># Use support count instead of support for calculation</span></span><br><span class="line">    min_sup_count=min_sup*<span class="built_in">len</span>(data)</span><br><span class="line">    <span class="comment"># Initialize 1-itemsets</span></span><br><span class="line">    <span class="keyword">for</span> tags <span class="keyword">in</span> data:</span><br><span class="line">        <span class="keyword">for</span> tag <span class="keyword">in</span> tags:</span><br><span class="line">            <span class="keyword">if</span> C==[] <span class="keyword">or</span> [tag] <span class="keyword">not</span> <span class="keyword">in</span>[x[<span class="number">0</span>] <span class="keyword">for</span> x <span class="keyword">in</span> C]:</span><br><span class="line">                C.append([[tag],<span class="number">0</span>])</span><br><span class="line">    <span class="comment"># Filter out frequent 1-itemsets</span></span><br><span class="line">    L=C.copy()</span><br><span class="line">    <span class="keyword">for</span> index,l <span class="keyword">in</span> <span class="built_in">enumerate</span>(L):</span><br><span class="line">        <span class="keyword">for</span> tags <span class="keyword">in</span> data:</span><br><span class="line">            <span class="keyword">if</span> is_exist(tags,l[<span class="number">0</span>]):</span><br><span class="line">                L[index][<span class="number">1</span>]+=<span class="number">1</span></span><br><span class="line">    L=prune(L,min_sup=min_sup)</span><br><span class="line">    L_save.append(L)</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="comment"># Construct k-itemsets using k-1-itemsets</span></span><br><span class="line">        C=[]</span><br><span class="line">        <span class="keyword">for</span> l1 <span class="keyword">in</span> L:</span><br><span class="line">            <span class="keyword">for</span> l2 <span class="keyword">in</span> L:</span><br><span class="line">                list_merge=merge_list(l1[<span class="number">0</span>],l2[<span class="number">0</span>])</span><br><span class="line">                <span class="keyword">if</span> list_merge!=<span class="string">&#x27;nope&#x27;</span>:</span><br><span class="line">                    C.append([list_merge,<span class="number">0</span>])</span><br><span class="line">        <span class="comment"># Count frequency and prune</span></span><br><span class="line">        L=C.copy()</span><br><span class="line">        <span class="keyword">for</span> index,l <span class="keyword">in</span> <span class="built_in">enumerate</span>(L):</span><br><span class="line">            <span class="keyword">for</span> tags <span class="keyword">in</span> data:</span><br><span class="line">                <span class="keyword">if</span> is_exist(tags,l[<span class="number">0</span>]):</span><br><span class="line">                    L[index][<span class="number">1</span>]+=<span class="number">1</span></span><br><span class="line">        L=prune(L,L_save[-<span class="number">1</span>],min_sup,min_conf)</span><br><span class="line">        <span class="comment"># End the loop when L is an empty set</span></span><br><span class="line">        <span class="keyword">if</span> L==[]:</span><br><span class="line">            <span class="keyword">return</span> L_save</span><br><span class="line">        L_save.append(L)</span><br></pre></td></tr></table></figure>
+<h3 id="k-means-clustering-algorithm">K-means Clustering Algorithm</h3>
+<h4 id="algorithm-introduction">Algorithm Introduction</h4>
+<p>K-means is an unsupervised clustering algorithm. The algorithm is
+simple and easy to implement, but it may produce empty clusters or
+converge to local optima.</p>
+<p>The algorithm flow is as follows:</p>
+<ol type="1">
+<li>Randomly select k points from the samples as initial centroids.</li>
+<li>Calculate the distance from each sample to these k centroids and
+assign the sample to the cluster whose centroid is closest to it.</li>
+<li>Recalculate the centroids of each cluster.</li>
+<li>Repeat steps 2 and 3 until the centroids do not change.</li>
+</ol>
+<h4 id="data-mapping">Data Mapping</h4>
+<p>Use K-means to cluster the anime based on the three-dimensional
+coordinates formed by the three types of data
+<code>[play count, follow count, barrage count]</code>. However, the
+values of these three data range from thousands to billions, so they
+cannot be used directly. Apply a logarithmic function to compress the
+data: <span class="math display">\[
+[x,y,z]=[ln\ x,ln\ y,ln\ z]
+\]</span> After the logarithmic transformation, in order to ensure that
+each type of data has the same range to ensure that they have the same
+weight, normalize the data: <span class="math display">\[
+x=\frac{x-min}{max-min}
+\]</span> The implementation code is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trans_data</span>(<span class="params">data</span>):</span><br><span class="line">    <span class="keyword">for</span> index,item <span class="keyword">in</span> <span class="built_in">enumerate</span>(data):</span><br><span class="line">        data[index]=math.log(item)</span><br><span class="line">    Max=<span class="built_in">max</span>(data)</span><br><span class="line">    Min=<span class="built_in">min</span>(data)</span><br><span class="line">    <span class="keyword">for</span> index,item <span class="keyword">in</span> <span class="built_in">enumerate</span>(data):</span><br><span class="line">        data[index]=(item-Min)/(Max-Min)</span><br></pre></td></tr></table></figure>
+<h4 id="k-means-programming-implementation">K-means Programming
+Implementation</h4>
+<p>In clustering, the distance measure used is the Euclidean distance,
+which is: <span class="math display">\[
+distance=\sqrt{(x_{1}-y_{1})^2+...+(x_{i}-y_{i})^2+...+(x_{n}-y_{n})^2}
+\]</span> The implementation code is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">distance</span>(<span class="params">point1,point2</span>):</span><br><span class="line">    dim=<span class="built_in">len</span>(point1)</span><br><span class="line">    <span class="keyword">if</span> dim != <span class="built_in">len</span>(point2):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;error! dim of point1 and point2 is not same&#x27;</span>)</span><br><span class="line">    dist=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(dim):</span><br><span class="line">        dist+=(point1[i]-point2[i])*(point1[i]-point2[i])</span><br><span class="line">    <span class="keyword">return</span> math.sqrt(dist)</span><br></pre></td></tr></table></figure>
+<ol type="1">
+<li>Randomly select k points as centroids</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">shape=np.array(dire).shape</span><br><span class="line">    k_center_index=[]</span><br><span class="line">    k_center=[]</span><br><span class="line">    temp_k=k</span><br><span class="line">    <span class="keyword">while</span>(temp_k):</span><br><span class="line">        temp=random.randrange(<span class="number">0</span>,shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">if</span> temp <span class="keyword">not</span> <span class="keyword">in</span> k_center_index:</span><br><span class="line">            k_center_index.append(temp)</span><br><span class="line">            k_center.append(<span class="built_in">list</span>(dire[temp]))</span><br><span class="line">            temp_k-=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>Cluster all the data</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_category</span>(<span class="params">dire,k,k_center</span>):</span><br><span class="line">    shape=np.array(dire).shape</span><br><span class="line">    k_categories=[[] <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(k)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(shape[<span class="number">0</span>]):</span><br><span class="line">        Min=<span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">            dist=distance(dire[i],k_center[j])</span><br><span class="line">            <span class="keyword">if</span> dist&lt;Min:</span><br><span class="line">                Min=dist</span><br><span class="line">                MinNum=j</span><br><span class="line">        k_categories[MinNum].append(i)</span><br><span class="line">    <span class="keyword">return</span> k_categories</span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li>Calculate new centroids and repeat</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Maximum number of iterations</span></span><br><span class="line">    Maxloop=<span class="number">500</span></span><br><span class="line">    k_center_new=k_center</span><br><span class="line">    k_center=[]</span><br><span class="line">    count=<span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span>(k_center!=k_center_new <span class="keyword">and</span> count&lt;Maxloop):</span><br><span class="line">        count+=<span class="number">1</span></span><br><span class="line">        k_center=copy.deepcopy(k_center_new)</span><br><span class="line">        k_categories=get_category(dire,k,k_center_new)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(shape[<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">                temp=<span class="number">0</span></span><br><span class="line">                <span class="keyword">for</span> w <span class="keyword">in</span> k_categories[j]:</span><br><span class="line">                    temp+=dire[w][i]</span><br><span class="line">                k_center_new[j][i]=temp/<span class="built_in">len</span>(k_categories[j])</span><br></pre></td></tr></table></figure>
+<p>The complete K-means algorithm main body is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">k_means</span>(<span class="params">dire,k</span>):</span><br><span class="line">    <span class="comment"># Randomly select k points as centroids</span></span><br><span class="line">    shape=np.array(dire).shape</span><br><span class="line">    k_center_index=[]</span><br><span class="line">    k_center=[]</span><br><span class="line">    temp_k=k</span><br><span class="line">    <span class="keyword">while</span>(temp_k):</span><br><span class="line">        temp=random.randrange(<span class="number">0</span>,shape[<span class="number">0</span>])</span><br><span class="line">        <span class="keyword">if</span> temp <span class="keyword">not</span> <span class="keyword">in</span> k_center_index:</span><br><span class="line">            k_center_index.append(temp)</span><br><span class="line">            k_center.append(<span class="built_in">list</span>(dire[temp]))</span><br><span class="line">            temp_k-=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Maximum number of iterations</span></span><br><span class="line">    Maxloop=<span class="number">500</span></span><br><span class="line">    k_center_new=k_center</span><br><span class="line">    k_center=[]</span><br><span class="line">    count=<span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span>(k_center!=k_center_new <span class="keyword">and</span> count&lt;Maxloop):</span><br><span class="line">        count+=<span class="number">1</span></span><br><span class="line">        k_center=copy.deepcopy(k_center_new)</span><br><span class="line">        k_categories=get_category(dire,k,k_center_new)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(shape[<span class="number">1</span>]):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">                temp=<span class="number">0</span></span><br><span class="line">                <span class="keyword">for</span> w <span class="keyword">in</span> k_categories[j]:</span><br><span class="line">                    temp+=dire[w][i]</span><br><span class="line">                k_center_new[j][i]=temp/<span class="built_in">len</span>(k_categories[j])</span><br><span class="line">    <span class="keyword">return</span> &#123;<span class="string">&#x27;k_center&#x27;</span>:k_center,<span class="string">&#x27;k_categories&#x27;</span>:k_categories,<span class="string">&#x27;dire&#x27;</span>:dire,<span class="string">&#x27;k&#x27;</span>:k&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="algorithm-results-and-evaluation">Algorithm Results and
+Evaluation</h4>
+<p>To visually see the clustering results, plot the clustered points in
+three-dimensional space, using different colors to represent different
+categories.</p>
+<blockquote>
+<p>The plotting function is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">show_k_means</span>(<span class="params">k_result</span>):</span><br><span class="line">    k,k_categories,dire=k_result[<span class="string">&#x27;k&#x27;</span>],k_result[<span class="string">&#x27;k_categories&#x27;</span>],k_result[<span class="string">&#x27;dire&#x27;</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">        x,y,z=[],[],[]</span><br><span class="line">        <span class="keyword">for</span> index <span class="keyword">in</span> k_categories[i]:</span><br><span class="line">            x.append(dire[index][<span class="number">0</span>])</span><br><span class="line">            y.append(dire[index][<span class="number">1</span>])</span><br><span class="line">            z.append(dire[index][<span class="number">2</span>])</span><br><span class="line">        fig = plt.gcf()</span><br><span class="line">        ax = fig.gca(projection=<span class="string">&#x27;3d&#x27;</span>)</span><br><span class="line">        ax.scatter(x,y,z)</span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>The clustering results are as follows:</p>
+<table>
+<tr>
+<td>
+<center>
+k=2
+</center>
+</td>
+<td>
+<center>
+k=5
+</center>
+</td>
+<td>
+<center>
+k=10
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/20201124160340.png?x-oss-process=style/webp" width='300'>
+</center>
+</td>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/20201124160804.png?x-oss-process=style/webp" width='300'>
+</center>
+</td>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/20201124160900.png?x-oss-process=style/webp" width='300'>
+</center>
+</td>
+</tr>
+</table>
+<p>To evaluate the clustering effect, select the Davies-Bouldin Index
+(DBI) to evaluate the clustering effect. The algorithm and method of DBI
+are as follows:</p>
+<ul>
+<li>Suppose there are k clusters, and the center point of each cluster
+is <span class="math inline">\(u_i\)</span>, and the points in the
+cluster are represented by <span
+class="math inline">\(x_{ij}\)</span></li>
+<li>Calculate the average distance within each cluster <span
+class="math inline">\(\mu_i\)</span>, which is the average distance from
+all points in the cluster to the cluster center</li>
+<li>Calculate the distance between centroids <span
+class="math inline">\(d(u_i,u_j)\)</span></li>
+<li>Calculate DBI:</li>
+</ul>
+<p><span class="math display">\[
+DB=\frac1k\sum_{i=1}^k\mathop{max}\limits_{i\neq
+j}(\frac{\mu_i+\mu_j}{d(u_i,u_j)})
+\]</span></p>
+<p>The implementation code is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">dbi</span>(<span class="params">k_result</span>):</span><br><span class="line">    k_center,k_categories,dire,k=k_result[<span class="string">&#x27;k_center&#x27;</span>],k_result[<span class="string">&#x27;k_categories&#x27;</span>],k_result[<span class="string">&#x27;dire&#x27;</span>],k_result[<span class="string">&#x27;k&#x27;</span>]</span><br><span class="line">    <span class="comment"># Average distance within clusters</span></span><br><span class="line">    k_ave_dist=[<span class="number">0</span> <span class="keyword">for</span> index <span class="keyword">in</span> <span class="built_in">range</span>(k)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">        temp=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> k_categories[i]:</span><br><span class="line">            temp+=distance(k_center[i],dire[item])</span><br><span class="line">        k_ave_dist[i]=temp/<span class="built_in">len</span>(k_categories[i])</span><br><span class="line">    <span class="comment"># Distance between cluster centers</span></span><br><span class="line">    k_center_dist=[[<span class="number">0</span> <span class="keyword">for</span> row <span class="keyword">in</span> <span class="built_in">range</span>(k)] <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(k)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">            k_center_dist[i][j]=distance(k_center[i],k_center[j])</span><br><span class="line">    <span class="comment"># Calculate DBI</span></span><br><span class="line">    DB=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">        Max=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(k):</span><br><span class="line">            <span class="keyword">if</span> i !=j:</span><br><span class="line">                temp=(k_ave_dist[i]+k_ave_dist[j])/k_center_dist[i][j]</span><br><span class="line">                <span class="keyword">if</span> temp&gt;Max:</span><br><span class="line">                    Max=temp</span><br><span class="line">        DB+=Max</span><br><span class="line">    <span class="keyword">return</span> DB/k</span><br></pre></td></tr></table></figure>
+<p>The evaluation results of clustering when k=2-10 are as follows:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">k</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+<th style="text-align: center;">8</th>
+<th style="text-align: center;">9</th>
+<th style="text-align: center;">10</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">DBI</td>
+<td style="text-align: center;">0.7028</td>
+<td style="text-align: center;">0.7851</td>
+<td style="text-align: center;">0.8324</td>
+<td style="text-align: center;">0.9075</td>
+<td style="text-align: center;">0.9267</td>
+<td style="text-align: center;">0.9927</td>
+<td style="text-align: center;">0.9242</td>
+<td style="text-align: center;">0.9123</td>
+<td style="text-align: center;">0.8849</td>
+</tr>
+</tbody>
+</table>
+<center>
+<img src="https://download.kezhi.tech/img/20201124162738.png?x-oss-process=style/webp" height='300'>
+</center>
+<p>The evaluation results of k=2-50 are as follows:</p>
+<center>
+<img src="https://download.kezhi.tech/img/20201124163322.png?x-oss-process=style/webp" height='300'>
+</center>
+<p>From the above results, it can be seen that the clustering effect is
+best when k=2 or 3. Analyzing from the data used and the characteristics
+of the k-means algorithm, the k-means algorithm uses Euclidean distance
+for clustering, and the regions divided are spherical. From the
+three-dimensional image, the data used does not have a clear boundary to
+separate the data. When k=2 or 3, each cluster is concentrated in a
+sphere, showing better clustering results. As k continues to increase,
+the clustering effect gradually deteriorates due to the influence of
+isolated points around the data.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/WeChatpay.png" alt="Yu Zhao WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/Alipay.png" alt="Yu Zhao Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Yu Zhao
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://kezhi.tech/en/6b2dc3cb.html" title="Crawling all anime data from Bilibili and conducting data analysis.">https://kezhi.tech/en/6b2dc3cb.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/Crawler/" rel="tag"><i class="fa fa-tag"></i> Crawler</a>
+              <a href="/tags/Big-Data/" rel="tag"><i class="fa fa-tag"></i> Big Data</a>
+              <a href="/tags/Aprior-Algorithm/" rel="tag"><i class="fa fa-tag"></i> Aprior Algorithm</a>
+              <a href="/tags/K-Means/" rel="tag"><i class="fa fa-tag"></i> K-Means</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/623a6b90.html" rel="prev" title="黄蜂群算法改进的多机器人区域覆盖">
+                  <i class="fa fa-angle-left"></i> 黄蜂群算法改进的多机器人区域覆盖
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/6b2dc3cb.html" rel="next" title="爬取B站所有番剧数据并进行数据分析">
+                  爬取B站所有番剧数据并进行数据分析 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="Select language">
+      
+        <option value="zh-CN" data-href="/6b2dc3cb.html" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/6b2dc3cb.html" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">陕ICP备20004764号 </a>
+      <img src="/images/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" alt="">
+  </div>
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yu Zhao</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Word count total: </span>
+    <span title="Word count total">587k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">8:53</span>
+  </span>
+</div>
+<div class="busuanzi-count" style="display: inline">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file"></i>
+      </span>
+      <span class="page-pv" title="文章访问量">
+        <span id="busuanzi_value_page_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://server.kezhi.tech:8361/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"locale":{"placeholder":"Welcome to comment"},"emoji":["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"wordLimit":0,"login":"enable","pageSize":10,"dark":"auto","el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/en/6b2dc3cb.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":270},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></body>
+</html>

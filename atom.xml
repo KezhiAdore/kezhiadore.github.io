@@ -1,0 +1,3365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kezhi&#39;s Blog</title>
+  
+  
+  <link href="https://kezhi.tech/atom.xml" rel="self"/>
+  
+  <link href="https://kezhi.tech/"/>
+  <updated>2024-05-31T07:00:10.611Z</updated>
+  <id>https://kezhi.tech/</id>
+  
+  <author>
+    <name>Yu Zhao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>锦绣太原青年博士行</title>
+    <link href="https://kezhi.tech/35bdcdc0.html"/>
+    <id>https://kezhi.tech/35bdcdc0.html</id>
+    <published>2024-05-31T06:56:21.000Z</published>
+    <updated>2024-05-31T07:00:10.611Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;24年5月28日 -
+24年5月31日，我和果果一起参加了青年博士太原行。总的来说，这次太原之行给我最大的感受就是惊喜。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202405311453559.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="太原" scheme="https://kezhi.tech/tags/%E5%A4%AA%E5%8E%9F/"/>
+    
+    <category term="博士行" scheme="https://kezhi.tech/tags/%E5%8D%9A%E5%A3%AB%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The magnificent Taiyuan young doctors journey.</title>
+    <link href="https://kezhi.tech/en/35bdcdc0.html"/>
+    <id>https://kezhi.tech/en/35bdcdc0.html</id>
+    <published>2024-05-31T06:56:21.000Z</published>
+    <updated>2024-05-31T07:05:23.189Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/35bdcdc0.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;24th May 28th - 31st, 24th, I participated in the Youth Doctor
+Taiyuan Tour with Guoguo. Overall, the trip to Taiyuan gave me the
+biggest surprise.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202405311453559.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="太原" scheme="https://kezhi.tech/tags/%E5%A4%AA%E5%8E%9F/"/>
+    
+    <category term="博士行" scheme="https://kezhi.tech/tags/%E5%8D%9A%E5%A3%AB%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈信任</title>
+    <link href="https://kezhi.tech/190fc18.html"/>
+    <id>https://kezhi.tech/190fc18.html</id>
+    <published>2024-03-25T09:33:18.000Z</published>
+    <updated>2024-03-25T09:33:24.204Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;不得不说，信任是十分珍贵且稀少的一样东西。其珍贵和稀少的原因很简单——怀疑是很容易的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202403251731371.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Talking About Trust.</title>
+    <link href="https://kezhi.tech/en/190fc18.html"/>
+    <id>https://kezhi.tech/en/190fc18.html</id>
+    <published>2024-03-25T09:33:18.000Z</published>
+    <updated>2024-04-20T12:30:12.887Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/190fc18.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It has to be said that trust is something extremely precious and
+rare. The reason for its preciousness and rarity is simple - doubt is
+easy.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202403251731371.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>炼丹工业化——mlflow使用简介</title>
+    <link href="https://kezhi.tech/b01892d.html"/>
+    <id>https://kezhi.tech/b01892d.html</id>
+    <published>2024-03-21T12:29:43.000Z</published>
+    <updated>2024-03-21T12:32:34.088Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;丹药管理是炼丹术中很重要的部分。毕竟，当一批一批的丹药通过不同的材料和火候炼制出来之后，我们总是会产生如下需求：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对丹药效果进行评估，筛选出好的丹药&lt;/li&gt;
+&lt;li&gt;将一批丹药的效果进行对比，从而发现好的材料配比（超参数）&lt;/li&gt;
+&lt;li&gt;发现了一颗效果好的丹药，想要复现这颗丹药的生产过程&lt;/li&gt;
+&lt;li&gt;......&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202403212027204.png?x-oss-process=style/webp&quot; style=&quot;width:67%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;为了实现以上需求，我们便需要炼丹管理技术，简单来说，就是要在
+&lt;code&gt;代码&lt;/code&gt;，&lt;code&gt;超参数&lt;/code&gt;，&lt;code&gt;模型&lt;/code&gt;之间建立映射关系并对齐进行存储，以便支持后续的分析以及训练过程的回溯。由此，诞生了很多机器学习全生命周期管理软件，本文主要介绍一款开源软件：&lt;code&gt;MLflow&lt;/code&gt;
+的简单使用流程&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="deep learning" scheme="https://kezhi.tech/tags/deep-learning/"/>
+    
+    <category term="mlflow" scheme="https://kezhi.tech/tags/mlflow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Alchemy Industrialization - Introduction to mlflow.</title>
+    <link href="https://kezhi.tech/en/b01892d.html"/>
+    <id>https://kezhi.tech/en/b01892d.html</id>
+    <published>2024-03-21T12:29:43.000Z</published>
+    <updated>2024-04-20T12:37:14.664Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/b01892d.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Dan medicine management is a crucial part of alchemy. After all, when
+batches of pills are produced through different materials and firing
+processes, we always have the following needs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Evaluate the effects of the pills and select the good ones&lt;/li&gt;
+&lt;li&gt;Compare the effects of batches of pills to discover good material
+ratios (hyperparameters)&lt;/li&gt;
+&lt;li&gt;Reproduce the production process of a pill with good effects&lt;/li&gt;
+&lt;li&gt;......&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202403212027204.png?x-oss-process=style/webp&quot; style=&quot;width:67%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To meet these needs, we need alchemy management technology. In simple
+terms, we need to establish mappings and alignments between
+&lt;code&gt;code&lt;/code&gt;, &lt;code&gt;hyperparameters&lt;/code&gt;, and &lt;code&gt;models&lt;/code&gt;
+for storage, in order to support subsequent analysis and training
+process tracing. As a result, many machine learning lifecycle management
+software have been developed. This article mainly introduces an
+open-source software called &lt;code&gt;MLflow&lt;/code&gt; and its simple usage
+process.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="deep learning" scheme="https://kezhi.tech/tags/deep-learning/"/>
+    
+    <category term="mlflow" scheme="https://kezhi.tech/tags/mlflow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇论文完成后</title>
+    <link href="https://kezhi.tech/437bf60f.html"/>
+    <id>https://kezhi.tech/437bf60f.html</id>
+    <published>2024-03-07T12:57:59.000Z</published>
+    <updated>2024-03-07T13:21:16.024Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;前段时间，我完成了第一篇论文，经历了从选题 -&amp;gt; 实验 -&amp;gt; 结果分析
+-&amp;gt;
+论文的全过程。在此期间虽然走了一些弯路，但也对科研发文的方法论有了新的认识。本文将围绕该次发文过程，概述科研大体流程，并对其中的一些细节进行思考。为今后的科研发文以及想要发文章的朋友们提供参考。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;致谢：感谢在实验和论文撰写过程中给予我指导的老师以及与我探讨的朋友们。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202403072120342.webp&quot; alt=&quot;Generated by ChatGPT-4&quot; style=&quot;width:75%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="research" scheme="https://kezhi.tech/tags/research/"/>
+    
+    <category term="总结" scheme="https://kezhi.tech/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>After the completion of the first paper.</title>
+    <link href="https://kezhi.tech/en/437bf60f.html"/>
+    <id>https://kezhi.tech/en/437bf60f.html</id>
+    <published>2024-03-07T12:57:59.000Z</published>
+    <updated>2024-04-20T12:30:12.976Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/437bf60f.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Recently, I completed my first research paper, going through the
+entire process from topic selection to experiments, result analysis, and
+paper writing. Although I took some detours along the way, I gained new
+insights into the methodology of scientific research and writing. This
+article will outline the general process of scientific research and
+discuss some of the details, providing reference for future research and
+for those who want to publish articles.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Acknowledgments: Thanks to the teachers who guided me during the
+experiments and paper writing, as well as friends who discussed with
+me.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202403072120342.webp&quot; alt=&quot;Generated by ChatGPT-4&quot; style=&quot;width:75%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="research" scheme="https://kezhi.tech/tags/research/"/>
+    
+    <category term="总结" scheme="https://kezhi.tech/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Policy Optimization</title>
+    <link href="https://kezhi.tech/309dbe23.html"/>
+    <id>https://kezhi.tech/309dbe23.html</id>
+    <published>2023-12-12T03:44:21.000Z</published>
+    <updated>2023-12-18T11:23:46.640Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文主要对基于策略优化定理的强化学习算法及相关变体进行一个梳理和总结。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312181919546.jpg?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+    <category term="Policy Optimization" scheme="https://kezhi.tech/tags/Policy-Optimization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Policy Optimization</title>
+    <link href="https://kezhi.tech/en/309dbe23.html"/>
+    <id>https://kezhi.tech/en/309dbe23.html</id>
+    <published>2023-12-12T03:44:21.000Z</published>
+    <updated>2024-04-20T12:30:12.588Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/309dbe23.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This article mainly reviews and summarizes reinforcement learning
+algorithms based on policy optimization theorems and related
+variants.&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202312181919546.jpg?x-oss-process=style/webp&quot; /&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+    <category term="Policy Optimization" scheme="https://kezhi.tech/tags/Policy-Optimization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python脚本+企业微信通知实验结果</title>
+    <link href="https://kezhi.tech/4d54863.html"/>
+    <id>https://kezhi.tech/4d54863.html</id>
+    <published>2023-12-07T09:13:39.000Z</published>
+    <updated>2023-12-07T09:18:12.494Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;深度学习的实验通常都需要跑很久，如果没有主动推送的手段，那么就会出现以下两种情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;过一段时间检查一下实验结果，无法专心干别的事情。&lt;/li&gt;
+&lt;li&gt;撇下不管，实验跑g了也不知道，跑完了也不知道。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为解决以上问题，就需要给实验程序加上监控进程，在实验结束后进行通知并发送实验结果。本文的脚本主要包含三部分内容：进程监控，tensorboard
+数据提取，企业微信机器人通知。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312071711241.png?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Script" scheme="https://kezhi.tech/tags/Script/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python Script For Notifying Experimental Results Via WeChat Work.</title>
+    <link href="https://kezhi.tech/en/4d54863.html"/>
+    <id>https://kezhi.tech/en/4d54863.html</id>
+    <published>2023-12-07T09:13:39.000Z</published>
+    <updated>2024-04-20T12:30:12.615Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/4d54863.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Deep learning experiments usually take a long time to run. Without
+proactive notification, two situations may arise:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the experiment results after a period of time, unable to focus
+on other things.&lt;/li&gt;
+&lt;li&gt;Abandon the experiment, not knowing whether it is running or
+completed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To solve the above problems, it is necessary to add a monitoring
+process to the experimental program, notify and send the experimental
+results after the experiment ends. This article&#39;s script mainly includes
+three parts: process monitoring, tensorboard data extraction, and
+enterprise WeChat robot notification.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312071711241.png?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Script" scheme="https://kezhi.tech/tags/Script/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高斯分布熵的推导</title>
+    <link href="https://kezhi.tech/80e25821.html"/>
+    <id>https://kezhi.tech/80e25821.html</id>
+    <published>2023-12-05T08:56:58.000Z</published>
+    <updated>2023-12-07T09:29:20.693Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文主要进行了一元高斯分布熵的推导：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312051655209.jpg?x-oss-process=style/webp&quot; alt=&quot;113646456_p0&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Math" scheme="https://kezhi.tech/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The derivation of Gaussian distribution entropy.</title>
+    <link href="https://kezhi.tech/en/80e25821.html"/>
+    <id>https://kezhi.tech/en/80e25821.html</id>
+    <published>2023-12-05T08:56:58.000Z</published>
+    <updated>2024-04-20T12:30:13.050Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/80e25821.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This article mainly derives the entropy of a univariate Gaussian
+distribution:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312051655209.jpg?x-oss-process=style/webp&quot; alt=&quot;113646456_p0&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Math" scheme="https://kezhi.tech/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电脑软件配置单</title>
+    <link href="https://kezhi.tech/f9af8ec4.html"/>
+    <id>https://kezhi.tech/f9af8ec4.html</id>
+    <published>2023-11-06T09:20:23.000Z</published>
+    <updated>2024-03-14T03:14:06.941Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我过去经常帮身边的朋友指导电脑硬件配置。然而，对于个人电脑来说，如果胡乱装软件，或者用了不合适的软件，会让电脑的使用效率事倍功半。同时，在我个人拿到一台新电脑时，也需要根据我的习惯初始化配置很多软件到新电脑上。由此，便有了写一份软件配置清单的想法，一来可以给大家做一些软件推荐，二来我自己也留一份作为参考。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202311061722807.png?x-oss-process=style/webp&quot; style=&quot;width:67%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="List" scheme="https://kezhi.tech/tags/List/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Computer Software Configuration List.</title>
+    <link href="https://kezhi.tech/en/f9af8ec4.html"/>
+    <id>https://kezhi.tech/en/f9af8ec4.html</id>
+    <published>2023-11-06T09:20:23.000Z</published>
+    <updated>2024-04-20T12:30:12.929Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/f9af8ec4.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I used to help my friends around me with computer hardware
+configurations. However, for personal computers, if you install software
+randomly or use inappropriate software, it will greatly reduce the
+efficiency of computer usage. At the same time, when I get a new
+computer, I also need to initialize and configure many software
+according to my habits. Therefore, I had the idea of writing a software
+configuration checklist, which can not only provide software
+recommendations for everyone, but also serve as a reference for
+myself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202311061722807.png?x-oss-process=style/webp&quot; style=&quot;width:67%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="List" scheme="https://kezhi.tech/tags/List/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker-VNC桌面配置</title>
+    <link href="https://kezhi.tech/d97606bd.html"/>
+    <id>https://kezhi.tech/d97606bd.html</id>
+    <published>2023-11-03T13:40:24.000Z</published>
+    <updated>2023-11-10T02:14:51.214Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在使用公共服务器时，通常用户只有普通权限账户，无法按照自己的想法任意对服务器进行配置。为满足这种需求，常使用docker来实现在容器内使用root权限来自由配置环境。VNC是一种常用的远程桌面，可以通过端口通信实现服务器渲染画面的回传。这在进行一些有界面的实验（如mujoco，habitat,
+igibson环境）时非常有用。本文将主要介绍如何在docker中配置vnc桌面，并给出了一个打包好的镜像：&lt;a
+href=&quot;https://hub.docker.com/r/kezhiadore/ubuntu-vnc&quot;&gt;kezhiadore/ubuntu-vnc
+- Docker Image | Docker Hub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202311032138787.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+是可爱的垃圾呀
+&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="docker" scheme="https://kezhi.tech/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker-Vnc Desktop Configuration.</title>
+    <link href="https://kezhi.tech/en/d97606bd.html"/>
+    <id>https://kezhi.tech/en/d97606bd.html</id>
+    <published>2023-11-03T13:40:24.000Z</published>
+    <updated>2024-04-20T12:30:12.452Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/d97606bd.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;When using public servers, users typically have regular user accounts
+with limited permissions, unable to configure the server freely
+according to their preferences. To meet this demand, Docker is often
+used to allow root privileges within containers for environment
+configuration. VNC, a commonly used remote desktop tool, facilitates
+server-side rendering of graphical interfaces, which is particularly
+useful for experiments requiring interfaces (such as mujoco, habitat,
+igibson environments). This article mainly discusses configuring VNC
+desktop within Docker and provides a pre-packaged image: &lt;a
+href=&quot;https://hub.docker.com/r/kezhiadore/ubuntu-vnc&quot;&gt;kezhiadore/ubuntu-vnc
+- Docker Image | Docker Hub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202311032138787.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+It&#39;s lovely rubbish
+&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="docker" scheme="https://kezhi.tech/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DDPG算法中AC学习率设置对训练效果的影响</title>
+    <link href="https://kezhi.tech/46493a5d.html"/>
+    <id>https://kezhi.tech/46493a5d.html</id>
+    <published>2023-10-13T06:45:22.000Z</published>
+    <updated>2024-04-20T11:38:27.628Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;深度强化学习算法相比于深度学习，有更多的超参数需要调节，本文主要对DDPG算法中的actor网络和critic网络学习率的设置对学习效果的影响进行了探讨。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312071724061.png?x-oss-process=style/webp&quot; width=&quot;33%&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="强化学习" scheme="https://kezhi.tech/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Impact Of AC Learning Rate Setting on Training Effect in DPG Algorithm.</title>
+    <link href="https://kezhi.tech/en/46493a5d.html"/>
+    <id>https://kezhi.tech/en/46493a5d.html</id>
+    <published>2023-10-13T06:45:22.000Z</published>
+    <updated>2024-04-20T12:30:12.440Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/46493a5d.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Deep reinforcement learning algorithms have more hyperparameters to
+tune compared to deep learning. This article mainly discusses the impact
+of the learning rate settings for the actor and critic networks in the
+DDPG algorithm on the learning performance.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202312071724061.png?x-oss-process=style/webp&quot; width=&quot;33%&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="强化学习" scheme="https://kezhi.tech/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>聚会互认问题小记</title>
+    <link href="https://kezhi.tech/244334e3.html"/>
+    <id>https://kezhi.tech/244334e3.html</id>
+    <published>2023-07-01T03:27:39.000Z</published>
+    <updated>2023-11-10T02:16:20.216Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;前两天，由4位轮值主席组织的第一届游在长安活动正式落幕。在活动组织过程中，有一个小游戏的分组问题很有一次，在此记录。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202307011126365.png?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="图论" scheme="https://kezhi.tech/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Party Mutual Recognition Issues Brief.</title>
+    <link href="https://kezhi.tech/en/244334e3.html"/>
+    <id>https://kezhi.tech/en/244334e3.html</id>
+    <published>2023-07-01T03:27:39.000Z</published>
+    <updated>2024-04-20T12:30:13.016Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/244334e3.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A few days ago, the first &quot;Game in Chang&#39;an&quot; event organized by four
+rotating chairpersons officially came to an end. There was a grouping
+problem in a small game during the event, and I will record it here.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202307011126365.png?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="图论" scheme="https://kezhi.tech/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023毕业快乐</title>
+    <link href="https://kezhi.tech/Infinity.html"/>
+    <id>https://kezhi.tech/Infinity.html</id>
+    <published>2023-06-13T02:43:44.000Z</published>
+    <updated>2024-04-20T12:22:10.376Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;年纪越大，感到时光流逝的就越快。转眼间，就已经到了2023年。比我大一届的师兄师姐们就要毕业了。这篇博客主要放照片用，没有什么太多的文字内容。&lt;/p&gt;
+&lt;p&gt;祝各位毕业的师兄师姐前程似锦，生活精彩。🎉🎉🎉&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202306131047631.jpg?x-oss-process=style/webp&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="毕业" scheme="https://kezhi.tech/tags/%E6%AF%95%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Happy graduation in 2023.</title>
+    <link href="https://kezhi.tech/en/48e66169.html"/>
+    <id>https://kezhi.tech/en/48e66169.html</id>
+    <published>2023-06-13T02:43:44.000Z</published>
+    <updated>2024-04-20T12:30:26.346Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/48e66169.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As we grow older, we feel that time passes by faster. In the blink of
+an eye, it&#39;s already 2023. The seniors who are one year older than me
+are about to graduate. This blog mainly consists of photos and doesn&#39;t
+have much text content.&lt;/p&gt;
+&lt;p&gt;I wish all the graduating seniors a bright future and a wonderful
+life. 🎉🎉🎉&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202306131047631.jpg?x-oss-process=style/webp&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="毕业" scheme="https://kezhi.tech/tags/%E6%AF%95%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GITM:LLM和RL的一次交融</title>
+    <link href="https://kezhi.tech/b222cfe2.html"/>
+    <id>https://kezhi.tech/b222cfe2.html</id>
+    <published>2023-06-07T02:30:53.000Z</published>
+    <updated>2023-11-10T02:16:20.211Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近，清华大学和商汤发表了一篇名为《Ghost in the Minecraft: Generally
+Capable Agents for Open-World Environments via Large Language Models
+with Text-based Knowledge and
+Memory》的文章，简称GITM。很有意思，感兴趣的朋友可以读一下原文。&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202306041618232.png?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="GPT" scheme="https://kezhi.tech/tags/GPT/"/>
+    
+    <category term="RL" scheme="https://kezhi.tech/tags/RL/"/>
+    
+    <category term="Minecraft" scheme="https://kezhi.tech/tags/Minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A Fusion Of Llm And Rl.</title>
+    <link href="https://kezhi.tech/en/b222cfe2.html"/>
+    <id>https://kezhi.tech/en/b222cfe2.html</id>
+    <published>2023-06-07T02:30:53.000Z</published>
+    <updated>2024-04-20T12:30:12.475Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/b222cfe2.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Recently, Tsinghua University and SenseTime published an article
+titled &quot;Ghost in the Minecraft: Generally Capable Agents for Open-World
+Environments via Large Language Models with Text-based Knowledge and
+Memory,&quot; abbreviated as GITM. It&#39;s quite interesting, and interested
+friends can read the original article.&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202306041618232.png?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="GPT" scheme="https://kezhi.tech/tags/GPT/"/>
+    
+    <category term="RL" scheme="https://kezhi.tech/tags/RL/"/>
+    
+    <category term="Minecraft" scheme="https://kezhi.tech/tags/Minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>强化学习中的Terminated 和 Truncated</title>
+    <link href="https://kezhi.tech/5be4b154.html"/>
+    <id>https://kezhi.tech/5be4b154.html</id>
+    <published>2023-05-24T13:25:19.000Z</published>
+    <updated>2023-11-10T02:16:20.293Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;深度强化学习的流程可以抽象为以下步骤的重复：&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;智能体与环境交互产生并存储经验&lt;/li&gt;
+&lt;li&gt;智能体从经验中进行学习&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本文主要探讨在收集经验过程中，环境自然结束（Terminated，包括目标成功，失败等）和人为截断（Truncated，主要为达到一定步数结束）对经验收集和训练产生的影响，以及如何对其进行处理。并对其进行了部分实验来比较性能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202305242122684.png?x-oss-process=style/webp&quot; style=&quot;width:60%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+    <category term="Q-Learning" scheme="https://kezhi.tech/tags/Q-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Terminated and Truncated in reinforcement learning.</title>
+    <link href="https://kezhi.tech/en/5be4b154.html"/>
+    <id>https://kezhi.tech/en/5be4b154.html</id>
+    <published>2023-05-24T13:25:19.000Z</published>
+    <updated>2024-04-20T12:30:12.788Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/5be4b154.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The process of deep reinforcement learning can be abstracted into the
+following steps:&lt;/p&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;The agent interacts with the environment and generates and stores
+experiences.&lt;/li&gt;
+&lt;li&gt;The agent learns from the experiences.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This article mainly discusses the impact of natural termination
+(Terminated), including successful or failed goals, and artificial
+truncation (Truncated), mainly ending after a certain number of steps,
+on experience collection and training. It also conducts some experiments
+to compare performance.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202305242122684.png?x-oss-process=style/webp&quot; style=&quot;width:60%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+    <category term="Q-Learning" scheme="https://kezhi.tech/tags/Q-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>转折</title>
+    <link href="https://kezhi.tech/36e895f1.html"/>
+    <id>https://kezhi.tech/36e895f1.html</id>
+    <published>2023-05-16T18:29:39.000Z</published>
+    <updated>2023-05-23T07:46:31.861Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;现在是2023年5月17日凌晨00时57分，不知道是下午喝了那杯拿铁的缘故，还是因为这两天发生的事情，到现在依旧没有困意。此外，脑中也有很多想法在不断涌现和争辩。思来想去，与其在床上胡思乱想，亦或是借酒助眠，不如来工位写一篇文章，梳理一下脑中所想，将不断涌现的混乱的想法整理为有条理与逻辑的文本内容。&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;红豆生南国，春来发几枝？&lt;/p&gt;
+&lt;p&gt;愿君多采撷，此物最相思。&lt;/p&gt;
+
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="日记" scheme="https://kezhi.tech/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="心情" scheme="https://kezhi.tech/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Contrast.</title>
+    <link href="https://kezhi.tech/en/36e895f1.html"/>
+    <id>https://kezhi.tech/en/36e895f1.html</id>
+    <published>2023-05-16T18:29:39.000Z</published>
+    <updated>2024-04-20T12:30:13.029Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/36e895f1.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Now it is 00:57 on May 17, 2023. I still can&#39;t fall asleep, maybe
+because of the latte I had in the afternoon or because of what has
+happened in the past few days. My mind is filled with thoughts and
+debates. Instead of lying in bed and overthinking or relying on alcohol
+to fall asleep, I decided to write an article at my desk to organize my
+thoughts and turn the chaotic ideas into logical and organized text.&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;Red beans grow in the southern land, how many branches bloom in
+spring?&lt;/p&gt;
+&lt;p&gt;May you pick many, for this is the most lovesick thing.&lt;/p&gt;
+
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="日记" scheme="https://kezhi.tech/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+    <category term="心情" scheme="https://kezhi.tech/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>强化学习算法实现中的细节</title>
+    <link href="https://kezhi.tech/aaafe79.html"/>
+    <id>https://kezhi.tech/aaafe79.html</id>
+    <published>2023-03-06T02:44:18.000Z</published>
+    <updated>2024-03-14T03:14:04.375Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;强化学习在算法实现时需要非常注意细节，否则网络很难收敛或没有训练效果。本文主要记录我在实现各种强化学习算法时踩到的一些坑以及需要注意的细节，持续更新......&lt;/p&gt;
+&lt;p&gt;以及附上我自己实现的RL算法库：&lt;a
+href=&quot;https://github.com/KezhiAdore/RL-Algorithm&quot;&gt;https://github.com/KezhiAdore/RL-Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202303061042992.jpg?x-oss-process=style/webp&quot; width = &quot;45%&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The details of implementing reinforcement learning algorithms.</title>
+    <link href="https://kezhi.tech/en/aaafe79.html"/>
+    <id>https://kezhi.tech/en/aaafe79.html</id>
+    <published>2023-03-06T02:44:18.000Z</published>
+    <updated>2024-04-20T12:30:12.801Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/aaafe79.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;common&quot;&gt;Common&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Be cautious when implementing reinforcement learning algorithms, as
+attention to detail is crucial for convergence and training
+effectiveness. This article mainly documents some pitfalls encountered
+and details to be aware of while implementing various reinforcement
+learning algorithms, with continuous updates...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And here&#39;s my self-implemented RL algorithm library: &lt;a
+href=&quot;https://github.com/KezhiAdore/RL-Algorithm&quot;&gt;https://github.com/KezhiAdore/RL-Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/202303061042992.jpg?x-oss-process=style/webp&quot;
+style=&quot;width:45.0%&quot; alt=&quot;Image&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Image&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyTorch中的CrossEntropyLoss与交叉熵计算不一致</title>
+    <link href="https://kezhi.tech/e295e676.html"/>
+    <id>https://kezhi.tech/e295e676.html</id>
+    <published>2023-03-04T05:58:17.000Z</published>
+    <updated>2023-11-10T02:16:20.299Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文主要对于交叉熵的手动计算和&lt;code&gt;PyTorch&lt;/code&gt;中的&lt;code&gt;CrossEntropyLoss&lt;/code&gt;模块计算结果不一致的问题展开讨论，查阅了&lt;code&gt;PyTorch&lt;/code&gt;的官方文档，最终发现是&lt;code&gt;CrossEntropyLoss&lt;/code&gt;在计算交叉熵之前会对输入的概率分布进行一次&lt;code&gt;SoftMax&lt;/code&gt;操作导致的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202303041402037.jpg?x-oss-process=style/webp&quot; width=61.8% /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="PyTorch" scheme="https://kezhi.tech/tags/PyTorch/"/>
+    
+    <category term="Deep Learning" scheme="https://kezhi.tech/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The CrossEntropyLoss in PyTorch is Inconsistent With The Calculation of Cross-Entropy.</title>
+    <link href="https://kezhi.tech/en/e295e676.html"/>
+    <id>https://kezhi.tech/en/e295e676.html</id>
+    <published>2023-03-04T05:58:17.000Z</published>
+    <updated>2024-04-20T12:30:12.636Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/e295e676.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="PyTorch" scheme="https://kezhi.tech/tags/PyTorch/"/>
+    
+    <category term="Deep Learning" scheme="https://kezhi.tech/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vanilla Policy Gradient关于loss mean与sum的探讨</title>
+    <link href="https://kezhi.tech/b69f94c6.html"/>
+    <id>https://kezhi.tech/b69f94c6.html</id>
+    <published>2023-03-01T14:05:22.000Z</published>
+    <updated>2023-11-10T02:16:20.299Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近在逐一复现RL算法过程中，策略梯度算法的收敛性一直有问题。经过一番探究和对比实验，学习了网上和书本上的很多实验代码之后，发现了代码实现中的一个小问题，即Policy
+Gradient在计算最终loss时求平均和求和对于网络训练的影响，本文将对此进行展开讨论。&lt;/p&gt;
+&lt;p&gt;先说结论：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在进行策略梯度下降优化策略时，可以对每个动作的loss逐一（for操作）进行反向传播后进行梯度下降，也可以对每个动作的loss求和（sum操作）之后进行反向传播后梯度下降，但尽量避免对所有动作的loss求平均（mean操作）之后进行反向传播后梯度下降，这会导致收敛速度较慢，甚至无法收敛。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;具体的论证和实验过程见下文。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+    <category term="Deep Learning" scheme="https://kezhi.tech/tags/Deep-Learning/"/>
+    
+    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discussion on Loss Mean and Sum in Vanilla Policy Gradient</title>
+    <link href="https://kezhi.tech/en/b69f94c6.html"/>
+    <id>https://kezhi.tech/en/b69f94c6.html</id>
+    <published>2023-03-01T14:05:22.000Z</published>
+    <updated>2024-04-20T12:30:12.668Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/b69f94c6.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://kezhi.tech/tags/Reinforcement-Learning/"/>
+    
+    <category term="Deep Learning" scheme="https://kezhi.tech/tags/Deep-Learning/"/>
+    
+    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zotero插件推荐及下载</title>
+    <link href="https://kezhi.tech/b2344ef.html"/>
+    <id>https://kezhi.tech/b2344ef.html</id>
+    <published>2023-02-28T08:25:48.000Z</published>
+    <updated>2023-11-10T02:16:20.301Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Zotero
+是一款非常好用的开源文献管理软件，在对比了Endnote，Mendeley，Zotero之后最终我选择了Zotero作为我自己的文献管理软件，选择其的主要原因有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持webdav同步文献记录及pdf附件&lt;/li&gt;
+&lt;li&gt;丰富的扩展插件&lt;/li&gt;
+&lt;li&gt;支持markdown笔记&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文主要介绍部分常用的Zotero插件，并附上其下载链接，同时谈谈使用感受。顺序按照我个人认为的好用程度排序。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202303021529700.png?x-oss-process=style/webp&quot; width=33% /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Zotero" scheme="https://kezhi.tech/tags/Zotero/"/>
+    
+    <category term="插件" scheme="https://kezhi.tech/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zotero Plugin Recommendation and Download</title>
+    <link href="https://kezhi.tech/en/b2344ef.html"/>
+    <id>https://kezhi.tech/en/b2344ef.html</id>
+    <published>2023-02-28T08:25:48.000Z</published>
+    <updated>2024-04-20T12:30:12.723Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/b2344ef.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Zotero is a very useful open-source reference management software.
+After comparing Endnote, Mendeley, and Zotero, I ultimately chose Zotero
+as my own reference management software for the following reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for webdav synchronization of reference records and PDF
+attachments&lt;/li&gt;
+&lt;li&gt;Rich extension plugins&lt;/li&gt;
+&lt;li&gt;Support for markdown notes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This article mainly introduces some commonly used Zotero plugins,
+along with their download links, and discusses my experience using them.
+The order is based on what I personally consider to be the most
+useful.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202303021529700.png?x-oss-process=style/webp&quot; width=33% /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Zotero" scheme="https://kezhi.tech/tags/Zotero/"/>
+    
+    <category term="插件" scheme="https://kezhi.tech/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性滤波与非线性滤波实验</title>
+    <link href="https://kezhi.tech/10ee70e7.html"/>
+    <id>https://kezhi.tech/10ee70e7.html</id>
+    <published>2022-11-29T09:15:13.000Z</published>
+    <updated>2024-03-14T03:14:08.177Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文围绕自由落体运动的估计，进行了线性滤波和非线性滤波的实验。下面这张图是源自西安交通大学蔡远利教授的《随即滤波与控制》课程。
+该课程主要围绕估计，平滑与预测三方面讲解各类滤波方法。&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/202211291710418.jpg?x-oss-process=style/webp&quot;
+alt=&quot;Map of Control Theory&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Map of Control Theory&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Kalman Filter" scheme="https://kezhi.tech/tags/Kalman-Filter/"/>
+    
+    <category term="Linear Filter" scheme="https://kezhi.tech/tags/Linear-Filter/"/>
+    
+    <category term="Nonlinear Filter" scheme="https://kezhi.tech/tags/Nonlinear-Filter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linear filtering and nonlinear filtering experiments.</title>
+    <link href="https://kezhi.tech/en/10ee70e7.html"/>
+    <id>https://kezhi.tech/en/10ee70e7.html</id>
+    <published>2022-11-29T09:15:13.000Z</published>
+    <updated>2024-04-20T12:30:12.990Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/10ee70e7.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This article presents experiments on linear filtering and nonlinear
+filtering for estimating the free fall motion. The following figure is
+from Professor Cai Yuanli&#39;s course &quot;Random Filtering and Control&quot; at
+Xi&#39;an Jiaotong University. The course mainly discusses various filtering
+methods related to estimation, smoothing, and prediction.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/202211291710418.jpg?x-oss-process=style/webp&quot;
+alt=&quot;Map of Control Theory&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Map of Control Theory&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Kalman Filter" scheme="https://kezhi.tech/tags/Kalman-Filter/"/>
+    
+    <category term="Linear Filter" scheme="https://kezhi.tech/tags/Linear-Filter/"/>
+    
+    <category term="Nonlinear Filter" scheme="https://kezhi.tech/tags/Nonlinear-Filter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>王者荣耀目标检测--Yolov5实现</title>
+    <link href="https://kezhi.tech/86b4b2c0.html"/>
+    <id>https://kezhi.tech/86b4b2c0.html</id>
+    <published>2022-11-29T09:01:37.000Z</published>
+    <updated>2023-11-10T02:16:20.214Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;智能体对战目标检测&quot;&gt;智能体对战目标检测&lt;/h1&gt;
+&lt;p&gt;手动标注数据集及视频分割程序下载见文章末。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291652294.jpg?x-oss-process=style/webp&quot; style=&quot;width:80%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Computer Vision" scheme="https://kezhi.tech/tags/Computer-Vision/"/>
+    
+    <category term="Target Detection" scheme="https://kezhi.tech/tags/Target-Detection/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>King Glory Target Detection - Yolov5 Implementation.</title>
+    <link href="https://kezhi.tech/en/86b4b2c0.html"/>
+    <id>https://kezhi.tech/en/86b4b2c0.html</id>
+    <published>2022-11-29T09:01:37.000Z</published>
+    <updated>2024-04-20T12:30:12.919Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/86b4b2c0.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1
+id=&quot;intelligent-agent-for-target-detection-in-game-battles&quot;&gt;Intelligent
+Agent for Target Detection in Game Battles&lt;/h1&gt;
+&lt;p&gt;Manual annotation dataset and video segmentation program download can
+be found at the end of the article.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/202211291652294.jpg?x-oss-process=style/webp&quot;
+alt=&quot;Image&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Image&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Computer Vision" scheme="https://kezhi.tech/tags/Computer-Vision/"/>
+    
+    <category term="Target Detection" scheme="https://kezhi.tech/tags/Target-Detection/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XJTU System Optimization and Scheduling Final Report</title>
+    <link href="https://kezhi.tech/a7067052.html"/>
+    <id>https://kezhi.tech/a7067052.html</id>
+    <published>2022-11-29T08:39:37.000Z</published>
+    <updated>2023-11-10T02:14:51.208Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;分支定界法在背包问题中的应用&quot;&gt;分支定界法在背包问题中的应用&lt;/h1&gt;
+&lt;p&gt;西安交通大学《系统优化与调度》课程期末报告&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291638345.jpg?x-oss-process=style/webp&quot; style=&quot;width:30%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Optimal" scheme="https://kezhi.tech/tags/Optimal/"/>
+    
+    <category term="背包问题" scheme="https://kezhi.tech/tags/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+    
+    <category term="branch-and-bound" scheme="https://kezhi.tech/tags/branch-and-bound/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xjtu System Optimization And Scheduling Final Report</title>
+    <link href="https://kezhi.tech/en/a7067052.html"/>
+    <id>https://kezhi.tech/en/a7067052.html</id>
+    <published>2022-11-29T08:39:37.000Z</published>
+    <updated>2024-04-20T12:30:12.700Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/a7067052.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1
+id=&quot;application-of-branch-and-bound-method-in-knapsack-problem&quot;&gt;Application
+of Branch and Bound Method in Knapsack Problem&lt;/h1&gt;
+&lt;p&gt;Final report for the course &quot;System Optimization and Scheduling&quot; at
+Xi&#39;an Jiaotong University&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291638345.jpg?x-oss-process=style/webp&quot; style=&quot;width:30%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Optimal" scheme="https://kezhi.tech/tags/Optimal/"/>
+    
+    <category term="背包问题" scheme="https://kezhi.tech/tags/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+    
+    <category term="branch-and-bound" scheme="https://kezhi.tech/tags/branch-and-bound/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XJTU System Optimization and Scheduling Midterm Report</title>
+    <link href="https://kezhi.tech/f95f8ff4.html"/>
+    <id>https://kezhi.tech/f95f8ff4.html</id>
+    <published>2022-11-29T08:31:55.000Z</published>
+    <updated>2023-11-10T02:16:20.289Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;midterm-report&quot;&gt;Midterm Report&lt;/h1&gt;
+&lt;p&gt;西安交通大学《系统优化与调度》课程中期报告&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291631791.jpg?x-oss-process=style/webp&quot; alt=&quot;&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Optimal" scheme="https://kezhi.tech/tags/Optimal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xjtu System Optimization And Scheduling Midterm Report</title>
+    <link href="https://kezhi.tech/en/f95f8ff4.html"/>
+    <id>https://kezhi.tech/en/f95f8ff4.html</id>
+    <published>2022-11-29T08:31:55.000Z</published>
+    <updated>2024-04-20T12:30:12.713Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;midterm-report&quot;&gt;Midterm Report&lt;/h1&gt;
+&lt;p&gt;西安交通大学《系统优化与调度》课程中期报告&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291631791.jpg?x-oss-process=style/webp&quot; alt=&quot;&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Optimal" scheme="https://kezhi.tech/tags/Optimal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>XJTU System Optimization and Scheduling Course Assignments</title>
+    <link href="https://kezhi.tech/7d0182be.html"/>
+    <id>https://kezhi.tech/7d0182be.html</id>
+    <published>2022-11-29T08:08:38.000Z</published>
+    <updated>2023-11-10T02:16:20.293Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;西安交通大学研究生《系统优化与调度》课程作业&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291608420.png?x-oss-process=style/webp&quot; style=&quot;width:30%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Optimal" scheme="https://kezhi.tech/tags/Optimal/"/>
+    
+    <category term="Schedule" scheme="https://kezhi.tech/tags/Schedule/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xjtu System Optimization And Scheduling Course Assignments</title>
+    <link href="https://kezhi.tech/en/7d0182be.html"/>
+    <id>https://kezhi.tech/en/7d0182be.html</id>
+    <published>2022-11-29T08:08:38.000Z</published>
+    <updated>2024-04-20T12:30:12.694Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;西安交通大学研究生《系统优化与调度》课程作业&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211291608420.png?x-oss-process=style/webp&quot; style=&quot;width:30%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Optimal" scheme="https://kezhi.tech/tags/Optimal/"/>
+    
+    <category term="Schedule" scheme="https://kezhi.tech/tags/Schedule/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序中的命名与作用域</title>
+    <link href="https://kezhi.tech/48242c23.html"/>
+    <id>https://kezhi.tech/48242c23.html</id>
+    <published>2022-11-26T11:23:38.000Z</published>
+    <updated>2023-11-10T02:16:20.216Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近在读《代码之髓》，里面讲解了很多编程语言中的concepts是为何产生的。本篇笔记主要参考了书中的第7章：名字与作用域。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202211261934570.png?x-oss-process=style/webp&quot; alt=&quot;转自:米游社@战小医仙&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Programming" scheme="https://kezhi.tech/tags/Programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Naming and Scope in Programs.</title>
+    <link href="https://kezhi.tech/en/48242c23.html"/>
+    <id>https://kezhi.tech/en/48242c23.html</id>
+    <published>2022-11-26T11:23:38.000Z</published>
+    <updated>2024-04-20T12:30:12.967Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/48242c23.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Recently, I have been reading &quot;The Essence of Code&quot;, which explains
+the concepts behind many programming languages. This note mainly refers
+to Chapter 7 of the book: Names and Scopes.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/202211261934570.png?x-oss-process=style/webp&quot;
+alt=&quot;转自:米游社@战小医仙&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;转自:米游社@战小医仙&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Programming" scheme="https://kezhi.tech/tags/Programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>限制WSL内存使用</title>
+    <link href="https://kezhi.tech/a587561c.html"/>
+    <id>https://kezhi.tech/a587561c.html</id>
+    <published>2022-10-15T03:54:01.000Z</published>
+    <updated>2022-10-25T06:53:01.872Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在使用WSL2时，系统有空余内存的情况下，Linux子系统在运行时会不断分配系统内存。随着其不断运行，占据的内存越来越大，甚至会将Windows系统内存占满。因此，在运行WSL时要限制其内存的使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="WSL" scheme="https://kezhi.tech/tags/WSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Limit WSL memory usage.</title>
+    <link href="https://kezhi.tech/en/a587561c.html"/>
+    <id>https://kezhi.tech/en/a587561c.html</id>
+    <published>2022-10-15T03:54:01.000Z</published>
+    <updated>2024-04-20T12:30:13.037Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/a587561c.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="WSL" scheme="https://kezhi.tech/tags/WSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch网络构造Tips</title>
+    <link href="https://kezhi.tech/a7298e70.html"/>
+    <id>https://kezhi.tech/a7298e70.html</id>
+    <published>2022-09-26T09:25:50.000Z</published>
+    <updated>2023-11-10T02:16:20.299Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;关于网络的parameters&quot;&gt;关于网络的parameters&lt;/h2&gt;
+&lt;p&gt;Pytorch中，每一个网络继承于&lt;code&gt;nn.Module&lt;/code&gt;类，当实例化之后，是通过维护一下8个字典来实现各种网络功能的：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;_parameters&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_buffers&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_backward_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_forward_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_forward_pre_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_state_dict_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_load_state_dict_pre_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_modules&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Pytorch" scheme="https://kezhi.tech/tags/Pytorch/"/>
+    
+    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tips for Constructing Pytorch Networks</title>
+    <link href="https://kezhi.tech/en/a7298e70.html"/>
+    <id>https://kezhi.tech/en/a7298e70.html</id>
+    <published>2022-09-26T09:25:50.000Z</published>
+    <updated>2024-04-20T12:30:12.644Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/a7298e70.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;about-network-parameters&quot;&gt;About Network Parameters&lt;/h2&gt;
+&lt;p&gt;In Pytorch, each network inherits from the &lt;code&gt;nn.Module&lt;/code&gt;
+class and implements various network functions by maintaining the
+following eight dictionaries after instantiation:&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;_parameters&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_buffers&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_backward_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_forward_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_forward_pre_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_state_dict_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_load_state_dict_pre_hooks&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_modules&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Pytorch" scheme="https://kezhi.tech/tags/Pytorch/"/>
+    
+    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云南施甸二中支教小记</title>
+    <link href="https://kezhi.tech/ebd84d05.html"/>
+    <id>https://kezhi.tech/ebd84d05.html</id>
+    <published>2022-07-28T17:30:26.000Z</published>
+    <updated>2023-11-10T02:14:51.212Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;day-0&quot;&gt;Day 0&lt;/h2&gt;
+&lt;p&gt;硕士研究生时期，需要参与一项社会实践。遂与好友相约前往云南施甸县支教。原本的安排是县里中学一所，村里中学一所以及山里中学一所。起初计划前往山里中学实行采蘑菇计划，然天有不测风云，支教团计划变更，改为前往施甸二中和施甸三中支教。我们二人被安排在施甸二中。&lt;/p&gt;
+&lt;p&gt;去程，西安途径昆明转机到保山，校方从保山机场接我们到学校。途中经过秦岭山脉，云贵高原。从北方到南方，从平原到山地再到高原。无论是空中的气候，还是地貌，均变化多样。&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/202208010008630.jpg?x-oss-process=style/webp&quot;
+alt=&quot;(摄影师: 蔡育倍)&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;(摄影师: 蔡育倍)&lt;/figcaption&gt;
+&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="支教" scheme="https://kezhi.tech/tags/%E6%94%AF%E6%95%99/"/>
+    
+    <category term="感悟" scheme="https://kezhi.tech/tags/%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Yunnan Shidian No.2 Middle School Support Teaching Memoir.</title>
+    <link href="https://kezhi.tech/en/ebd84d05.html"/>
+    <id>https://kezhi.tech/en/ebd84d05.html</id>
+    <published>2022-07-28T17:30:26.000Z</published>
+    <updated>2024-04-20T12:30:12.753Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/ebd84d05.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="支教" scheme="https://kezhi.tech/tags/%E6%94%AF%E6%95%99/"/>
+    
+    <category term="感悟" scheme="https://kezhi.tech/tags/%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科研问题记录</title>
+    <link href="https://kezhi.tech/4efb358.html"/>
+    <id>https://kezhi.tech/4efb358.html</id>
+    <published>2022-07-19T18:00:14.000Z</published>
+    <updated>2023-11-10T02:14:51.206Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;引言&lt;/h2&gt;
+&lt;p&gt;在科研和工程实践的过程中，问题的解决往往伴随着新问题的发生。往往这些问题都是在特定场景下才会出现，但是其问题的抽象又具有一定的普适性，从而这些问题能够构成一个个科学研究的起点。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202207200159235.jpg?x-oss-process=style/webp&quot; width=30%&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="强化学习" scheme="https://kezhi.tech/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="博弈论" scheme="https://kezhi.tech/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="多智能体" scheme="https://kezhi.tech/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Research problem record.</title>
+    <link href="https://kezhi.tech/en/4efb358.html"/>
+    <id>https://kezhi.tech/en/4efb358.html</id>
+    <published>2022-07-19T18:00:14.000Z</published>
+    <updated>2024-04-20T12:30:12.951Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/4efb358.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In the process of scientific research and engineering practice, the
+solution to a problem often comes with the emergence of new problems.
+These problems often occur in specific scenarios, but their abstractions
+have a certain universality, making them the starting point for
+scientific research.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202207200159235.jpg?x-oss-process=style/webp&quot; width=30%&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="强化学习" scheme="https://kezhi.tech/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="博弈论" scheme="https://kezhi.tech/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="多智能体" scheme="https://kezhi.tech/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实数六大基本定理的相互证明</title>
+    <link href="https://kezhi.tech/24a1693.html"/>
+    <id>https://kezhi.tech/24a1693.html</id>
+    <published>2022-06-30T07:26:13.000Z</published>
+    <updated>2023-11-10T02:14:51.208Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;p&gt;翟老师的&lt;泛函分析&gt;课程带我重新认识了实数。实数中有一些基本定理，但具体有几个存在着很多不同的观点。本文以六大定理为准，这六大定理分别为&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;确界原理&lt;/li&gt;
+&lt;li&gt;单调有界原理&lt;/li&gt;
+&lt;li&gt;Cantor闭区间套定理&lt;/li&gt;
+&lt;li&gt;致密性定理（聚点定理）&lt;/li&gt;
+&lt;li&gt;Cauchy收敛准则&lt;/li&gt;
+&lt;li&gt;有限覆盖定理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文对这六大定理之间进行了循环证明，共计30个证明，如有不正之处，可在评论区指出，我会及时进行修正。&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202206301525923.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="实数" scheme="https://kezhi.tech/tags/%E5%AE%9E%E6%95%B0/"/>
+    
+    <category term="证明" scheme="https://kezhi.tech/tags/%E8%AF%81%E6%98%8E/"/>
+    
+    <category term="数学分析" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修改操作系统安装时间</title>
+    <link href="https://kezhi.tech/629d278e.html"/>
+    <id>https://kezhi.tech/629d278e.html</id>
+    <published>2022-06-23T11:52:49.000Z</published>
+    <updated>2023-11-10T02:16:20.301Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;由于某些不可名状的原因，导致了有修改操作系统安装时间的需求，在此小记。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202206231950445.png?x-oss-process=style/webp&quot; width=30%&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="操作系统" scheme="https://kezhi.tech/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="安装时间" scheme="https://kezhi.tech/tags/%E5%AE%89%E8%A3%85%E6%97%B6%E9%97%B4/"/>
+    
+    <category term="系统修改" scheme="https://kezhi.tech/tags/%E7%B3%BB%E7%BB%9F%E4%BF%AE%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Modify operating system installation time.</title>
+    <link href="https://kezhi.tech/en/629d278e.html"/>
+    <id>https://kezhi.tech/en/629d278e.html</id>
+    <published>2022-06-23T11:52:49.000Z</published>
+    <updated>2024-04-20T12:30:12.754Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/629d278e.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Due to certain indescribable reasons, there is a need to modify the
+installation time of the operating system. Here is a brief summary.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202206231950445.png?x-oss-process=style/webp&quot; width=30%&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="操作系统" scheme="https://kezhi.tech/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="安装时间" scheme="https://kezhi.tech/tags/%E5%AE%89%E8%A3%85%E6%97%B6%E9%97%B4/"/>
+    
+    <category term="系统修改" scheme="https://kezhi.tech/tags/%E7%B3%BB%E7%BB%9F%E4%BF%AE%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>影片《字节跳动》创作阐述</title>
+    <link href="https://kezhi.tech/fa011f5e.html"/>
+    <id>https://kezhi.tech/fa011f5e.html</id>
+    <published>2022-06-07T08:25:29.000Z</published>
+    <updated>2023-11-10T02:16:20.217Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;序&quot;&gt;序&lt;/h2&gt;
+&lt;p&gt;《字节跳动》创作于2022年5月下旬至6月上旬，历时半个月。是截至目前为止本人参与的短片拍摄最高水平。&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202206071619140.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="创作" scheme="https://kezhi.tech/tags/%E5%88%9B%E4%BD%9C/"/>
+    
+    <category term="影视创作" scheme="https://kezhi.tech/tags/%E5%BD%B1%E8%A7%86%E5%88%9B%E4%BD%9C/"/>
+    
+    <category term="微电影" scheme="https://kezhi.tech/tags/%E5%BE%AE%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="协作" scheme="https://kezhi.tech/tags/%E5%8D%8F%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The film &quot;ByteDance&quot; is a creative exposition.</title>
+    <link href="https://kezhi.tech/en/fa011f5e.html"/>
+    <id>https://kezhi.tech/en/fa011f5e.html</id>
+    <published>2022-06-07T08:25:29.000Z</published>
+    <updated>2024-04-20T12:30:12.809Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/fa011f5e.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&quot;ByteDance&quot; was created from late May to early June 2022, taking half
+a month. It is the highest level short film I have participated in so
+far.&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202206071619140.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="创作" scheme="https://kezhi.tech/tags/%E5%88%9B%E4%BD%9C/"/>
+    
+    <category term="影视创作" scheme="https://kezhi.tech/tags/%E5%BD%B1%E8%A7%86%E5%88%9B%E4%BD%9C/"/>
+    
+    <category term="微电影" scheme="https://kezhi.tech/tags/%E5%BE%AE%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="协作" scheme="https://kezhi.tech/tags/%E5%8D%8F%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于影视创作</title>
+    <link href="https://kezhi.tech/624fe65f.html"/>
+    <id>https://kezhi.tech/624fe65f.html</id>
+    <published>2022-05-25T09:25:13.000Z</published>
+    <updated>2022-07-28T16:24:21.804Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;电影是经由极度刻意而达到的自然&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;影视创作的基本流程&quot;&gt;影视创作的基本流程&lt;/h2&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202205251718490.webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="感悟" scheme="https://kezhi.tech/tags/%E6%84%9F%E6%82%9F/"/>
+    
+    <category term="拍摄" scheme="https://kezhi.tech/tags/%E6%8B%8D%E6%91%84/"/>
+    
+    <category term="电影" scheme="https://kezhi.tech/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="创作" scheme="https://kezhi.tech/tags/%E5%88%9B%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About film and television creation.</title>
+    <link href="https://kezhi.tech/en/624fe65f.html"/>
+    <id>https://kezhi.tech/en/624fe65f.html</id>
+    <published>2022-05-25T09:25:13.000Z</published>
+    <updated>2024-04-20T12:30:12.769Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/624fe65f.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;Movies achieve a sense of naturalness through extreme
+deliberation.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;basic-process-of-film-and-television-production&quot;&gt;Basic Process
+of Film and Television Production&lt;/h2&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202205251718490.webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="感悟" scheme="https://kezhi.tech/tags/%E6%84%9F%E6%82%9F/"/>
+    
+    <category term="拍摄" scheme="https://kezhi.tech/tags/%E6%8B%8D%E6%91%84/"/>
+    
+    <category term="电影" scheme="https://kezhi.tech/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="创作" scheme="https://kezhi.tech/tags/%E5%88%9B%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站收藏</title>
+    <link href="https://kezhi.tech/16fab331.html"/>
+    <id>https://kezhi.tech/16fab331.html</id>
+    <published>2022-05-16T11:54:58.000Z</published>
+    <updated>2022-07-28T16:20:34.222Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202205251650671.webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Collection" scheme="https://kezhi.tech/categories/Collection/"/>
+    
+    
+    <category term="软件" scheme="https://kezhi.tech/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="网站" scheme="https://kezhi.tech/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="收藏" scheme="https://kezhi.tech/tags/%E6%94%B6%E8%97%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Website bookmark.</title>
+    <link href="https://kezhi.tech/en/16fab331.html"/>
+    <id>https://kezhi.tech/en/16fab331.html</id>
+    <published>2022-05-16T11:54:58.000Z</published>
+    <updated>2024-04-20T12:30:13.005Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/16fab331.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Collection" scheme="https://kezhi.tech/categories/Collection/"/>
+    
+    
+    <category term="软件" scheme="https://kezhi.tech/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="网站" scheme="https://kezhi.tech/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="收藏" scheme="https://kezhi.tech/tags/%E6%94%B6%E8%97%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>来选头像</title>
+    <link href="https://kezhi.tech/ca112d32.html"/>
+    <id>https://kezhi.tech/ca112d32.html</id>
+    <published>2022-05-11T07:52:09.000Z</published>
+    <updated>2024-03-14T03:14:05.546Z</updated>
+    
+    
+    <summary type="html">&lt;iframe src=&quot;//kezhi.tech/avatar/&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;
+&lt;/iframe&gt;</summary>
+    
+    
+    
+    <category term="Collection" scheme="https://kezhi.tech/categories/Collection/"/>
+    
+    
+    <category term="JavaScript" scheme="https://kezhi.tech/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Choose an avatar.</title>
+    <link href="https://kezhi.tech/en/ca112d32.html"/>
+    <id>https://kezhi.tech/en/ca112d32.html</id>
+    <published>2022-05-11T07:52:09.000Z</published>
+    <updated>2024-04-20T12:30:12.881Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/ca112d32.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;System: Translate the following text into English:&lt;/p&gt;
+&lt;iframe src=&quot;//kezhi.tech/avatar/&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;
+&lt;/iframe&gt;</summary>
+    
+    
+    
+    <category term="Collection" scheme="https://kezhi.tech/categories/Collection/"/>
+    
+    
+    <category term="JavaScript" scheme="https://kezhi.tech/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>于小鸡历险记（一）</title>
+    <link href="https://kezhi.tech/32347def.html"/>
+    <id>https://kezhi.tech/32347def.html</id>
+    <published>2022-05-10T15:09:25.000Z</published>
+    <updated>2024-03-14T03:14:02.879Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;引子&quot;&gt;引子&lt;/h2&gt;
+&lt;p&gt;有时候，生活会带给人一些惊喜。或许是一次翘课偶然碰到的晚霞，亦或是一觉醒来突然开放的花苞。在这个不断向前的工业化时代里，我们每个人都身不由己，裹挟其中。这在我上了研究生，进一步了解这个世界之后，最深的感触。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202205102220466.jpg?x-oss-process=style/webp&quot; width=30%&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>于小鸡历险记（一）</title>
+    <link href="https://kezhi.tech/en/32347def.html"/>
+    <id>https://kezhi.tech/en/32347def.html</id>
+    <published>2022-05-10T15:09:25.000Z</published>
+    <updated>2024-04-20T12:30:12.745Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/32347def.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Sometimes, life brings us surprises. It could be a beautiful sunset
+we stumble upon while skipping class, or a blooming flower we wake up
+to. In this ever-progressing industrial era, we are all involuntarily
+caught up in the hustle and bustle. This is the deepest realization I&#39;ve
+had since I entered graduate school and gained a deeper understanding of
+the world.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202205102220466.jpg?x-oss-process=style/webp&quot; width=30%&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git commit message 规范</title>
+    <link href="https://kezhi.tech/58877bc8.html"/>
+    <id>https://kezhi.tech/58877bc8.html</id>
+    <published>2022-04-07T14:05:01.000Z</published>
+    <updated>2022-07-28T16:26:27.552Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;git-commit-message-规范&quot;&gt;Git commit message 规范&lt;/h2&gt;
+&lt;h3 id=&quot;commit-message-格式&quot;&gt;commit message 格式&lt;/h3&gt;
+&lt;figure class=&quot;highlight text&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="git" scheme="https://kezhi.tech/tags/git/"/>
+    
+    <category term="语法规范" scheme="https://kezhi.tech/tags/%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Commit Message Specification.</title>
+    <link href="https://kezhi.tech/en/58877bc8.html"/>
+    <id>https://kezhi.tech/en/58877bc8.html</id>
+    <published>2022-04-07T14:05:01.000Z</published>
+    <updated>2024-04-20T12:30:12.465Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/58877bc8.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help us
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;git-commit-message-specification&quot;&gt;Git commit message
+specification&lt;/h2&gt;
+&lt;h3 id=&quot;commit-message-format&quot;&gt;Commit message format&lt;/h3&gt;
+&lt;figure class=&quot;highlight text&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;subject&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="git" scheme="https://kezhi.tech/tags/git/"/>
+    
+    <category term="语法规范" scheme="https://kezhi.tech/tags/%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python高性能编程</title>
+    <link href="https://kezhi.tech/411c70cb.html"/>
+    <id>https://kezhi.tech/411c70cb.html</id>
+    <published>2022-04-07T14:03:09.000Z</published>
+    <updated>2022-10-18T06:43:48.444Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;python-高性能编程&quot;&gt;Python 高性能编程&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Cython" scheme="https://kezhi.tech/tags/Cython/"/>
+    
+    <category term="Numpy" scheme="https://kezhi.tech/tags/Numpy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python High Performance Programming</title>
+    <link href="https://kezhi.tech/en/411c70cb.html"/>
+    <id>https://kezhi.tech/en/411c70cb.html</id>
+    <published>2022-04-07T14:03:09.000Z</published>
+    <updated>2024-04-20T12:30:12.627Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/411c70cb.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Cython" scheme="https://kezhi.tech/tags/Cython/"/>
+    
+    <category term="Numpy" scheme="https://kezhi.tech/tags/Numpy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NexT标签云配置</title>
+    <link href="https://kezhi.tech/47930864.html"/>
+    <id>https://kezhi.tech/47930864.html</id>
+    <published>2022-03-22T09:11:28.000Z</published>
+    <updated>2023-11-10T02:16:20.213Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文引自&lt;a
+href=&quot;https://alex-mcavoy.github.io/hexo/7be258c0.html&quot;&gt;Next 7.0+
+TagCanvas 标签云 | Alex_McAvoy (alex-mcavoy.github.io)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/20220322172925.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Next标签云配置</title>
+    <link href="https://kezhi.tech/en/47930864.html"/>
+    <id>https://kezhi.tech/en/47930864.html</id>
+    <published>2022-03-22T09:11:28.000Z</published>
+    <updated>2024-04-20T12:30:12.577Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/47930864.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This article is from &lt;a
+href=&quot;https://alex-mcavoy.github.io/hexo/7be258c0.html&quot;&gt;Next 7.0+
+TagCanvas Tag Cloud | Alex_McAvoy (alex-mcavoy.github.io)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/20220322172925.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创新港体育场馆自动预定</title>
+    <link href="https://kezhi.tech/66f3a0f6.html"/>
+    <id>https://kezhi.tech/66f3a0f6.html</id>
+    <published>2022-03-21T13:05:38.000Z</published>
+    <updated>2023-11-10T02:16:20.285Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;项目由来&quot;&gt;项目由来&lt;/h2&gt;
+&lt;p&gt;创新港羽毛球场馆每天的预定需求较大。在线预定系统每天早上 8:40
+左右开放，并且开放时间不定。这些因素给手动预定场馆带来了很大的麻烦，因此考虑由脚本自动化实现场馆预定过程。&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202203212104191.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Script" scheme="https://kezhi.tech/tags/Script/"/>
+    
+    <category term="Automation" scheme="https://kezhi.tech/tags/Automation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Innovation Port Sports Facilities Automatic Reservation.</title>
+    <link href="https://kezhi.tech/en/66f3a0f6.html"/>
+    <id>https://kezhi.tech/en/66f3a0f6.html</id>
+    <published>2022-03-21T13:05:38.000Z</published>
+    <updated>2024-04-20T12:30:12.782Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/66f3a0f6.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;project-background&quot;&gt;Project Background&lt;/h2&gt;
+&lt;p&gt;The Innovation Port badminton venue has a high demand for
+reservations every day. The online reservation system opens around 8:40
+am every morning, and the opening time is not fixed. These factors have
+caused a lot of trouble for manual venue reservations, so it is
+considered to automate the venue reservation process with a script.&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202203212104191.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Script" scheme="https://kezhi.tech/tags/Script/"/>
+    
+    <category term="Automation" scheme="https://kezhi.tech/tags/Automation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo本地写作环境配置</title>
+    <link href="https://kezhi.tech/315fc17e.html"/>
+    <id>https://kezhi.tech/315fc17e.html</id>
+    <published>2022-03-20T15:21:53.000Z</published>
+    <updated>2022-10-18T06:43:48.442Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写作缘由&quot;&gt;写作缘由&lt;/h2&gt;
+&lt;p&gt;由于经常换电脑设备，每次更换设备时都需要重新配置Hexo环境，故对配置流程进行记录，以供后续使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="node.js" scheme="https://kezhi.tech/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Configure Hexo Local Writing Environment.</title>
+    <link href="https://kezhi.tech/en/315fc17e.html"/>
+    <id>https://kezhi.tech/en/315fc17e.html</id>
+    <published>2022-03-20T15:21:53.000Z</published>
+    <updated>2024-04-20T12:30:12.507Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/315fc17e.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;reasons-for-writing&quot;&gt;Reasons for Writing&lt;/h2&gt;
+&lt;p&gt;Due to frequently changing computer devices, every time a device is
+replaced, the Hexo environment needs to be reconfigured. Therefore, the
+configuration process is recorded for future use.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="node.js" scheme="https://kezhi.tech/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NLP工具NLTK的安装及使用</title>
+    <link href="https://kezhi.tech/3300cce2.html"/>
+    <id>https://kezhi.tech/3300cce2.html</id>
+    <published>2021-10-21T13:24:53.000Z</published>
+    <updated>2023-11-10T02:16:20.300Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;nltk简介&quot;&gt;nltk简介&lt;/h2&gt;
+&lt;p&gt;NLTK是构建Python程序以使用人类语言数据的领先平台。它为50多种语料库和词汇资源（如WordNet）提供了易于使用的界面，还提供了一套用于分类，标记化，词干化，标记，解析和语义推理的文本处理库。NLTK是Python上著名的⾃然语⾔处理库
+⾃带语料库，具有词性分类库 ⾃带分类，分词，等等功能。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="NLP" scheme="https://kezhi.tech/tags/NLP/"/>
+    
+    <category term="NLTK" scheme="https://kezhi.tech/tags/NLTK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nlp工具Nltk的安装及使用</title>
+    <link href="https://kezhi.tech/en/3300cce2.html"/>
+    <id>https://kezhi.tech/en/3300cce2.html</id>
+    <published>2021-10-21T13:24:53.000Z</published>
+    <updated>2024-04-20T12:30:12.587Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/3300cce2.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;introduction-to-nltk&quot;&gt;Introduction to NLTK&lt;/h2&gt;
+&lt;p&gt;NLTK is a leading platform for building Python programs that use
+human language data. It provides an easy-to-use interface for over 50
+corpora and lexical resources (such as WordNet), as well as a text
+processing library for classification, tokenization, stemming, tagging,
+parsing, and semantic inference. NLTK is a famous natural language
+processing library on Python, which comes with its own corpus,
+part-of-speech tagging library, tokenization, and other functions.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="NLP" scheme="https://kezhi.tech/tags/NLP/"/>
+    
+    <category term="NLTK" scheme="https://kezhi.tech/tags/NLTK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>社会心理学（一）</title>
+    <link href="https://kezhi.tech/1eea1e9f.html"/>
+    <id>https://kezhi.tech/1eea1e9f.html</id>
+    <published>2021-06-08T13:37:03.000Z</published>
+    <updated>2022-07-28T16:25:56.399Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;社会中的自我&quot;&gt;社会中的自我&lt;/h2&gt;
+&lt;h3 id=&quot;自我概念我是谁&quot;&gt;自我概念：我是谁&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="心理学" scheme="https://kezhi.tech/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Social Psychology (Part One).</title>
+    <link href="https://kezhi.tech/en/1eea1e9f.html"/>
+    <id>https://kezhi.tech/en/1eea1e9f.html</id>
+    <published>2021-06-08T13:37:03.000Z</published>
+    <updated>2024-04-20T12:30:12.936Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/1eea1e9f.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="心理学" scheme="https://kezhi.tech/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>摘抄</title>
+    <link href="https://kezhi.tech/639b053d.html"/>
+    <id>https://kezhi.tech/639b053d.html</id>
+    <published>2021-06-08T11:09:06.000Z</published>
+    <updated>2022-11-26T08:14:43.184Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;section&quot;&gt;2021.04&lt;/h2&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;矫揉做作地喜好各种规矩就是“有系统”，孜孜不倦且兴致勃勃地处理鸡毛蒜皮的公事就是“勤勉”；该做的事优柔寡断就是“谨慎”；不该做的事盲目地坚持到底就是“决心”。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;-- 《银河帝国2：基地与帝国》&lt;/b&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="读书笔记" scheme="https://kezhi.tech/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="摘抄" scheme="https://kezhi.tech/tags/%E6%91%98%E6%8A%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excerpt.</title>
+    <link href="https://kezhi.tech/en/639b053d.html"/>
+    <id>https://kezhi.tech/en/639b053d.html</id>
+    <published>2021-06-08T11:09:06.000Z</published>
+    <updated>2024-04-20T12:30:12.817Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/639b053d.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;section&quot;&gt;2021.04&lt;/h2&gt;
+&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;Being artificially fond of various rules is called &quot;systematic&quot;,
+tirelessly and enthusiastically dealing with trivial matters is called
+&quot;diligence&quot;; being indecisive about what should be done is called
+&quot;caution&quot;; persisting blindly in what should not be done is called
+&quot;determination&quot;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;-- &quot;Foundation and Empire&quot; by Isaac Asimov&lt;/b&gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="读书笔记" scheme="https://kezhi.tech/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Excerpt." scheme="https://kezhi.tech/tags/Excerpt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue学习笔记</title>
+    <link href="https://kezhi.tech/71513ccb.html"/>
+    <id>https://kezhi.tech/71513ccb.html</id>
+    <published>2021-04-13T03:32:27.000Z</published>
+    <updated>2022-10-18T06:43:48.444Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;vue&quot;&gt;Vue&lt;/h2&gt;
+&lt;h3 id=&quot;与flask一起使用时的注意事项&quot;&gt;与Flask一起使用时的注意事项&lt;/h3&gt;
+&lt;p&gt;Vue与Flask一起使用时会出现冲突，更改配置即可解决。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Flask&lt;/li&gt;
+&lt;/ul&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Vue" scheme="https://kezhi.tech/tags/Vue/"/>
+    
+    <category term="前端" scheme="https://kezhi.tech/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue Study Notes</title>
+    <link href="https://kezhi.tech/en/71513ccb.html"/>
+    <id>https://kezhi.tech/en/71513ccb.html</id>
+    <published>2021-04-13T03:32:27.000Z</published>
+    <updated>2024-04-20T12:30:12.687Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/71513ccb.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Vue" scheme="https://kezhi.tech/tags/Vue/"/>
+    
+    <category term="前端" scheme="https://kezhi.tech/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy爬虫相关</title>
+    <link href="https://kezhi.tech/68a55fd7.html"/>
+    <id>https://kezhi.tech/68a55fd7.html</id>
+    <published>2020-10-24T15:10:17.000Z</published>
+    <updated>2023-11-10T02:16:20.303Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;请求伪装&quot;&gt;请求伪装&lt;/h2&gt;
+&lt;p&gt;在爬取腾讯天气时，发现无法成功爬取到天气数据，经过尝试发现是请求头除了问题。爬虫在爬取网页时的默认请求头为：&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/20201024223544.png?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;这种默认的请求头在爬取很多网站时会被禁止，无法获取到网页数据，因此需要使用请求头伪装，让网站认为是浏览器在访问。操作步骤如下：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Scrapy" scheme="https://kezhi.tech/tags/Scrapy/"/>
+    
+    <category term="Crawler" scheme="https://kezhi.tech/tags/Crawler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy Spider Related</title>
+    <link href="https://kezhi.tech/en/68a55fd7.html"/>
+    <id>https://kezhi.tech/en/68a55fd7.html</id>
+    <published>2020-10-24T15:10:17.000Z</published>
+    <updated>2024-04-20T12:30:12.659Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/68a55fd7.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;request-spoofing&quot;&gt;Request Spoofing&lt;/h2&gt;
+&lt;p&gt;When crawling Tencent weather data, it was found that the weather
+data could not be successfully crawled. After some attempts, it was
+discovered that the issue lies in the request headers. The default
+request headers used by the spider when crawling web pages are:&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/20201024223544.png?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This default request header may be blocked when crawling many
+websites, making it impossible to obtain web page data. Therefore,
+request header spoofing is needed to make the website think it is a
+browser accessing it. The operation steps are as follows:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Scrapy" scheme="https://kezhi.tech/tags/Scrapy/"/>
+    
+    <category term="Crawler" scheme="https://kezhi.tech/tags/Crawler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬取B站所有番剧数据并进行数据分析</title>
+    <link href="https://kezhi.tech/6b2dc3cb.html"/>
+    <id>https://kezhi.tech/6b2dc3cb.html</id>
+    <published>2020-10-14T16:24:39.000Z</published>
+    <updated>2023-11-10T02:16:20.289Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Bilibili（以下简称B站）中有大量的番剧版权，截止目前一共有3161部。每一部番剧都可以找到它的&lt;mark class=&quot;label primary&quot;&gt;播放量&lt;/mark&gt;，&lt;mark class=&quot;label success&quot;&gt;追番量&lt;/mark&gt;，&lt;mark class=&quot;label info&quot;&gt;弹幕数量&lt;/mark&gt;等播放数据，除此之外，每部番剧还有其相应的标签（如“漫画改”，“热血”，“搞笑”）。本项目旨在分析番剧播放数据与番剧标签之间的关系，同时也是一项数据分析的大作业，采用APriori频繁项集挖掘进行分析。&lt;/p&gt;
+&lt;p&gt;GitHub地址：&lt;a
+href=&quot;https://github.com/KezhiAdore/BilibiliAnimeData_Analysis&quot;&gt;https://github.com/KezhiAdore/BilibiliAnimeData_Analysis&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;码云地址：&lt;a
+href=&quot;https://gitee.com/KezhiAdore/BilibiliAnimeData_Analysis&quot;&gt;https://gitee.com/KezhiAdore/BilibiliAnimeData_Analysis&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Crawler" scheme="https://kezhi.tech/tags/Crawler/"/>
+    
+    <category term="Big Data" scheme="https://kezhi.tech/tags/Big-Data/"/>
+    
+    <category term="Aprior Algorithm" scheme="https://kezhi.tech/tags/Aprior-Algorithm/"/>
+    
+    <category term="K-Means" scheme="https://kezhi.tech/tags/K-Means/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Crawling all anime data from Bilibili and conducting data analysis.</title>
+    <link href="https://kezhi.tech/en/6b2dc3cb.html"/>
+    <id>https://kezhi.tech/en/6b2dc3cb.html</id>
+    <published>2020-10-14T16:24:39.000Z</published>
+    <updated>2024-04-20T12:30:12.910Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/6b2dc3cb.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Bilibili (referred to as B station) has a large number of anime
+copyrights, with a total of 3161 as of now. Each anime can be found with
+its &lt;mark class=&quot;label primary&quot;&gt;play count&lt;/mark&gt;, &lt;mark class=&quot;label success&quot;&gt;follow count&lt;/mark&gt;, &lt;mark class=&quot;label info&quot;&gt;barrage count&lt;/mark&gt;, and other playback
+data. In addition, each anime has its corresponding tags (such as &quot;comic
+adaptation&quot;, &quot;hot-blooded&quot;, &quot;comedy&quot;). This project aims to analyze the
+relationship between anime playback data and anime tags, and it is also
+a data analysis project that uses APriori frequent itemset mining for
+analysis.&lt;/p&gt;
+&lt;p&gt;GitHub address: &lt;a
+href=&quot;https://github.com/KezhiAdore/BilibiliAnimeData_Analysis&quot;&gt;https://github.com/KezhiAdore/BilibiliAnimeData_Analysis&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gitee address: &lt;a
+href=&quot;https://gitee.com/KezhiAdore/BilibiliAnimeData_Analysis&quot;&gt;https://gitee.com/KezhiAdore/BilibiliAnimeData_Analysis&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="Crawler" scheme="https://kezhi.tech/tags/Crawler/"/>
+    
+    <category term="Big Data" scheme="https://kezhi.tech/tags/Big-Data/"/>
+    
+    <category term="Aprior Algorithm" scheme="https://kezhi.tech/tags/Aprior-Algorithm/"/>
+    
+    <category term="K-Means" scheme="https://kezhi.tech/tags/K-Means/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黄蜂群算法改进的多机器人区域覆盖</title>
+    <link href="https://kezhi.tech/623a6b90.html"/>
+    <id>https://kezhi.tech/623a6b90.html</id>
+    <published>2020-06-22T17:30:24.000Z</published>
+    <updated>2023-11-10T02:16:20.215Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;GitHub地址：&lt;a
+href=&quot;https://github.com/KezhiAdore/MultiRobots_CoverMap&quot;&gt;https://github.com/KezhiAdore/MultiRobots_CoverMap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;码云地址：&lt;a
+href=&quot;https://gitee.com/KezhiAdore/MultiRobots_CoverMap&quot;&gt;https://gitee.com/KezhiAdore/MultiRobots_CoverMap&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;一问题提出&quot;&gt;一、问题提出&lt;/h2&gt;
+&lt;h3 id=&quot;背景&quot;&gt;1. 背景&lt;/h3&gt;
+&lt;p&gt;机器人在工业、国防和科学技术中的应用日益广泛，
+它能够在枯燥和危险的复杂非结构化环境下工作。使用机器人大大提高了人们的工作效率，
+改变了人们的生活方式， 带来了巨大的经济和社会效益，
+有力地推动了有关学科和技术领域的发展。&lt;/p&gt;
+&lt;p&gt;区域覆盖是指携带有一定探测范围的传感器如激光、声纳等的机器人探索访问整个区域，
+并完成相应任务的过程。区域覆盖是自主移动机器人的一项基本任务。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="智能计算" scheme="https://kezhi.tech/tags/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97/"/>
+    
+    <category term="多机器人" scheme="https://kezhi.tech/tags/%E5%A4%9A%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    <category term="覆盖问题" scheme="https://kezhi.tech/tags/%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/"/>
+    
+    <category term="算法改进" scheme="https://kezhi.tech/tags/%E7%AE%97%E6%B3%95%E6%94%B9%E8%BF%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Improved multi-robot area coverage using the Bee Algorithm.</title>
+    <link href="https://kezhi.tech/en/623a6b90.html"/>
+    <id>https://kezhi.tech/en/623a6b90.html</id>
+    <published>2020-06-22T17:30:24.000Z</published>
+    <updated>2024-04-20T12:30:13.061Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/623a6b90.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;GitHub link: &lt;a
+href=&quot;https://github.com/KezhiAdore/MultiRobots_CoverMap&quot;&gt;https://github.com/KezhiAdore/MultiRobots_CoverMap&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gitee link: &lt;a
+href=&quot;https://gitee.com/KezhiAdore/MultiRobots_CoverMap&quot;&gt;https://gitee.com/KezhiAdore/MultiRobots_CoverMap&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+&lt;h3 id=&quot;background&quot;&gt;1. Background&lt;/h3&gt;
+&lt;p&gt;Robots are increasingly being used in industries, defense, and
+scientific and technological fields. They can work in complex and
+dangerous environments that are monotonous and unstructured. The use of
+robots greatly improves work efficiency, changes people&#39;s lifestyles,
+brings enormous economic and social benefits, and promotes the
+development of related disciplines and technologies.&lt;/p&gt;
+&lt;p&gt;Area coverage refers to the process of exploring and accessing the
+entire area with robots carrying sensors with a certain detection range,
+such as lasers and sonars, and completing corresponding tasks. Area
+coverage is a fundamental task of autonomous mobile robots.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Research" scheme="https://kezhi.tech/categories/Research/"/>
+    
+    
+    <category term="智能计算" scheme="https://kezhi.tech/tags/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97/"/>
+    
+    <category term="多机器人" scheme="https://kezhi.tech/tags/%E5%A4%9A%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+    <category term="覆盖问题" scheme="https://kezhi.tech/tags/%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/"/>
+    
+    <category term="算法改进" scheme="https://kezhi.tech/tags/%E7%AE%97%E6%B3%95%E6%94%B9%E8%BF%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字图像处理（六）频域滤波器</title>
+    <link href="https://kezhi.tech/b8e0d4a2.html"/>
+    <id>https://kezhi.tech/b8e0d4a2.html</id>
+    <published>2020-05-08T13:17:21.000Z</published>
+    <updated>2023-11-10T02:14:51.205Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;频域滤波器简介&quot;&gt;频域滤波器简介&lt;/h2&gt;
+&lt;p&gt;频域滤波器与空域滤波器相对，空域滤波器是空间卷积块与空间图像做卷积运算，而频域滤波是在将图像进行了离散傅里叶变换之后在频域上与滤波器做乘法，之后再进行傅里叶反变换得到滤波之后的图像。&lt;/p&gt;
+&lt;p&gt;使用频域滤波器对图像进行滤波的基本步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对图像进行DFT变换得到原图像的频域图像&lt;/li&gt;
+&lt;li&gt;频域图像与频域滤波器相乘得到新的频域图像&lt;/li&gt;
+&lt;li&gt;对新的频域图像进行IDFT变换到空域得到新图像。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="滤波器" scheme="https://kezhi.tech/tags/%E6%BB%A4%E6%B3%A2%E5%99%A8/"/>
+    
+    <category term="频域" scheme="https://kezhi.tech/tags/%E9%A2%91%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Digital Image Processing (6) Frequency Domain Filters.</title>
+    <link href="https://kezhi.tech/en/b8e0d4a2.html"/>
+    <id>https://kezhi.tech/en/b8e0d4a2.html</id>
+    <published>2020-05-08T13:17:21.000Z</published>
+    <updated>2024-04-20T12:30:12.867Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/b8e0d4a2.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;introduction-to-frequency-domain-filters&quot;&gt;Introduction to
+Frequency Domain Filters&lt;/h2&gt;
+&lt;p&gt;Frequency domain filters are different from spatial domain filters.
+Spatial domain filters perform convolution operations between spatial
+convolution kernels and spatial images, while frequency domain filters
+perform multiplication operations between the frequency domain image
+obtained by discrete Fourier transform (DFT) and the filter in the
+frequency domain, and then perform inverse Fourier transform (IDFT) to
+obtain the filtered image.&lt;/p&gt;
+&lt;p&gt;The basic steps of using frequency domain filters to filter images
+are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Perform DFT on the image to obtain the frequency domain image of the
+original image.&lt;/li&gt;
+&lt;li&gt;Multiply the frequency domain image by the frequency domain filter
+to obtain a new frequency domain image.&lt;/li&gt;
+&lt;li&gt;Perform IDFT on the new frequency domain image to obtain a new image
+in the spatial domain.&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="滤波器" scheme="https://kezhi.tech/tags/%E6%BB%A4%E6%B3%A2%E5%99%A8/"/>
+    
+    <category term="频域" scheme="https://kezhi.tech/tags/%E9%A2%91%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BP神经网络</title>
+    <link href="https://kezhi.tech/4f98a72.html"/>
+    <id>https://kezhi.tech/4f98a72.html</id>
+    <published>2020-05-06T06:45:22.000Z</published>
+    <updated>2023-11-10T02:16:20.181Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;bp神经网络概述&quot;&gt;BP神经网络概述&lt;/h2&gt;
+&lt;p&gt;BP神经网络是神经网络中最基础也是应用最多的神经网络，它由三层节点组成，分别为输入层，隐含层和输出层。BP神经网络的实现比较简单，主要分为正向传递输出和反向传递误差两部分。&lt;/p&gt;
+&lt;p&gt;神经网络的万能逼近定律：一维阶梯函数的线性组合可以逼近任何一维连续函数；sigmoid函数可以逼近阶梯函数，因此一维sigmoid函数的线性组合能够逼近任何连续函数。（1989年，Robert
+Hecht-Nielsen）这为神经网络的应用提供了理论依据。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="机器学习" scheme="https://kezhi.tech/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="神经网络" scheme="https://kezhi.tech/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="BP" scheme="https://kezhi.tech/tags/BP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bp Neural Network.</title>
+    <link href="https://kezhi.tech/en/4f98a72.html"/>
+    <id>https://kezhi.tech/en/4f98a72.html</id>
+    <published>2020-05-06T06:45:22.000Z</published>
+    <updated>2024-04-20T12:30:12.429Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/4f98a72.html&quot;&gt;original post&lt;/a&gt; </summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="机器学习" scheme="https://kezhi.tech/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="神经网络" scheme="https://kezhi.tech/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="BP" scheme="https://kezhi.tech/tags/BP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git常用命令</title>
+    <link href="https://kezhi.tech/caff8000.html"/>
+    <id>https://kezhi.tech/caff8000.html</id>
+    <published>2020-04-25T07:38:41.000Z</published>
+    <updated>2023-11-10T02:16:20.210Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;git文件管理系统&quot;&gt;Git文件管理系统&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本博客为转载，原文地址&lt;a
+href=&quot;https://www.cnblogs.com/chenwolong/p/GIT.html&quot;&gt;https://www.cnblogs.com/chenwolong/p/GIT.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/20200424230007.png?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Git" scheme="https://kezhi.tech/tags/Git/"/>
+    
+    <category term="命令行" scheme="https://kezhi.tech/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Commonly Used Git Commands.</title>
+    <link href="https://kezhi.tech/en/caff8000.html"/>
+    <id>https://kezhi.tech/en/caff8000.html</id>
+    <published>2020-04-25T07:38:41.000Z</published>
+    <updated>2024-04-20T12:30:12.487Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/caff8000.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;git-file-management-system&quot;&gt;Git File Management System&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This blog is a reprint, the original address is &lt;a
+href=&quot;https://www.cnblogs.com/chenwolong/p/GIT.html&quot;&gt;https://www.cnblogs.com/chenwolong/p/GIT.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/20200424230007.png?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Git" scheme="https://kezhi.tech/tags/Git/"/>
+    
+    <category term="命令行" scheme="https://kezhi.tech/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字图像处理（五）空域高通滤波器</title>
+    <link href="https://kezhi.tech/bbc72bae.html"/>
+    <id>https://kezhi.tech/bbc72bae.html</id>
+    <published>2020-03-30T07:27:33.000Z</published>
+    <updated>2023-11-10T02:16:20.285Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;高通滤波器经常用来增强图像和提取图像的边缘信息，在日常的图像处理和图像识别中都有着很广泛的应用。这里要说明的高通滤波器主要有如下几种：非锐化掩膜，索贝尔算子，拉普拉斯算子，canny算法。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="空域滤波器" scheme="https://kezhi.tech/tags/%E7%A9%BA%E5%9F%9F%E6%BB%A4%E6%B3%A2%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spatial High-pass Filters.</title>
+    <link href="https://kezhi.tech/en/bbc72bae.html"/>
+    <id>https://kezhi.tech/en/bbc72bae.html</id>
+    <published>2020-03-30T07:27:33.000Z</published>
+    <updated>2024-04-20T12:30:12.857Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/bbc72bae.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="空域滤波器" scheme="https://kezhi.tech/tags/%E7%A9%BA%E5%9F%9F%E6%BB%A4%E6%B3%A2%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字图像处理（四）空域低通滤波器</title>
+    <link href="https://kezhi.tech/29443507.html"/>
+    <id>https://kezhi.tech/29443507.html</id>
+    <published>2020-03-27T08:03:46.000Z</published>
+    <updated>2023-11-10T02:16:20.283Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;低通滤波器在我们的日常生活中很有用，图像模糊，图像去噪以及图像识别都需要低通滤波器的处理。低通滤波即滤除图像中的高频部分（变化很快的部分），留下低频部分（变化不明显得到部分）。滤波器的实现有空域和频域两种：空域滤波器是直接在空间图像上进行操作，图像矩阵和滤波器算子进行卷积得到滤波后的输出；频域滤波器是将图像经过傅里叶变换到频域上再与滤波器做乘法得到输出。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="空域滤波器" scheme="https://kezhi.tech/tags/%E7%A9%BA%E5%9F%9F%E6%BB%A4%E6%B3%A2%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Digital Image Processing (Part 4) Spatial Domain Low-pass Filters.</title>
+    <link href="https://kezhi.tech/en/29443507.html"/>
+    <id>https://kezhi.tech/en/29443507.html</id>
+    <published>2020-03-27T08:03:46.000Z</published>
+    <updated>2024-04-20T12:30:12.874Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/29443507.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="空域滤波器" scheme="https://kezhi.tech/tags/%E7%A9%BA%E5%9F%9F%E6%BB%A4%E6%B3%A2%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个用单片机放视频的小项目</title>
+    <link href="https://kezhi.tech/d9a2f421.html"/>
+    <id>https://kezhi.tech/d9a2f421.html</id>
+    <published>2020-03-24T11:40:59.000Z</published>
+    <updated>2023-11-10T02:16:20.293Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;总体设计思路&quot;&gt;总体设计思路&lt;/h2&gt;
+&lt;p&gt;视频的播放实际上就是一系列的图片按照一定的顺序，以一定的时间间隔连续播放所产生的视觉效果。因此，使用单片机驱动LCD去播放视频实际上就是让单片机以一定的时间间隔向LCD的缓存推送图片，让其不断刷新屏幕去切换图片即可。在文章的最后我放入了这个项目的源工程文件供大家参考。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Protues" scheme="https://kezhi.tech/tags/Protues/"/>
+    
+    <category term="单片机" scheme="https://kezhi.tech/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个用单片机放视频的小项目</title>
+    <link href="https://kezhi.tech/en/d9a2f421.html"/>
+    <id>https://kezhi.tech/en/d9a2f421.html</id>
+    <published>2020-03-24T11:40:59.000Z</published>
+    <updated>2024-04-20T12:30:12.734Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/d9a2f421.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;overall-design-concept&quot;&gt;Overall Design Concept&lt;/h2&gt;
+&lt;p&gt;The playback of a video essentially involves a sequence of images
+displayed in a specific order at regular time intervals, creating a
+visual effect. Therefore, driving an LCD to play a video with a
+microcontroller involves pushing images to the LCD&#39;s buffer at certain
+intervals, continuously refreshing the screen to switch images. At the
+end of the article, I&#39;ve included the source project files for
+reference.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Project" scheme="https://kezhi.tech/categories/Project/"/>
+    
+    
+    <category term="Protues" scheme="https://kezhi.tech/tags/Protues/"/>
+    
+    <category term="单片机" scheme="https://kezhi.tech/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字图像处理（三）直方图均衡</title>
+    <link href="https://kezhi.tech/a6c8a314.html"/>
+    <id>https://kezhi.tech/a6c8a314.html</id>
+    <published>2020-03-19T13:33:46.000Z</published>
+    <updated>2023-11-10T02:16:20.289Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在数字图像处理中，直方图均衡是调整图像亮度，对比度，图像增晰等操作中常用的做法。对于图像中各个不同的颜色进行直方图统计，采取统计数据对于颜色进行重新映射，从而达到调整对比度，图像增晰的目的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="直方图均衡" scheme="https://kezhi.tech/tags/%E7%9B%B4%E6%96%B9%E5%9B%BE%E5%9D%87%E8%A1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Digital Image Processing (III) Histogram Equalization.</title>
+    <link href="https://kezhi.tech/en/a6c8a314.html"/>
+    <id>https://kezhi.tech/en/a6c8a314.html</id>
+    <published>2020-03-19T13:33:46.000Z</published>
+    <updated>2024-04-20T12:30:12.836Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/a6c8a314.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="直方图均衡" scheme="https://kezhi.tech/tags/%E7%9B%B4%E6%96%B9%E5%9B%BE%E5%9D%87%E8%A1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeTaX数学公式常用语法</title>
+    <link href="https://kezhi.tech/fc7e112.html"/>
+    <id>https://kezhi.tech/fc7e112.html</id>
+    <published>2020-03-14T09:35:38.000Z</published>
+    <updated>2023-11-10T02:14:51.198Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;
+码一些经常使用的LeTaX数学公式语法
+&lt;/center&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/8QXOvd.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="LetaX" scheme="https://kezhi.tech/tags/LetaX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Letax Mathematical Formula Commonly Used Syntax.</title>
+    <link href="https://kezhi.tech/en/fc7e112.html"/>
+    <id>https://kezhi.tech/en/fc7e112.html</id>
+    <published>2020-03-14T09:35:38.000Z</published>
+    <updated>2024-04-20T12:30:12.523Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/fc7e112.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;center&gt;
+Code some frequently used LeTaX mathematical formula syntax
+&lt;/center&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/8QXOvd.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="LetaX" scheme="https://kezhi.tech/tags/LetaX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字图像处理（二）图像配准</title>
+    <link href="https://kezhi.tech/3cac2a44.html"/>
+    <id>https://kezhi.tech/3cac2a44.html</id>
+    <published>2020-03-14T09:04:38.000Z</published>
+    <updated>2024-02-24T12:17:21.472Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;图像配准即对于内容大致相同，但在角度，大小或是其他几何位置上有所偏差的两张或几张图像进行坐标变换。使得这些图像矫正到同一规整的大小，角度，坐标上。&lt;/p&gt;
+&lt;p&gt;图像配准对于图像拼接，制作全景图像，进行环境识别等方面有很大的用处。其原理简单，使用矩阵运算转换速度也很快，在选取映射点合适的情况下，配准效果很好。具体的转化方法如下：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="图像配准" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E9%85%8D%E5%87%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Digital Image Processing (II) Image Registration.</title>
+    <link href="https://kezhi.tech/en/3cac2a44.html"/>
+    <id>https://kezhi.tech/en/3cac2a44.html</id>
+    <published>2020-03-14T09:04:38.000Z</published>
+    <updated>2024-04-20T12:30:12.847Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/3cac2a44.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="图像配准" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E9%85%8D%E5%87%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NexT写作常用样式</title>
+    <link href="https://kezhi.tech/61ad1e34.html"/>
+    <id>https://kezhi.tech/61ad1e34.html</id>
+    <published>2020-03-13T15:32:16.000Z</published>
+    <updated>2023-11-10T02:14:51.199Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;一些markdown之外的语法规则，让文章更美观&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文摘录自 &lt;mark class=&quot;label success&quot;&gt;周宇峰的博客&lt;/mark&gt; &lt;a
+href=&quot;https://yfzhou.coding.me/2018/08/27/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%EF%BC%89/&quot;&gt;原文链接&lt;/a&gt;
+&lt;img
+src=&quot;https://download.kezhi.tech/img/8MAadJ.md.jpg?x-oss-process=style/webp&quot;
+alt=&quot;8MAadJ.md&quot; /&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
+    
+    <category term="Markdown" scheme="https://kezhi.tech/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Next写作常用样式</title>
+    <link href="https://kezhi.tech/en/61ad1e34.html"/>
+    <id>https://kezhi.tech/en/61ad1e34.html</id>
+    <published>2020-03-13T15:32:16.000Z</published>
+    <updated>2024-04-20T12:30:12.546Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/61ad1e34.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
+    
+    <category term="Markdown" scheme="https://kezhi.tech/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字图像处理（一）图像插值(Python)</title>
+    <link href="https://kezhi.tech/2b8fba10.html"/>
+    <id>https://kezhi.tech/2b8fba10.html</id>
+    <published>2020-03-13T08:18:30.000Z</published>
+    <updated>2023-11-10T02:16:20.283Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;数字图像在当代社会有着非常重要的作用，图像的插值作为一种基本的图像处理方法，在很多情况下可以很好的提高图像分辨率，提升图像观感。图像的插值方法主要有以下三种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最近邻插值&lt;/li&gt;
+&lt;li&gt;双线性插值&lt;/li&gt;
+&lt;li&gt;双三次插值</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="插值" scheme="https://kezhi.tech/tags/%E6%8F%92%E5%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Digital Image Processing (Part 1) - Image Interpolation (Python)</title>
+    <link href="https://kezhi.tech/en/2b8fba10.html"/>
+    <id>https://kezhi.tech/en/2b8fba10.html</id>
+    <published>2020-03-13T08:18:30.000Z</published>
+    <updated>2024-04-20T12:30:12.826Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/2b8fba10.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Digital images play a very important role in contemporary society.
+Image interpolation, as a basic image processing method, can effectively
+improve image resolution and enhance visual perception in many cases.
+There are three main interpolation methods for images:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nearest Neighbor Interpolation&lt;/li&gt;
+&lt;li&gt;Bilinear Interpolation&lt;/li&gt;
+&lt;li&gt;Bicubic Interpolation</summary>
+    
+    
+    
+    <category term="Study" scheme="https://kezhi.tech/categories/Study/"/>
+    
+    
+    <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
+    
+    <category term="数字图像" scheme="https://kezhi.tech/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F/"/>
+    
+    <category term="图像处理" scheme="https://kezhi.tech/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    <category term="插值" scheme="https://kezhi.tech/tags/%E6%8F%92%E5%80%BC/"/>
+    
+  </entry>
+  
+</feed>

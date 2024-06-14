@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_xiaomai/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_xiaomai/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_xiaomai/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/favicon_xiaomai/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"kezhi.tech","root":"/","images":"/images","scheme":"Gemini","darkmode":"auto","version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="This is an automatically translated post by LLM. The original post is in Chinese. If you find any translation errors, please leave a comment to help me improve the translation. Thanks!  GitHub lin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Improved multi-robot area coverage using the Bee Algorithm.">
+<meta property="og:url" content="https://kezhi.tech/en/623a6b90.html">
+<meta property="og:site_name" content="Kezhi&#39;s Blog">
+<meta property="og:description" content="This is an automatically translated post by LLM. The original post is in Chinese. If you find any translation errors, please leave a comment to help me improve the translation. Thanks!  GitHub lin">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://download.kezhi.tech/img/20200622224835.gif">
+<meta property="article:published_time" content="2020-06-22T17:30:24.000Z">
+<meta property="article:modified_time" content="2024-04-20T12:30:13.061Z">
+<meta property="article:author" content="Yu Zhao">
+<meta property="article:tag" content="智能计算">
+<meta property="article:tag" content="多机器人">
+<meta property="article:tag" content="覆盖问题">
+<meta property="article:tag" content="算法改进">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://download.kezhi.tech/img/20200622224835.gif">
+
+
+<link rel="canonical" href="https://kezhi.tech/en/623a6b90.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://kezhi.tech/en/623a6b90.html","path":"en/623a6b90.html","title":"Improved multi-robot area coverage using the Bee Algorithm."}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Improved multi-robot area coverage using the Bee Algorithm. | Kezhi's Blog</title>
+  
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="https://server.kezhi.tech:8361/">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Kezhi's Blog" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Kezhi's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">102</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">7</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">117</span></a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>Guestbook</a></li><li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fa fa-camera fa-fw"></i>Gallery</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>Links</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>rss</a></li><li class="menu-item menu-item-anime"><a href="/bangumis/" rel="section"><i class="fa fa-tv fa-fw"></i>anime</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-text">1. Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#background"><span class="nav-text">1. Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#problem-definition"><span class="nav-text">2. Problem Definition:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#complexity-analysis-of-the-problem"><span class="nav-text">3. Complexity Analysis of
+the Problem</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#preliminary-model-construction"><span class="nav-text">2. Preliminary Model
+Construction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#modeling-the-environment"><span class="nav-text">1. Modeling the Environment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#modeling-the-robots"><span class="nav-text">2. Modeling the Robots</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#modeling-the-robots-as-particles"><span class="nav-text">2.1 Modeling the Robots as
+Particles</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#modeling-the-detection-range-of-robots"><span class="nav-text">2.2 Modeling the
+Detection Range of Robots</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#functions-of-robots"><span class="nav-text">2.3 Functions of Robots</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#modeling-time"><span class="nav-text">3. Modeling Time</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#modeling-the-solution-to-the-problem"><span class="nav-text">4. Modeling the Solution
+to the Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#representation-of-the-solution"><span class="nav-text">4.1 Representation of the
+Solution</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#evaluation-of-the-solution"><span class="nav-text">4.2 Evaluation of the Solution</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#algorithm-design-and-improvement"><span class="nav-text">3. Algorithm Design and
+Improvement</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#common-description-of-the-map-and-robots"><span class="nav-text">1. Common Description
+of the Map and Robots</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-bee-algorithm"><span class="nav-text">2. Basic Bee Algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bee-algorithm-with-adaptive-pheromone-release"><span class="nav-text">3. Bee Algorithm
+with Adaptive Pheromone Release</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bee-algorithm-with-memory-backtracking"><span class="nav-text">4. Bee Algorithm with
+Memory Backtracking</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#performance-testing-and-improvement-direction"><span class="nav-text">4. Performance
+Testing and Improvement Direction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#testing-on-open-maps"><span class="nav-text">1. Testing on Open Maps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#testing-on-maps-with-simple-obstacles"><span class="nav-text">2. Testing on Maps with
+Simple Obstacles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#testing-on-real-terrain"><span class="nav-text">3. Testing on Real Terrain</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hot-spring-bathroom"><span class="nav-text">3.1 Hot Spring Bathroom</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#zhongying-college"><span class="nav-text">3.2 Zhongying College</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#experimental-conclusion"><span class="nav-text">4. Experimental Conclusion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#other-improvement-ideas"><span class="nav-text">5. Other Improvement Ideas</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yu Zhao"
+      src="/images/%E5%B0%8F%E5%9F%8B.jpg">
+  <p class="site-author-name" itemprop="name">Yu Zhao</p>
+  <div class="site-description" itemprop="description">知识因被记录而产生价值</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/KezhiAdore" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KezhiAdore" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yuzhao@163.com" title="E-Mail → mailto:yuzhao@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+      
+      
+      
+      
+      <div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Yrta9qQDj8isri1_KNjhT7WenyEDA1dzZcv9bkzWhMw"></script>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://gwyxjtu.github.io/" title="https:&#x2F;&#x2F;gwyxjtu.github.io&#x2F;" rel="noopener" target="_blank">果果的博客</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://zchsakura.github.io/" title="https:&#x2F;&#x2F;zchsakura.github.io" rel="noopener" target="_blank">周小天的博客</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="/linux-command/" title="&#x2F;linux-command&#x2F;">Linux命令查询</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.foreverblog.cn/go.html" title="https:&#x2F;&#x2F;www.foreverblog.cn&#x2F;go.html" rel="noopener" target="_blank">虫洞</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://uptime.kezhi.tech/status/web" title="https:&#x2F;&#x2F;uptime.kezhi.tech&#x2F;status&#x2F;web" rel="noopener" target="_blank">网站监控</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kezhi.tech/en/623a6b90.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E5%B0%8F%E5%9F%8B.jpg">
+      <meta itemprop="name" content="Yu Zhao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kezhi's Blog">
+      <meta itemprop="description" content="知识因被记录而产生价值">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Improved multi-robot area coverage using the Bee Algorithm. | Kezhi's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Improved multi-robot area coverage using the Bee Algorithm.
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-06-23 01:30:24" itemprop="dateCreated datePublished" datetime="2020-06-23T01:30:24+08:00">2020-06-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-04-20 20:30:13" itemprop="dateModified" datetime="2024-04-20T20:30:13+08:00">2024-04-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Research/" itemprop="url" rel="index"><span itemprop="name">Research</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline: </span>
+  
+    <a title="waline" href="/en/623a6b90.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/en/623a6b90.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>12k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>11 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><div class="note info"><p>This is an automatically translated post by LLM. The <a
+href="https://kezhi.tech/623a6b90.html">original post</a> is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!</p>
+</div>
+<p>GitHub link: <a
+target="_blank" rel="noopener" href="https://github.com/KezhiAdore/MultiRobots_CoverMap">https://github.com/KezhiAdore/MultiRobots_CoverMap</a></p>
+<p>Gitee link: <a
+target="_blank" rel="noopener" href="https://gitee.com/KezhiAdore/MultiRobots_CoverMap">https://gitee.com/KezhiAdore/MultiRobots_CoverMap</a></p>
+<h2 id="introduction">1. Introduction</h2>
+<h3 id="background">1. Background</h3>
+<p>Robots are increasingly being used in industries, defense, and
+scientific and technological fields. They can work in complex and
+dangerous environments that are monotonous and unstructured. The use of
+robots greatly improves work efficiency, changes people's lifestyles,
+brings enormous economic and social benefits, and promotes the
+development of related disciplines and technologies.</p>
+<p>Area coverage refers to the process of exploring and accessing the
+entire area with robots carrying sensors with a certain detection range,
+such as lasers and sonars, and completing corresponding tasks. Area
+coverage is a fundamental task of autonomous mobile robots.</p>
+<span id="more"></span>
+<p><img src="https://download.kezhi.tech/img/20200622224835.gif" /></p>
+<center>
+Figure 1.1 Example of a floor cleaning robot - a case of robot area
+coverage problem
+</center>
+<h3 id="problem-definition">2. Problem Definition:</h3>
+<ol type="1">
+<li><p>A group of autonomous mobile robots with limited sensing
+capabilities collaboratively cover a bounded connected area.</p></li>
+<li><p>Robots can repeatedly cover a certain position in the area, and
+the goal is to achieve a certain coverage rate of the area.</p></li>
+<li><p>Robots complete the task in a distributed and non-centralized
+manner, determining their actions based on the locally detected
+information without relying on external control.</p></li>
+<li><p>The coverage speed should be as fast as possible.</p></li>
+</ol>
+<h3 id="complexity-analysis-of-the-problem">3. Complexity Analysis of
+the Problem</h3>
+<p>Compared to general intelligent optimization problems, the swarm
+robot area coverage problem is more complex in the following
+aspects:</p>
+<ul>
+<li><p>Dynamics: The problem introduces the time dimension, and the
+solution obtained is a sequence of robot paths (point sequences),
+resulting in an extremely large solution space.</p></li>
+<li><p>Distributed: The execution center of the algorithm is on a single
+robot, without external host for unified control. The computational and
+sensing capabilities of a single robot are limited, and the computing
+power and information used for decision-making are limited.</p></li>
+<li><p>Large-scale: In order to ensure the accuracy of map
+representation, the number of grid cells in the grid map must be large.
+At the same time, the actual environment map is complex and variable,
+and the area is large, with a large number of robots.</p></li>
+</ul>
+<h2 id="preliminary-model-construction">2. Preliminary Model
+Construction</h2>
+<h3 id="modeling-the-environment">1. Modeling the Environment</h3>
+<p>Gridify the map to form a grid map as the environment for robot
+movement and obstacle placement.</p>
+<p>The grid map divides the environment into rectangular grid cells,
+with each grid cell serving as the smallest unit for robot movement and
+coverage. Each grid cell has certain attributes, such as the
+concentration of pheromones, whether it has been covered, and whether it
+is empty or an obstacle.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200622225508.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 2.1 Example of gridification
+</center>
+<p>There are obstacles distributed in the map, and the robots cannot
+pass through the obstacle grid cells, but they can be detected by the
+robots.</p>
+<h3 id="modeling-the-robots">2. Modeling the Robots</h3>
+<h4 id="modeling-the-robots-as-particles">2.1 Modeling the Robots as
+Particles</h4>
+<p>Ignore the physical shape of the robots and treat them as
+collision-free particles without volume. The robots can only be in one
+grid cell of the grid map, and multiple robots can exist in the same
+grid cell.</p>
+<h4 id="modeling-the-detection-range-of-robots">2.2 Modeling the
+Detection Range of Robots</h4>
+<p>Due to the limitation of the distributed robot's power supply, its
+detection range is also limited. To simplify the calculation on the grid
+map, the detection range of the robot's pheromones is defined as four
+units in the up, down, left, and right directions.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200622225820.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 2.2 Detection range of robots
+</center>
+<h4 id="functions-of-robots">2.3 Functions of Robots</h4>
+<p>Robots can perform the following operations: move to one of the four
+directions of up, down, left, and right or stay still, perceive the grid
+cells in the up, down, left, right, and current positions, and modify
+the concentration of pheromones in the grid cell they are in.</p>
+<p>We focus more on the influence of pheromones on robot behavior rather
+than studying the specific pheromones used for communication in physical
+terms. Therefore, the concentration of pheromones at each position is
+abstracted as a number, and the robot can modify the concentration of
+pheromones when it reaches that position.</p>
+<h3 id="modeling-time">3. Modeling Time</h3>
+<p>Discretize time into units called "rounds". In each round, each robot
+performs the following actions:</p>
+<p>Step 1: Achieve coverage of the current grid cell.</p>
+<p>Step 2: Modify the concentration of pheromones in the current grid
+cell.</p>
+<p>Step 3: Perform a movement or choose to stay still.</p>
+<p>All robots perform these three actions synchronously in each
+round.</p>
+<h3 id="modeling-the-solution-to-the-problem">4. Modeling the Solution
+to the Problem</h3>
+<h4 id="representation-of-the-solution">4.1 Representation of the
+Solution</h4>
+<p>For a grid cell, it can be represented by a pair of coordinates <span
+class="math inline">\((x, y)\)</span>. If the coverage process lasts for
+t rounds and involves n robots, the solution can be represented by a
+sequence of grid cells with a length of t for each robot, representing
+the movement trajectory of each robot. The valid solution should not
+include obstacle grid cells. The set of all grid cells forms the covered
+grid cells.</p>
+<h4 id="evaluation-of-the-solution">4.2 Evaluation of the Solution</h4>
+<p>We define coverage rate as the ratio of covered grid cells to all
+grid cells. The target coverage rate is denoted as α. When the current
+coverage rate exceeds α or the time exceeds the upper limit, the
+coverage process stops. The quality of the solution is measured by the
+coverage time t. For maps of the same size and the same number of
+robots, the shorter the time to achieve the given coverage rate, the
+better the solution. Multiple experiments are conducted, and the shorter
+the average time to achieve the given coverage rate, the better the
+algorithm performance, and the smaller the standard deviation of the
+average time, the better the algorithm performance.</p>
+<h2 id="algorithm-design-and-improvement">3. Algorithm Design and
+Improvement</h2>
+<h3 id="common-description-of-the-map-and-robots">1. Common Description
+of the Map and Robots</h3>
+<p>For this problem, different coverage algorithms have different rules
+for robot operation. However, the establishment and description of the
+map are the same and can be reused in different algorithms. The
+description of the map is as follows: - The map size is M*N, and the
+total number of robots is n, denoted as r1, r2, ..., ri, ..., rn. - The
+concentration of pheromones at a point (i, j) on the map is denoted as
+sij, and the initial concentration of pheromones at each point is 1.</p>
+<h3 id="basic-bee-algorithm">2. Basic Bee Algorithm</h3>
+<p>The rules for robot operation are as follows:</p>
+<ol type="1">
+<li>The response threshold of each robot is θ.</li>
+<li>For a robot ri at position (xi, yi), first update the concentration
+of pheromones at its current position:</li>
+</ol>
+<p><span class="math display">\[
+s_{xiyi} = s_{xiyi} \times \alpha (\alpha \in (0, 1))
+\]</span></p>
+<ol start="3" type="1">
+<li>Detect the concentration of pheromones in the surrounding cells: up:
+s1, down: s2, left: s3, right: s4.</li>
+<li>The probability of robot choosing direction k is:</li>
+</ol>
+<p><span class="math display">\[
+\frac{s_k^2}{\theta^2 + \sum_{k=1}^{4} s_k^2}
+\]</span></p>
+<ol start="5" type="1">
+<li>The probability of robot staying still is:</li>
+</ol>
+<p><span class="math display">\[
+\frac{\theta_i^2}{\theta^2 + \sum_{k=1}^{4} s_k^2}
+\]</span></p>
+<ol start="6" type="1">
+<li>Use roulette wheel selection to choose the next movement direction
+or stay still.</li>
+</ol>
+<p>The above algorithm is the most basic bee algorithm in the
+literature, with two parameters θ and α that affect the robot's
+movement. Through simulation experiments, the influence of these two
+parameters on map coverage is explored. All simulation maps in this
+experiment are of size 100*100, with 50 robots randomly distributed on
+the map.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623002730.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 3.1 Influence of θ on coverage results
+</center>
+<p>From the above experimental results, it can be seen that as θ
+increases, the coverage time and time variance increase rapidly. From
+the perspective of the algorithm, when θ is larger, the robot is more
+likely to stay still after exploring the surrounding area.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623002917.png?x-oss-process=style/webp" /></p>
+<p>When θ is very small, even if the surrounding cells have been visited
+multiple times, the robot still has a high probability of moving instead
+of staying still.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623002947.png?x-oss-process=style/webp" /></p>
+<p>When θ is not much different from the initial concentration of
+pheromones, such as in the above figure where θ is 1/10 of the initial
+concentration, in this case, if all four surrounding cells have been
+visited more than twice, the probability of the robot moving is greatly
+reduced. This leads to a sharp increase in the average coverage time and
+variance. Considering the above experimental results and the actual
+situation, since the effect of the robot staying still when θ is very
+small is negligible, and when θ is large, it will seriously affect the
+map coverage speed, in practical applications, we hope that the swarm
+robots can complete the coverage as quickly as possible rather than
+saving energy. Therefore, we choose to remove the rule of robots staying
+still, that is, θ=0. After the above modification, further experiments
+are conducted to explore the influence of α on the coverage time of
+swarm robots.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623003121.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 3.2 Influence of α on coverage results
+</center>
+<p>From the above experimental data, it can be seen that with the change
+of α, the coverage time and coverage time variance do not change much,
+and there is a trend of increasing and then decreasing. This is because
+when α is small, the concentration of pheromones in the explored area
+changes rapidly, effectively preventing repeated exploration. When α is
+large, there is a certain tolerance for returning to previously explored
+areas, allowing robots to return to the original area to cover the
+missed area. Both have their advantages and disadvantages, but overall,
+the value of α has little impact on coverage efficiency.</p>
+<h3 id="bee-algorithm-with-adaptive-pheromone-release">3. Bee Algorithm
+with Adaptive Pheromone Release</h3>
+<p>Through the analysis of the above bee algorithm, we found that the
+following two situations have the same change in the concentration of
+pheromones in the central area under the bee algorithm.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623003224.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 3.3 Different scenarios of map exploration
+</center>
+<p>However, in reality, for the scenario on the right, in order to
+explore the blank cells around the central node, we hope that some
+robots can return to the central node. For the scenario on the left,
+since its surroundings have been mostly explored, it is not meaningful
+for robots to return to the central node, and we hope that robots will
+try to avoid returning to that area. Therefore, we propose an adaptive
+pheromone release method, where the modification of pheromones is small
+when there are many unexplored cells around, and the modification of
+pheromones is large when there are few unexplored cells. At the same
+time, we hope that this change is nonlinear. The new pheromone release
+method is as follows:</p>
+<ul>
+<li>The basic update of pheromones is still: <span
+class="math display">\[
+s = s \times \alpha
+\]</span></li>
+<li>Let m be the number of empty cells around a certain cell, then the
+weight exponent to be added is: <span class="math display">\[
+k = 1 + \frac{4-m}{4}
+\]</span></li>
+<li>Then the way robots update pheromones in a certain cell becomes:
+<span class="math display">\[
+s = s \times \alpha^k
+\]</span></li>
+</ul>
+<h3 id="bee-algorithm-with-memory-backtracking">4. Bee Algorithm with
+Memory Backtracking</h3>
+<p>In obstacle map coverage tests, we found the following phenomenon:
+robots are trapped in a small enclosed area with a small entrance and
+cannot get out. This leads to robots being trapped and unable to work
+properly.</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623003821.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 3.4 Robots being trapped
+</center>
+<p>To avoid this situation, we consider the backtracking feature of
+depth-first search (DFS) and perform backtracking when there is no way
+out. The algorithm flow combining memory backtracking with the bee
+algorithm is as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623003850.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 3.5 Bee algorithm with memory backtracking
+</center>
+<p>Using this algorithm, even if the robot enters a local obstacle area,
+it can use the memory path to backtrack and walk out of the local
+environment, which has good reliability and robustness.</p>
+<h2 id="performance-testing-and-improvement-direction">4. Performance
+Testing and Improvement Direction</h2>
+<h3 id="testing-on-open-maps">1. Testing on Open Maps</h3>
+<p>Open maps are the simplest and most convenient maps to test, and the
+test results on these maps can well reflect the time and time stability
+of the algorithms mentioned above. At the same time, in this experiment,
+the number of tests is increased, with each map and each algorithm
+tested 500 times to avoid randomness. The test results on open maps are
+as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623004514.png?x-oss-process=style/webp" /></p>
+<p>From the above experimental results, it can be seen that the adaptive
+pheromone release bee algorithm has the shortest exploration time and
+the best time stability. The other two algorithms have similar coverage
+times, and the time stability of the memory backtracking bee algorithm
+is slightly worse.</p>
+<h3 id="testing-on-maps-with-simple-obstacles">2. Testing on Maps with
+Simple Obstacles</h3>
+<p><img
+src="https://download.kezhi.tech/img/20200623012150.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 4.1 Map with simple obstacles
+</center>
+<p>The test results on the above map are as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623012213.png?x-oss-process=style/webp" /></p>
+<p>The test results are significantly different from those on open maps.
+The memory backtracking bee algorithm performs the best in terms of the
+two evaluation metrics, followed by the adaptive pheromone release bee
+algorithm. The basic bee algorithm takes longer and has worse time
+stability.</p>
+<h3 id="testing-on-real-terrain">3. Testing on Real Terrain</h3>
+<h4 id="hot-spring-bathroom">3.1 Hot Spring Bathroom</h4>
+<p>The map of the hot spring bathroom is as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623012251.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 4.2 Floor plan of the hot spring bathroom
+</center>
+<p>The most notable feature of this map is the presence of many small
+rooms with small entrances, making it easy for robots to get trapped and
+unable to get out. The results of the three algorithms on this map are
+as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623012321.png?x-oss-process=style/webp" /></p>
+<p>Due to the influence of the terrain and in order to test the actual
+environment, all robots start from the top left corner of the map
+instead of being randomly distributed initially, resulting in a
+significant increase in the time required for the three algorithms to
+cover the map.</p>
+<p>From the three sets of results, the memory backtracking bee algorithm
+has the highest efficiency, followed by the adaptive pheromone release
+bee algorithm, and the basic bee algorithm takes the longest time and
+has the worst time stability.</p>
+<h4 id="zhongying-college">3.2 Zhongying College</h4>
+<p>The terrain of Zhongying College is as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623012351.png?x-oss-process=style/webp" /></p>
+<center>
+Figure 4.3 Floor plan of Zhongying College
+</center>
+<p>The test results are as follows:</p>
+<p><img
+src="https://download.kezhi.tech/img/20200623012410.png?x-oss-process=style/webp" /></p>
+<p>In this map, the memory backtracking bee algorithm is obviously
+superior to the other two intelligent algorithms, and the adaptive
+pheromone release algorithm is also more efficient than the basic bee
+algorithm. The basic bee algorithm takes longer and has worse time
+stability.</p>
+<h3 id="experimental-conclusion">4. Experimental Conclusion</h3>
+<ul>
+<li><p>The bee algorithm with heuristic pheromone release is more
+time-efficient than the basic bee algorithm in all cases.</p></li>
+<li><p>The bee algorithm with memory backtracking performs best in maps
+with many obstacles, followed by the adaptive pheromone release bee
+algorithm. The basic bee algorithm takes longer and has worse time
+stability.</p></li>
+</ul>
+<h3 id="other-improvement-ideas">5. Other Improvement Ideas</h3>
+<p><em>Bee Algorithm with Limited-Length Memory for Depth-First
+Search</em></p>
+<p>In practical situations, unlimited memory for the DFS algorithm is
+difficult to achieve due to movement errors and memory limitations.
+Therefore, a length limit can be added to the algorithm.</p>
+<ol type="1">
+<li>Queue length limit: Use a deque instead of a stack, and pop the last
+element when the queue length exceeds the limit.</li>
+<li>Stack length limit: Force backtracking when the stack length exceeds
+the limit.</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/WeChatpay.png" alt="Yu Zhao WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/Alipay.png" alt="Yu Zhao Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Yu Zhao
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://kezhi.tech/en/623a6b90.html" title="Improved multi-robot area coverage using the Bee Algorithm.">https://kezhi.tech/en/623a6b90.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97/" rel="tag"><i class="fa fa-tag"></i> 智能计算</a>
+              <a href="/tags/%E5%A4%9A%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="tag"><i class="fa fa-tag"></i> 多机器人</a>
+              <a href="/tags/%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> 覆盖问题</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95%E6%94%B9%E8%BF%9B/" rel="tag"><i class="fa fa-tag"></i> 算法改进</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/b8e0d4a2.html" rel="prev" title="数字图像处理（六）频域滤波器">
+                  <i class="fa fa-angle-left"></i> 数字图像处理（六）频域滤波器
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/623a6b90.html" rel="next" title="黄蜂群算法改进的多机器人区域覆盖">
+                  黄蜂群算法改进的多机器人区域覆盖 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="Select language">
+      
+        <option value="zh-CN" data-href="/623a6b90.html" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/623a6b90.html" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">陕ICP备20004764号 </a>
+      <img src="/images/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" alt="">
+  </div>
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yu Zhao</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Word count total: </span>
+    <span title="Word count total">587k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">8:53</span>
+  </span>
+</div>
+<div class="busuanzi-count" style="display: inline">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file"></i>
+      </span>
+      <span class="page-pv" title="文章访问量">
+        <span id="busuanzi_value_page_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://server.kezhi.tech:8361/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"locale":{"placeholder":"Welcome to comment"},"emoji":["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"wordLimit":0,"login":"enable","pageSize":10,"dark":"auto","el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/en/623a6b90.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":270},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></body>
+</html>

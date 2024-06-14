@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_xiaomai/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_xiaomai/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_xiaomai/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/favicon_xiaomai/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/green/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"kezhi.tech","root":"/","images":"/images","scheme":"Gemini","darkmode":"auto","version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="This is an automatically translated post by LLM. The original post is in Chinese. If you find any translation errors, please leave a comment to help me improve the translation. Thanks!  This artic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linear filtering and nonlinear filtering experiments.">
+<meta property="og:url" content="https://kezhi.tech/en/10ee70e7.html">
+<meta property="og:site_name" content="Kezhi&#39;s Blog">
+<meta property="og:description" content="This is an automatically translated post by LLM. The original post is in Chinese. If you find any translation errors, please leave a comment to help me improve the translation. Thanks!  This artic">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://download.kezhi.tech/img/202206171355785.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/202206171356665.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/202206172030142.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/202206172030896.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/202206172039755.png?x-oss-process=style/webp">
+<meta property="og:image" content="https://download.kezhi.tech/img/202206172039518.png?x-oss-process=style/webp">
+<meta property="article:published_time" content="2022-11-29T09:15:13.000Z">
+<meta property="article:modified_time" content="2024-04-20T12:30:12.990Z">
+<meta property="article:author" content="Yu Zhao">
+<meta property="article:tag" content="Kalman Filter">
+<meta property="article:tag" content="Linear Filter">
+<meta property="article:tag" content="Nonlinear Filter">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://download.kezhi.tech/img/202206171355785.png?x-oss-process=style/webp">
+
+
+<link rel="canonical" href="https://kezhi.tech/en/10ee70e7.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://kezhi.tech/en/10ee70e7.html","path":"en/10ee70e7.html","title":"Linear filtering and nonlinear filtering experiments."}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Linear filtering and nonlinear filtering experiments. | Kezhi's Blog</title>
+  
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="https://server.kezhi.tech:8361/">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Kezhi's Blog" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Kezhi's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">102</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">7</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">117</span></a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>Guestbook</a></li><li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fa fa-camera fa-fw"></i>Gallery</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>Links</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>rss</a></li><li class="menu-item menu-item-anime"><a href="/bangumis/" rel="section"><i class="fa fa-tv fa-fw"></i>anime</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#problem-description"><span class="nav-text">Problem Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#model-introduction"><span class="nav-text">Model Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-estimation-problem"><span class="nav-text">1. Linear Estimation Problem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nonlinear-estimation-problem"><span class="nav-text">2. Nonlinear Estimation
+Problem</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#experimental-results"><span class="nav-text">Experimental Results</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-filtering-problem"><span class="nav-text">1. Linear Filtering Problem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nonlinear-filtering-problem"><span class="nav-text">2. Nonlinear Filtering Problem</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#some-findings-during-the-experiment"><span class="nav-text">Some Findings During the
+Experiment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#appendix"><span class="nav-text">Appendix</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#constant-configuration"><span class="nav-text">Constant Configuration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#problem-1-code"><span class="nav-text">Problem 1 Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#problem-2-code"><span class="nav-text">Problem 2 Code</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#enable-chinese-characters"><span class="nav-text">Enable Chinese characters</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#create-the-cache-folder"><span class="nav-text">Create the cache folder</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#compute-h-in-ekf"><span class="nav-text">Compute H in EKF</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#function-of-observation"><span class="nav-text">Function of observation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#kalman-filter"><span class="nav-text">Kalman filter</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iteration-ekf-which-may-have-a-worse-result-tat"><span class="nav-text">Iteration EKF,
+which may have a worse result TAT</span></a></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yu Zhao"
+      src="/images/%E5%B0%8F%E5%9F%8B.jpg">
+  <p class="site-author-name" itemprop="name">Yu Zhao</p>
+  <div class="site-description" itemprop="description">知识因被记录而产生价值</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">117</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/KezhiAdore" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KezhiAdore" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yuzhao@163.com" title="E-Mail → mailto:yuzhao@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+      
+      
+      
+      
+      <div style="">
+  <canvas id="canvas" style="width:60%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+<script>
+(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();
+</script>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=Yrta9qQDj8isri1_KNjhT7WenyEDA1dzZcv9bkzWhMw"></script>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://gwyxjtu.github.io/" title="https:&#x2F;&#x2F;gwyxjtu.github.io&#x2F;" rel="noopener" target="_blank">果果的博客</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://zchsakura.github.io/" title="https:&#x2F;&#x2F;zchsakura.github.io" rel="noopener" target="_blank">周小天的博客</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="/linux-command/" title="&#x2F;linux-command&#x2F;">Linux命令查询</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://www.foreverblog.cn/go.html" title="https:&#x2F;&#x2F;www.foreverblog.cn&#x2F;go.html" rel="noopener" target="_blank">虫洞</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://uptime.kezhi.tech/status/web" title="https:&#x2F;&#x2F;uptime.kezhi.tech&#x2F;status&#x2F;web" rel="noopener" target="_blank">网站监控</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://kezhi.tech/en/10ee70e7.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E5%B0%8F%E5%9F%8B.jpg">
+      <meta itemprop="name" content="Yu Zhao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kezhi's Blog">
+      <meta itemprop="description" content="知识因被记录而产生价值">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Linear filtering and nonlinear filtering experiments. | Kezhi's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linear filtering and nonlinear filtering experiments.
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-11-29 17:15:13" itemprop="dateCreated datePublished" datetime="2022-11-29T17:15:13+08:00">2022-11-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-04-20 20:30:12" itemprop="dateModified" datetime="2024-04-20T20:30:12+08:00">2024-04-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline: </span>
+  
+    <a title="waline" href="/en/10ee70e7.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/en/10ee70e7.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>17k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>15 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><div class="note info"><p>This is an automatically translated post by LLM. The <a
+href="https://kezhi.tech/10ee70e7.html">original post</a> is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!</p>
+</div>
+<p>This article presents experiments on linear filtering and nonlinear
+filtering for estimating the free fall motion. The following figure is
+from Professor Cai Yuanli's course "Random Filtering and Control" at
+Xi'an Jiaotong University. The course mainly discusses various filtering
+methods related to estimation, smoothing, and prediction.</p>
+<figure>
+<img
+src="https://download.kezhi.tech/img/202211291710418.jpg?x-oss-process=style/webp"
+alt="Map of Control Theory" />
+<figcaption aria-hidden="true">Map of Control Theory</figcaption>
+</figure>
+<span id="more"></span>
+<h2 id="problem-description">Problem Description</h2>
+<ol type="1">
+<li><p>A object is in free fall motion, and its height has been measured
+20 times. The measurement values are shown in the following table:</p>
+<figure>
+<img
+src="https://download.kezhi.tech/img/202206171143534.png?x-oss-process=style/webp"
+alt="image-20220617114332337" />
+<figcaption aria-hidden="true">image-20220617114332337</figcaption>
+</figure></li>
+<li><p>Consider the same object in free fall motion, and use a radar (in
+the same horizontal plane as the object) for measurement. The
+measurement noise of radar range and angle is a Gaussian white noise
+sequence with a mean of 0 and a variance matrix <span
+class="math inline">\(R=\begin{bmatrix}0.04
+&amp;0\\0&amp;0.01\end{bmatrix}\)</span>. Based on the following
+measurement data, determine the estimated values of the object's height
+and downward velocity over time:</p>
+<figure>
+<img
+src="https://download.kezhi.tech/img/202206171202388.png?x-oss-process=style/webp"
+alt="image-202206171202388" />
+<figcaption aria-hidden="true">image-202206171202388</figcaption>
+</figure>
+<figure>
+<img
+src="https://download.kezhi.tech/img/202206171212236.png?x-oss-process=style/webp"
+alt="image-202206171212236" />
+<figcaption aria-hidden="true">image-202206171212236</figcaption>
+</figure>
+<p>The descent motion and radar detection information are shown in the
+following figure:</p>
+<figure>
+<img
+src="https://download.kezhi.tech/img/202206171212177.png?x-oss-process=style/webp"
+alt="image-202206171212177" />
+<figcaption aria-hidden="true">image-202206171212177</figcaption>
+</figure></li>
+</ol>
+<h2 id="model-introduction">Model Introduction</h2>
+<h3 id="linear-estimation-problem">1. Linear Estimation Problem</h3>
+<p>Assume that during free fall motion, the object's height is <span
+class="math inline">\(h\)</span> and velocity is <span
+class="math inline">\(v\)</span> (downward is positive). Let <span
+class="math inline">\(x_1=h\)</span> and <span
+class="math inline">\(x_2=v\)</span>, then the system's state equation
+is:</p>
+<p><span class="math display">\[
+    \begin{bmatrix}
+        \dot x_1\\\dot x_2
+    \end{bmatrix}=
+    \begin{bmatrix}
+        0&amp;-1\\
+        0&amp;0\\
+    \end{bmatrix}
+    \begin{bmatrix}
+        x_1\\x_2
+    \end{bmatrix}+
+    \begin{bmatrix}
+        0\\1
+    \end{bmatrix}g\ \ (g=9.80m/s^2)
+\]</span></p>
+<p>The state transfer function of the system can be solved from the
+above state equation:</p>
+<p><span class="math display">\[
+    x(t)=\begin{bmatrix}
+        1&amp;-t\\
+        0&amp;1
+    \end{bmatrix}x(0)
+    +\begin{bmatrix}
+        -t\\1
+    \end{bmatrix}u(t)
+\]</span></p>
+<p>When the time step is 1s, the state transfer function of the system
+is:</p>
+<p><span class="math display">\[
+\Phi_{k+1,k}=\begin{bmatrix}
+        1&amp;-1\\
+        0&amp;1
+    \end{bmatrix}
+    \ \Psi_{k+1,k}=\begin{bmatrix}
+        -1\\
+        1
+    \end{bmatrix}
+\]</span></p>
+<p>Therefore, the one-step prediction of the system is:</p>
+<p><span class="math display">\[
+x_{k+1,k}=\Phi_{k+1,k}x_{k|k}+\Psi_{k+1,k}u_k
+\]</span></p>
+<p>Since the observation is a direct measurement of the object's height,
+and assuming the measurement error is a white noise with a mean of 0 and
+a variance of 1, the measurement equation is:</p>
+<p><span class="math display">\[
+    y_k=H_kx_k+v_k
+\]</span></p>
+<p>where:</p>
+<p><span class="math display">\[
+H_k\equiv \begin{bmatrix}
+    1\\0
+\end{bmatrix},
+\ v_k \sim N(0,1),
+\ R=1
+\]</span></p>
+<p>In this problem, the measurement height unit is <span
+class="math inline">\(km\)</span>, and the acceleration is <span
+class="math inline">\(9.8m/s^2\)</span>. For ease of calculation, the
+distance unit is unified to <span class="math inline">\(km\)</span>, and
+the time unit is unified to <span class="math inline">\(s\)</span>, so
+the gravity acceleration <span
+class="math inline">\(g=0.0098km/s\)</span>. Since the initial value of
+the filter is not given, the initial height is estimated as <span
+class="math inline">\(2km\)</span> based on the measurement data, and
+the initial velocity is 0, i.e., <span
+class="math inline">\(x_{0|0}=\begin{bmatrix}2&amp;0\end{bmatrix}\)</span>.
+Since the initial estimate value determined in this way is relatively
+rough, the variance is large. Therefore, the initial variance matrix of
+the system is set to <span
+class="math inline">\(P_{0|0}=\begin{bmatrix}10&amp;0\\0&amp;10\end{bmatrix}\)</span>.</p>
+<p>Establish the Kalman filter equations: <span class="math display">\[
+x_{k+1,k}=\Phi_{k+1,k}x_{k|k}+\Psi_{k+1,k}u_k\\
+P_{k+1|k}=\Phi_{k+1,k}P_{k|k}\Phi^\top_{k+1,k}\\
+P_{k+1|k+1}=[P_{k+1|k}^{-1}+H_{k+1}^{\top} R_{k+1}^{-1}H_{k+1}]^{-1}\\
+K_{k+1}=P_{k+1|k+1}H_{k+1}^\top R_{k+1}^{-1}\\
+\hat x_{k+1|k+1}=\hat x_{k+1|k}+K_{k+1}(y_{k+1}-H_{k+1}\hat x_{k+1|k})
+\]</span> Calculate the descent height and velocity of the object, and
+the calculation results are shown in the experimental results section
+below.</p>
+<h3 id="nonlinear-estimation-problem">2. Nonlinear Estimation
+Problem</h3>
+<p>In the second problem, the measurement and estimation values are
+nonlinearly related. Consider using the Extended Kalman Filter (EKF)
+algorithm to estimate it. In this report, the Extended Kalman Filter
+algorithm is used.</p>
+<p>Let the measured slant range be <span
+class="math inline">\(l(km)\)</span>, the elevation angle be <span
+class="math inline">\(\theta(rad)\)</span>, the height of the object be
+<span class="math inline">\(h(km)\)</span>, and the downward velocity be
+<span class="math inline">\(v(km/s)\)</span> (downward is positive). The
+vertical projection of the object on the ground to the radar is <span
+class="math inline">\(d_0\)</span>.</p>
+<p>For ease of subsequent linearization calculations, the system state
+variables are selected as: <span class="math display">\[
+x_1=h,\ x_2=v,\ x_3=d_0
+\]</span> Then the system's state equation is: <span
+class="math display">\[
+\dot x=
+\begin{bmatrix}
+0&amp;-1&amp;0\\
+0&amp;0&amp;0\\
+0&amp;0&amp;0
+\end{bmatrix}x+
+\begin{bmatrix}
+0\\
+1\\
+0
+\end{bmatrix}g,\ where\ g=0.0098\ km/s
+\]</span> Solving the equation, when the time interval is <span
+class="math inline">\(0.5s\)</span>, the discrete state transfer
+function of the system is: <span class="math display">\[
+\Phi_{k+1,k}=\begin{bmatrix}
+1&amp;-0.5&amp;0\\
+0&amp;1&amp;0\\
+0&amp;0&amp;1
+\end{bmatrix},\
+\Psi_{k+1,k}=\begin{bmatrix}
+-0.125\\
+0.5\\
+0
+\end{bmatrix}
+\]</span> The observation of the system is the slant range and elevation
+angle measured by the radar, then: <span class="math display">\[
+y_1=l=\sqrt{h^2+d_0^2}=\sqrt{x_1^2+x_3^2}\\
+y_2=\theta=\arctan(\frac{h}{d_0})=\arctan(\frac{x_1}{x_3})
+\]</span> Taking the derivative of the observation with respect to the
+state variables, we have: <span class="math display">\[
+\frac{\partial y_1}{\partial x_1}=\frac{x_1}{\sqrt{x_1^2+x_3^2}}\\
+\frac{\partial y_1}{\partial x_2}=0\\
+\frac{\partial y_1}{\partial x_3}=\frac{x_3}{\sqrt{x_1^2+x_3^2}}\\
+\frac{\partial y_2}{\partial x_1}=\frac{x_3}{x_1^2+x_3^2}\\
+\frac{\partial y_2}{\partial x_2}=0\\
+\frac{\partial y_2}{\partial x_3}=-\frac{x_1}{x_1^2+x_3^2}\\
+\]</span> Therefore, the local linearization coefficients of the system
+are: <span class="math display">\[
+H=\begin{bmatrix}
+\frac{x_1}{\sqrt{x_1^2+x_3^2}}&amp;0&amp;\frac{x_3}{\sqrt{x_1^2+x_3^2}}\\
+\frac{x_3}{x_1^2+x_3^2}&amp;0&amp;-\frac{x_1}{x_1^2+x_3^2}
+\end{bmatrix}
+\]</span> The calculation process of the Extended Kalman Filter (EKF) is
+as follows: <span class="math display">\[
+x_{k+1,k}=\Phi_{k+1,k}x_{k|k}+\Psi_{k+1,k}u_k\\
+P_{k+1|k}=\Phi_{k+1,k}P_{k|k}\Phi^\top_{k+1,k}\\
+P_{k+1|k+1}=[P_{k+1|k}^{-1}+H_{k+1}^{\top} R_{k+1}^{-1}H_{k+1}]^{-1}\\
+K_{k+1}=P_{k+1|k+1}H_{k+1}^\top R_{k+1}^{-1}\\
+\hat x_{k+1|k+1}=\hat x_{k+1|k}+K_{k+1}(y_{k+1}-H_{k+1}\hat x_{k+1|k})
+\]</span> The difference between the Extended Kalman Filter and the
+Kalman Filter is that the coefficient matrix <span
+class="math inline">\(H\)</span> is obtained by local linearization at
+the observation point. With the above steps, the nonlinear observation
+can be filtered and estimated.</p>
+<h2 id="experimental-results">Experimental Results</h2>
+<h3 id="linear-filtering-problem">1. Linear Filtering Problem</h3>
+<p>Based on the given height observation data, linear Kalman filtering
+is performed, and the calculated results are as follows:</p>
+<p>The estimated height data is:</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+<th style="text-align: center;">7</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Height</td>
+<td style="text-align: center;">1.9943</td>
+<td style="text-align: center;">1.9791</td>
+<td style="text-align: center;">1.9550</td>
+<td style="text-align: center;">1.9211</td>
+<td style="text-align: center;">1.8774</td>
+<td style="text-align: center;">1.8244</td>
+<td style="text-align: center;">1.7605</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">8</th>
+<th style="text-align: center;">9</th>
+<th style="text-align: center;">10</th>
+<th style="text-align: center;">11</th>
+<th style="text-align: center;">12</th>
+<th style="text-align: center;">13</th>
+<th style="text-align: center;">14</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Height</td>
+<td style="text-align: center;">1.6870</td>
+<td style="text-align: center;">1.6038</td>
+<td style="text-align: center;">1.5103</td>
+<td style="text-align: center;">1.4075</td>
+<td style="text-align: center;">1.2947</td>
+<td style="text-align: center;">1.1723</td>
+<td style="text-align: center;">1.0400</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">15</th>
+<th style="text-align: center;">16</th>
+<th style="text-align: center;">17</th>
+<th style="text-align: center;">18</th>
+<th style="text-align: center;">19</th>
+<th style="text-align: center;">20</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Height</td>
+<td style="text-align: center;">0.8980</td>
+<td style="text-align: center;">0.7460</td>
+<td style="text-align: center;">0.5845</td>
+<td style="text-align: center;">0.4129</td>
+<td style="text-align: center;">0.2317</td>
+<td style="text-align: center;">0.0405</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>The height change graph is shown below:</p>
+<p><img
+src="https://download.kezhi.tech/img/202206171314878.png?x-oss-process=style/webp" /></p>
+<p>The filtered data of the downward velocity (positive downward) is as
+follows:</p>
+<div class="line-block">  Time | 1 | 2 | 3 | 4 | 5 | 6 | 7 |<br />
+:: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |<br />
+Velocity | 0.0078 | 0.0157 | 0.0247 | 0.0343 | 0.0439 | 0.0536 | 0.0635
+|</div>
+<div class="line-block">  Time | 8 | 9 | 10 | 11 | 12 | 13 | 14 |<br />
+:: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |<br />
+Velocity | 0.0733 | 0.0831 | 0.0930 | 0.1028 | 0.1126 | 0.1224 | 0.1322
+|</div>
+<div class="line-block">  Time | 15 | 16 | 17 | 18 | 19 | 20 | |<br />
+:: | :-: | :-: | :-: | :-: | :-: | :-: | :--: |<br />
+Velocity | 0.1420 | 0.1519 | 0.1616 | 0.1714 | 0.1812 | 0.1911 | |</div>
+<p>The velocity change graph is shown below:</p>
+<p><img
+src="https://download.kezhi.tech/img/202206171354944.png?x-oss-process=style/webp" /></p>
+<p>At the same time, the estimated variance of the height and velocity
+over time is:</p>
+<table>
+<tr>
+<td>
+<center>
+Estimated Variance of Height
+</center>
+</td>
+<td>
+<center>
+Estimated Variance of Velocity
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/202206171355785.png?x-oss-process=style/webp">
+</center>
+</td>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/202206171356665.png?x-oss-process=style/webp">
+</center>
+</td>
+</tr>
+</table>
+<p>From the above figures, it can be seen that the Kalman filter quickly
+reduces the estimation of the object's descent height and velocity as
+soon as the new information is added, and then gradually decreases to
+near 0 without further significant reduction. The height change curve of
+the object's free fall is a parabola, and the velocity changes
+uniformly, which conforms to the relevant physical laws of free
+fall.</p>
+<h3 id="nonlinear-filtering-problem">2. Nonlinear Filtering Problem</h3>
+<p>Based on the given measurement data and the nonlinear filtering model
+mentioned above, the filtered height and velocity of the falling object
+are as follows.</p>
+<p>The height change is:</p>
+<p><img
+src="https://download.kezhi.tech/img/202206172029931.png?x-oss-process=style/webp" /></p>
+<p>The velocity change is:</p>
+<p><img
+src="https://download.kezhi.tech/img/202206172029342.png?x-oss-process=style/webp" /></p>
+<p>The estimation error of the object's free fall height and velocity
+is:</p>
+<table>
+<tr>
+<td>
+<center>
+Estimated Variance of Height
+</center>
+</td>
+<td>
+<center>
+Estimated Variance of Velocity
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/202206172030142.png?x-oss-process=style/webp">
+</center>
+</td>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/202206172030896.png?x-oss-process=style/webp">
+</center>
+</td>
+</tr>
+</table>
+<p>From the above estimated results, it can be seen that the descent
+height decreases parabolically with time, and the descent velocity
+(downward is positive) increases uniformly with time, which conforms to
+the physical laws of free fall.</p>
+<h2 id="some-findings-during-the-experiment">Some Findings During the
+Experiment</h2>
+<p>In the initial programming and experimental process, since the
+measurement data given in the problem is in units of <span
+class="math inline">\(km\)</span>, for ease of calculation, the distance
+unit is converted to <span class="math inline">\(km\)</span>. However,
+since the problem does not specify the unit of the measurement variance,
+the value is not converted and is treated as <span
+class="math inline">\(km\)</span>.</p>
+<p>No anomalies were found during the solution of problem 1. However,
+when solving problem 2, if the measurement covariance is not converted,
+and the unit is treated as <span class="math inline">\(km\)</span>, the
+estimated results will be as shown in the following figure:</p>
+<table>
+<tr>
+<td>
+<center>
+Height Change
+</center>
+</td>
+<td>
+<center>
+Velocity Change
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/202206172039755.png?x-oss-process=style/webp">
+</center>
+</td>
+<td>
+<center>
+<img src="https://download.kezhi.tech/img/202206172039518.png?x-oss-process=style/webp">
+</center>
+</td>
+</tr>
+</table>
+<p>Comparing the calculated results in the above figure with the
+calculated results in the experimental results of problem 2, it can be
+seen that the nonlinear Kalman filter is more affected by the
+measurement error if the measurement covariance is large. This is
+because the coefficient matrix <span class="math inline">\(H\)</span> in
+the nonlinear filter is obtained by local linearization, and if the
+measurement error itself is large, it will affect the calculation
+results of the Kalman coefficients, resulting in inaccurate estimation
+results.</p>
+<h2 id="appendix">Appendix</h2>
+<h3 id="constant-configuration">Constant Configuration</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">@ Author: Yu Zhao</span></span><br><span class="line"><span class="string">@ Contact: yuzhaokz@163.com</span></span><br><span class="line"><span class="string">@ Date: 2022-06-10 16:59:11</span></span><br><span class="line"><span class="string">@ LastEditors: Yu Zhao</span></span><br><span class="line"><span class="string">@ LastEditTime: 2022-06-17 21:02:09</span></span><br><span class="line"><span class="string">@ Description: 知识因被记录而产生价值</span></span><br><span class="line"><span class="string">@ Website: https://kezhi.tech</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">cache_dir=<span class="string">&quot;cache/&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># observation</span></span><br><span class="line"></span><br><span class="line">observation_1=[</span><br><span class="line">    [<span class="number">1.9945</span>],</span><br><span class="line">    [<span class="number">1.9794</span>],</span><br><span class="line">    [<span class="number">1.9554</span>],</span><br><span class="line">    [<span class="number">1.9214</span>],</span><br><span class="line">    [<span class="number">1.8777</span>],</span><br><span class="line">    [<span class="number">1.8250</span>],</span><br><span class="line">    [<span class="number">1.7598</span>],</span><br><span class="line">    [<span class="number">1.6867</span>],</span><br><span class="line">    [<span class="number">1.6036</span>],</span><br><span class="line">    [<span class="number">1.5092</span>],</span><br><span class="line">    [<span class="number">1.4076</span>],</span><br><span class="line">    [<span class="number">1.2944</span>],</span><br><span class="line">    [<span class="number">1.1724</span>],</span><br><span class="line">    [<span class="number">1.0399</span>],</span><br><span class="line">    [<span class="number">0.8980</span>],</span><br><span class="line">    [<span class="number">0.7455</span>],</span><br><span class="line">    [<span class="number">0.5850</span>],</span><br><span class="line">    [<span class="number">0.4125</span>],</span><br><span class="line">    [<span class="number">0.2318</span>],</span><br><span class="line">    [<span class="number">0.0399</span>],</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">observation_2=[</span><br><span class="line">    [<span class="number">2.82741643781891</span>,<span class="number">0.00075850435876</span>],</span><br><span class="line">    [<span class="number">2.82519811729771</span>,<span class="number">0.00083282260478</span>],</span><br><span class="line">    [<span class="number">2.82066686966236</span>,<span class="number">0.00067808241639</span>],</span><br><span class="line">    [<span class="number">2.81487233105901</span>,<span class="number">0.00085279036802</span>],</span><br><span class="line">    [<span class="number">2.80671786536244</span>,<span class="number">0.00072900768452</span>],</span><br><span class="line">    [<span class="number">2.79725268974089</span>,<span class="number">0.00080072481819</span>],</span><br><span class="line">    [<span class="number">2.78664273475039</span>,<span class="number">0.00075095576213</span>],</span><br><span class="line">    [<span class="number">2.77320365026313</span>,<span class="number">0.00065762725379</span>],</span><br><span class="line">    [<span class="number">2.75919535464551</span>,<span class="number">0.00081186148545</span>],</span><br><span class="line">    [<span class="number">2.74331288628195</span>,<span class="number">0.00079783727034</span>],</span><br><span class="line">    [<span class="number">2.72538888482812</span>,<span class="number">0.00073060712986</span>],</span><br><span class="line">    [<span class="number">2.70664967712312</span>,<span class="number">0.00063242006530</span>],</span><br><span class="line">    [<span class="number">2.68632403406473</span>,<span class="number">0.00063656524495</span>],</span><br><span class="line">    [<span class="number">2.66386533852220</span>,<span class="number">0.00080659845639</span>],</span><br><span class="line">    [<span class="number">2.64093529707333</span>,<span class="number">0.00067704740069</span>],</span><br><span class="line">    [<span class="number">2.61621111727357</span>,<span class="number">0.00076573767706</span>],</span><br><span class="line">    [<span class="number">2.59038109850785</span>,<span class="number">0.00054955759081</span>],</span><br><span class="line">    [<span class="number">2.56298794272843</span>,<span class="number">0.00058487913971</span>],</span><br><span class="line">    [<span class="number">2.53498317950797</span>,<span class="number">0.00055602747368</span>],</span><br><span class="line">    [<span class="number">2.50647589372246</span>,<span class="number">0.00033550412588</span>],</span><br><span class="line">    [<span class="number">2.47571075016386</span>,<span class="number">0.00056012688452</span>],</span><br><span class="line">    [<span class="number">2.44560676000982</span>,<span class="number">0.00056694491978</span>],</span><br><span class="line">    [<span class="number">2.41403690772088</span>,<span class="number">0.00059380631025</span>],</span><br><span class="line">    [<span class="number">2.38252228611696</span>,<span class="number">0.00053681916544</span>],</span><br><span class="line">    [<span class="number">2.35016501182332</span>,<span class="number">0.00065871960781</span>],</span><br><span class="line">    [<span class="number">2.31790939837137</span>,<span class="number">0.00068598344328</span>],</span><br><span class="line">    [<span class="number">2.28597616656453</span>,<span class="number">0.00060922471348</span>],</span><br><span class="line">    [<span class="number">2.25418431681401</span>,<span class="number">0.00057086018918</span>],</span><br><span class="line">    [<span class="number">2.22259320219535</span>,<span class="number">0.00041308535708</span>],</span><br><span class="line">    [<span class="number">2.19237398969466</span>,<span class="number">0.00047302026281</span>],</span><br><span class="line">    [<span class="number">2.16290177997271</span>,<span class="number">0.00030949309972</span>],</span><br><span class="line">    [<span class="number">2.13441725793706</span>,<span class="number">0.00040552624986</span>],</span><br><span class="line">    [<span class="number">2.10811064690727</span>,<span class="number">0.00037545033142</span>],</span><br><span class="line">    [<span class="number">2.08322179823195</span>,<span class="number">0.00017282319262</span>],</span><br><span class="line">    [<span class="number">2.06148109026767</span>,<span class="number">0.00020758327980</span>],</span><br><span class="line">    [<span class="number">2.04219885094031</span>,<span class="number">0.00037186464579</span>],</span><br><span class="line">    [<span class="number">2.02610235314357</span>,<span class="number">0.00018082163465</span>],</span><br><span class="line">    [<span class="number">2.01290326863579</span>,<span class="number">0.00023323830160</span>],</span><br><span class="line">    [<span class="number">2.00463157388395</span>,-<span class="number">0.00004536186964</span>],</span><br><span class="line">    [<span class="number">2.00058143251913</span>,<span class="number">0.00003246284068</span>],</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment"># dimension transform</span></span><br><span class="line">observation_2=[[observation[<span class="number">0</span>],observation[<span class="number">1</span>]*<span class="number">1000</span>] <span class="keyword">for</span> observation <span class="keyword">in</span> observation_2]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># the parameters of problem 1</span></span><br><span class="line">param_1=&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;Phi&quot;</span>:np.matrix(</span><br><span class="line">        [</span><br><span class="line">            [<span class="number">1</span>,-<span class="number">1</span>],</span><br><span class="line">            [<span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">        ]</span><br><span class="line">    ),</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;Psi&quot;</span>:np.matrix(</span><br><span class="line">        [</span><br><span class="line">            [-<span class="number">1</span>],</span><br><span class="line">            [<span class="number">1</span>],</span><br><span class="line">        ]</span><br><span class="line">    ),</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;H&quot;</span>:np.matrix(</span><br><span class="line">        [</span><br><span class="line">            [<span class="number">1</span>,<span class="number">0</span>],</span><br><span class="line">        ]</span><br><span class="line">    ),</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;R&quot;</span>:np.matrix(</span><br><span class="line">        [<span class="number">1</span>/<span class="number">1000</span>]</span><br><span class="line">    ),</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># the parameters of problem 2</span></span><br><span class="line">param_2=&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;Phi&quot;</span>:np.matrix(</span><br><span class="line">        [</span><br><span class="line">            [<span class="number">1</span>,-<span class="number">0.5</span>,<span class="number">0</span>],</span><br><span class="line">            [<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>],</span><br><span class="line">            [<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>],</span><br><span class="line">        ]</span><br><span class="line">    ),</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;Psi&quot;</span>:np.matrix(</span><br><span class="line">        [</span><br><span class="line">            [-<span class="number">0.125</span>],</span><br><span class="line">            [<span class="number">0.5</span>],</span><br><span class="line">            [<span class="number">0</span>],</span><br><span class="line">        ]</span><br><span class="line">    ),</span><br><span class="line">    </span><br><span class="line">    <span class="string">&quot;R&quot;</span>:np.matrix(</span><br><span class="line">        [</span><br><span class="line">            [<span class="number">0.04</span>/<span class="number">1000</span>,<span class="number">0</span>],</span><br><span class="line">            [<span class="number">0</span>,<span class="number">0.01</span>],</span><br><span class="line">        ]</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="problem-1-code">Problem 1 Code</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">@ Author: Yu Zhao</span></span><br><span class="line"><span class="string">@ Contact: yuzhaokz@163.com</span></span><br><span class="line"><span class="string">@ Date: 2022-06-10 14:44:08</span></span><br><span class="line"><span class="string">@ LastEditors: Yu Zhao</span></span><br><span class="line"><span class="string">@ LastEditTime: 2022-06-17 12:45:17</span></span><br><span class="line"><span class="string">@ Description: 知识因被记录而产生价值</span></span><br><span class="line"><span class="string">@ Website: https://kezhi.tech</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> pprint <span class="keyword">import</span> pprint</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> config <span class="keyword">import</span> cache_dir,observation_1,param_1</span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable Chinese characters</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;SimHei&#x27;</span>]  <span class="comment"># Used to display Chinese labels normally</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="literal">False</span>  <span class="comment"># Used to display negative signs normally</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Create the cache folder</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(cache_dir):</span><br><span class="line">    os.mkdir(cache_dir)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Kalman filter</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">Kalman_filter</span>(<span class="params">x_0:np.matrix,  <span class="comment"># the status of last step</span></span></span><br><span class="line"><span class="params">                  P_0:np.matrix,  <span class="comment"># the variance of last step</span></span></span><br><span class="line"><span class="params">                  y_1:np.matrix,  <span class="comment"># the observation of this step</span></span></span><br><span class="line"><span class="params">                  u_0:np.matrix=<span class="literal">None</span>, <span class="comment"># the input of system</span></span></span><br><span class="line"><span class="params">                  Phi:np.matrix=<span class="literal">None</span>,  <span class="comment"># the status transform matrix </span></span></span><br><span class="line"><span class="params">                  Psi:np.matrix=<span class="literal">None</span>,  <span class="comment"># coefficient of system input</span></span></span><br><span class="line"><span class="params">                  Gamma:np.matrix=<span class="literal">None</span>,   <span class="comment"># coefficient of observing noise</span></span></span><br><span class="line"><span class="params">                  H:np.matrix=<span class="literal">None</span>,    <span class="comment"># y=Hx+v</span></span></span><br><span class="line"><span class="params">                  R:np.matrix=<span class="literal">None</span>,    <span class="comment"># the variance of observing noise</span></span></span><br><span class="line"><span class="params">                  Q:np.matrix=<span class="literal">None</span>,    <span class="comment"># the variance of status noise</span></span></span><br><span class="line"><span class="params"></span>):</span><br><span class="line">    <span class="comment"># Check variables</span></span><br><span class="line">    <span class="keyword">if</span> u_0 <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        u_0=np.matrix(<span class="number">0</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;u_0 is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(u_0))</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> Phi <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        Phi=np.matrix(np.eye(x_0.shape[<span class="number">0</span>]))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Phi is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(Phi))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> Psi <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        Psi=np.matrix(np.zeros((x_0.shape[<span class="number">0</span>],<span class="number">1</span>)))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Psi is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(Psi))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> Gamma <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        Gamma=Psi.copy()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Gamma is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(Gamma))</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> H <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        H=np.matrix(np.ones((y_1.shape[<span class="number">0</span>],x_0.shape[<span class="number">0</span>])))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;H is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(H))</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> R <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        R=np.matrix(np.zeros((y_1.shape[<span class="number">0</span>],<span class="number">1</span>)))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;R is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(R))</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> Q <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        Q=np.matrix(<span class="number">0</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Q is missing, use the default value: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(Q))</span><br><span class="line">        </span><br><span class="line">    <span class="comment"># One-step prediction</span></span><br><span class="line">    x_10=Phi@x_0+Psi@u_0</span><br><span class="line">    P_10=Phi@P_0@Phi.T+Gamma@Q@Gamma.T</span><br><span class="line">    <span class="comment"># Time update</span></span><br><span class="line">    P_11=(P_10.I+H.T@R.I@H).I</span><br><span class="line">    K_1=P_11@H.T@R.I</span><br><span class="line">    x_11=x_10+K_1@(y_1-H@x_10)</span><br><span class="line">    <span class="keyword">return</span> x_11,P_11,K_1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_result</span>(<span class="params">record:<span class="built_in">dict</span>,problem</span>):</span><br><span class="line">    pprint(record)</span><br><span class="line">    <span class="keyword">for</span> key,value <span class="keyword">in</span> record.items():</span><br><span class="line">        plt.title(key)</span><br><span class="line">        plt.xlabel(<span class="string">&quot;step&quot;</span>)</span><br><span class="line">        <span class="keyword">if</span> key==<span class="string">&quot;h&quot;</span>:</span><br><span class="line">            plt.ylabel(<span class="string">&quot;Height: km&quot;</span>)</span><br><span class="line">        <span class="keyword">if</span> key==<span class="string">&quot;v&quot;</span>:</span><br><span class="line">            plt.ylabel(<span class="string">&quot;Velocity: km/s (downward is positive)&quot;</span>)</span><br><span class="line">        plt.plot(value)</span><br><span class="line">        plt.savefig(os.path.join(cache_dir,problem+<span class="string">&quot;_&quot;</span>+key+<span class="string">&quot;.png?x-oss-process=style/webp&quot;</span>),dpi=<span class="number">600</span>)</span><br><span class="line">        plt.clf()</span><br><span class="line">        plt.cla()</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Solve problem 1</span></span><br><span class="line">    x_0=np.matrix([[<span class="number">2</span>],[<span class="number">0</span>]])</span><br><span class="line">    P_0=np.matrix([[<span class="number">10</span>,<span class="number">0</span>],[<span class="number">0</span>,<span class="number">10</span>]])</span><br><span class="line">    x_record=[x_0]</span><br><span class="line">    P_record=[P_0]</span><br><span class="line">    K_record=[<span class="literal">None</span>]</span><br><span class="line">    <span class="keyword">for</span> obs <span class="keyword">in</span> observation_1:</span><br><span class="line">        y_1=np.matrix(obs).T</span><br><span class="line">        x_1,P_1,K_1=Kalman_filter(</span><br><span class="line">            x_0,</span><br><span class="line">            P_0,</span><br><span class="line">            y_1,</span><br><span class="line">            u_0=np.matrix(<span class="number">9.8</span>/<span class="number">1000</span>),</span><br><span class="line">            Phi=np.matrix(param_1[<span class="string">&quot;Phi&quot;</span>]),</span><br><span class="line">            Psi=np.matrix(param_1[<span class="string">&quot;Psi&quot;</span>]),</span><br><span class="line">            H=np.matrix(param_1[<span class="string">&quot;H&quot;</span>]),</span><br><span class="line">            R=np.matrix(param_1[<span class="string">&quot;R&quot;</span>]),</span><br><span class="line">        )</span><br><span class="line">        </span><br><span class="line">        x_record.append(x_1)</span><br><span class="line">        P_record.append(P_1)</span><br><span class="line">        K_record.append(K_1)</span><br><span class="line">        </span><br><span class="line">        x_0=x_1</span><br><span class="line">        P_0=P_1</span><br><span class="line">        </span><br><span class="line">    result_record=&#123;</span><br><span class="line">        <span class="string">&quot;h&quot;</span>:[x[<span class="number">0</span>,<span class="number">0</span>] <span class="keyword">for</span> x <span class="keyword">in</span> x_record],</span><br><span class="line">        <span class="string">&quot;v&quot;</span>:[x[<span class="number">1</span>,<span class="number">0</span>] <span class="keyword">for</span> x <span class="keyword">in</span> x_record],</span><br><span class="line">        <span class="string">&quot;P_0&quot;</span>:[P[<span class="number">0</span>,<span class="number">0</span>] <span class="keyword">for</span> P <span class="keyword">in</span> P_record],</span><br><span class="line">        <span class="string">&quot;P_1&quot;</span>:[P[<span class="number">1</span>,<span class="number">1</span>] <span class="keyword">for</span> P <span class="keyword">in</span> P_record],</span><br><span class="line">        <span class="comment"># &quot;K&quot;:K_record,</span></span><br><span class="line">    &#125;</span><br><span class="line">    show_result(result_record,problem=<span class="string">&quot;p1&quot;</span>)</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<h3 id="problem-2-code">Problem 2 Code</h3>
+<p>```python ''' @ Author: Yu Zhao @ Contact: yuzhaokz@163.com @ Date:
+2022-06-17 16:54:31 @ LastEditors: Yu Zhao @ LastEditTime: 2022-06-17
+21:02:28 @ Description: 知识因被记录而产生价值 @ Website:
+https://kezhi.tech '''</p>
+<p>import os from pprint import pprint from matplotlib import pyplot as
+plt import numpy as np</p>
+<p>from config import cache_dir,observation_2,param_2</p>
+<h1 id="enable-chinese-characters">Enable Chinese characters</h1>
+<p>plt.rcParams['font.sans-serif'] = ['SimHei'] # Used to display
+Chinese labels normally plt.rcParams['axes.unicode_minus'] = False #
+Used to display negative signs normally</p>
+<h1 id="create-the-cache-folder">Create the cache folder</h1>
+<p>if not os.path.exists(cache_dir): os.mkdir(cache_dir)</p>
+<h1 id="compute-h-in-ekf">Compute H in EKF</h1>
+<p>def get_H(x): l_2=x[0,0]<strong>2+x[2,0]</strong>2 return np.matrix(
+[ [x[0,0]/np.sqrt(l_2),0,x[2,0]/np.sqrt(l_2)],
+[x[2,0]/l_2,0,-x[0,0]/l_2], ] )</p>
+<h1 id="function-of-observation">Function of observation</h1>
+<p>def y(x): return np.matrix( [
+[np.sqrt(x[0,0]<strong>2+x[2,0]</strong>2)], [np.arctan(x[0,0]/x[2,0])],
+] )</p>
+<h1 id="kalman-filter">Kalman filter</h1>
+<p>def EKF(x_0:np.matrix, # the status of last step P_0:np.matrix, # the
+variance of last step y_1:np.matrix, # the observation of this step
+u_0:np.matrix=None, # the input of system Phi:np.matrix=None, # the
+status transform matrix Psi:np.matrix=None, # coefficient of system
+input Gamma:np.matrix=None, # coefficient of observing noise
+R:np.matrix=None, # the variance of observing noise Q:np.matrix=None, #
+the variance of status noise ): # Check variables if u_0 is None:
+u_0=np.matrix(0) print("u_0 is missing, use the default value:
+{}".format(u_0))</p>
+<pre><code>if Phi is None:
+    Phi=np.matrix(np.eye(x_0.shape[0]))
+    print(&quot;Phi is missing, use the default value: &#123;&#125;&quot;.format(Phi))
+
+if Psi is None:
+    Psi=np.matrix(np.zeros((x_0.shape[0],1)))
+    print(&quot;Psi is missing, use the default value: &#123;&#125;&quot;.format(Psi))
+
+if Gamma is None:
+    Gamma=np.matrix(np.zeros((x_0.shape[0],1)))
+    print(&quot;Gamma is missing, use the default value: &#123;&#125;&quot;.format(Gamma))
+    
+if R is None:
+    R=np.matrix(np.zeros((y_1.shape[0],1)))
+    print(&quot;R is missing, use the default value: &#123;&#125;&quot;.format(R))
+    
+if Q is None:
+    Q=np.matrix(0)
+    print(&quot;Q is missing, use the default value: &#123;&#125;&quot;.format(Q))
+    
+# One-step prediction
+x_10=Phi@x_0+Psi@u_0
+P_10=Phi@P_0@Phi.T+Gamma@Q@Gamma.T
+# Local linearization
+H=get_H(x_10)
+# Time update
+P_11=(P_10.I+H.T@R.I@H).I
+K_1=P_11@H.T@R.I
+x_11=x_10+K_1@(y_1-y(x_10))
+return x_11,P_11,K_1</code></pre>
+<p>def mse(x_1:np.matrix,x_2:np.matrix): loss=0 for i in
+range(x_1.shape[0]): for j in range(x_1.shape[1]):
+loss+=(x_1[i,j]-x_2[i,j])**2 loss=loss/(x_1.shape[0]*x_1.shape[0])
+return loss</p>
+<h1 id="iteration-ekf-which-may-have-a-worse-result-tat">Iteration EKF,
+which may have a worse result TAT</h1>
+<p>def EKF_iter( x_0:np.matrix, # the status of last step P_0:np.matrix,
+# the variance of last step y_1:np.matrix, # the observation of this
+step u_0:np.matrix=None, # the input of system Phi:np.matrix=None, # the
+status transform matrix Psi:np.matrix=None,</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/WeChatpay.png" alt="Yu Zhao WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/Alipay.png" alt="Yu Zhao Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Yu Zhao
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://kezhi.tech/en/10ee70e7.html" title="Linear filtering and nonlinear filtering experiments.">https://kezhi.tech/en/10ee70e7.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Kalman-Filter/" rel="tag"><i class="fa fa-tag"></i> Kalman Filter</a>
+              <a href="/tags/Linear-Filter/" rel="tag"><i class="fa fa-tag"></i> Linear Filter</a>
+              <a href="/tags/Nonlinear-Filter/" rel="tag"><i class="fa fa-tag"></i> Nonlinear Filter</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/86b4b2c0.html" rel="prev" title="王者荣耀目标检测--Yolov5实现">
+                  <i class="fa fa-angle-left"></i> 王者荣耀目标检测--Yolov5实现
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/10ee70e7.html" rel="next" title="线性滤波与非线性滤波实验">
+                  线性滤波与非线性滤波实验 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="Select language">
+      
+        <option value="zh-CN" data-href="/10ee70e7.html" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/10ee70e7.html" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">陕ICP备20004764号 </a>
+      <img src="/images/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" alt="">
+  </div>
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yu Zhao</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Word count total: </span>
+    <span title="Word count total">587k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">8:53</span>
+  </span>
+</div>
+<div class="busuanzi-count" style="display: inline">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file"></i>
+      </span>
+      <span class="page-pv" title="文章访问量">
+        <span id="busuanzi_value_page_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://server.kezhi.tech:8361/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"locale":{"placeholder":"Welcome to comment"},"emoji":["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"wordLimit":0,"login":"enable","pageSize":10,"dark":"auto","el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/en/10ee70e7.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/ Relative","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":270},"mobile":{"show":false},"react":{"opacityDefault":0.7}});</script></body>
+</html>
