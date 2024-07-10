@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-06-24T02:51:53.998Z</updated>
+  <updated>2024-07-10T10:22:23.318Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -17,15 +17,82 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>vscode编译Latex配置</title>
+    <link href="https://kezhi.tech/26b82930.html"/>
+    <id>https://kezhi.tech/26b82930.html</id>
+    <published>2024-07-10T10:21:58.000Z</published>
+    <updated>2024-07-10T10:22:23.318Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;原本是不想写 latex
+本地环境配置的文章的，因为网上已经有很多相关的博客和文章。但是师妹在配置
+vscode 时复制了网上错误的配置导致 &lt;code&gt;bib&lt;/code&gt;
+半天编译不过，并难以定位问题。因此，写下本篇配置说明来维护一个正确的配置，避免未来再出现类似的问题。&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+放一盆王八在这
+&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="vscode" scheme="https://kezhi.tech/tags/vscode/"/>
+    
+    <category term="latex" scheme="https://kezhi.tech/tags/latex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode compile Latex configuration.</title>
+    <link href="https://kezhi.tech/en/26b82930.html"/>
+    <id>https://kezhi.tech/en/26b82930.html</id>
+    <published>2024-07-10T10:21:58.000Z</published>
+    <updated>2024-07-10T10:25:12.057Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/26b82930.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Originally, I didn&#39;t want to write an article about configuring the
+local LaTeX environment because there are already many related blogs and
+articles online. However, my junior sister made a mistake by copying the
+wrong configuration from the internet when setting up vscode, which
+caused the bibliography to fail to compile for half a day and was
+difficult to locate the problem. Therefore, I wrote this configuration
+guide to maintain a correct configuration and avoid similar issues in
+the future.&lt;/p&gt;
+&lt;p&gt;&lt;img
+src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+Put a snapping turtle here
+&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="vscode" scheme="https://kezhi.tech/tags/vscode/"/>
+    
+    <category term="latex" scheme="https://kezhi.tech/tags/latex/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2024毕业快乐</title>
     <link href="https://kezhi.tech/35956731.html"/>
     <id>https://kezhi.tech/35956731.html</id>
     <published>2024-06-24T02:51:38.000Z</published>
-    <updated>2024-06-24T02:51:53.998Z</updated>
+    <updated>2024-07-10T10:20:57.754Z</updated>
     
     
     <summary type="html">&lt;p&gt;转眼间，从我步入大学校园到现在已经有七年之久。三年前也经历过一次毕业，不过那时身边的朋友们大多选择继续在学校读研，所以并未有太多伤感。而今年，读研的人也大多取得了硕士学位，走向天南海北的社会岗位。自此一别，今后恐再难相见。谨以此文为念，祝今年毕业的朋友们前程似锦。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202406241051402.jpg&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202406241051402.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -41,7 +108,7 @@
     <link href="https://kezhi.tech/en/35956731.html"/>
     <id>https://kezhi.tech/en/35956731.html</id>
     <published>2024-06-24T02:51:38.000Z</published>
-    <updated>2024-06-24T02:52:47.222Z</updated>
+    <updated>2024-07-10T10:20:51.406Z</updated>
     
     
     <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
@@ -57,7 +124,7 @@ the graduate students have also obtained their master&#39;s degrees and
 embarked on various social positions across the country. From now on, it
 may be difficult for us to meet again. With this in mind, I wish all the
 friends who are graduating this year a bright future.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202406241051402.jpg&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202406241051402.jpg?x-oss-process=style/webp&quot; style=&quot;width:50%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -686,8 +753,8 @@ problem in a small game during the event, and I will record it here.&lt;/p&gt;
   
   <entry>
     <title>2023毕业快乐</title>
-    <link href="https://kezhi.tech/null.html"/>
-    <id>https://kezhi.tech/null.html</id>
+    <link href="https://kezhi.tech/Infinity.html"/>
+    <id>https://kezhi.tech/Infinity.html</id>
     <published>2023-06-13T02:43:44.000Z</published>
     <updated>2024-04-20T12:22:10.376Z</updated>
     
@@ -1541,9 +1608,9 @@ href=&quot;https://kezhi.tech/a587561c.html&quot;&gt;original post&lt;/a&gt;</su
     
     <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
     
-    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
-    
     <category term="Pytorch" scheme="https://kezhi.tech/tags/Pytorch/"/>
+    
+    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
     
   </entry>
   
@@ -1573,9 +1640,9 @@ following eight dictionaries after instantiation:&lt;/p&gt;
     
     <category term="Python" scheme="https://kezhi.tech/tags/Python/"/>
     
-    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
-    
     <category term="Pytorch" scheme="https://kezhi.tech/tags/Pytorch/"/>
+    
+    <category term="Neural Network" scheme="https://kezhi.tech/tags/Neural-Network/"/>
     
   </entry>
   
@@ -1602,11 +1669,11 @@ alt=&quot;(摄影师: 蔡育倍)&quot; /&gt;
     <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
     
     
+    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    
     <category term="支教" scheme="https://kezhi.tech/tags/%E6%94%AF%E6%95%99/"/>
     
     <category term="感悟" scheme="https://kezhi.tech/tags/%E6%84%9F%E6%82%9F/"/>
-    
-    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
@@ -1629,11 +1696,11 @@ href=&quot;https://kezhi.tech/ebd84d05.html&quot;&gt;original post&lt;/a&gt;</su
     <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
     
     
+    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
+    
     <category term="支教" scheme="https://kezhi.tech/tags/%E6%94%AF%E6%95%99/"/>
     
     <category term="感悟" scheme="https://kezhi.tech/tags/%E6%84%9F%E6%82%9F/"/>
-    
-    <category term="日常" scheme="https://kezhi.tech/tags/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
@@ -2187,9 +2254,9 @@ src=&quot;https://download.kezhi.tech/img/20220322172925.jpg?x-oss-process=style
     <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
     
     
-    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
-    
     <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
     
   </entry>
   
@@ -2217,9 +2284,9 @@ src=&quot;https://download.kezhi.tech/img/20220322172925.jpg?x-oss-process=style
     <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
     
     
-    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
-    
     <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
     
   </entry>
   
@@ -3313,9 +3380,9 @@ alt=&quot;8MAadJ.md&quot; /&gt;</summary>
     <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
     
     
-    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
-    
     <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
     
     <category term="Markdown" scheme="https://kezhi.tech/tags/Markdown/"/>
     
@@ -3340,9 +3407,9 @@ href=&quot;https://kezhi.tech/61ad1e34.html&quot;&gt;original post&lt;/a&gt;</su
     <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
     
     
-    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
-    
     <category term="Hexo" scheme="https://kezhi.tech/tags/Hexo/"/>
+    
+    <category term="NexT" scheme="https://kezhi.tech/tags/NexT/"/>
     
     <category term="Markdown" scheme="https://kezhi.tech/tags/Markdown/"/>
     

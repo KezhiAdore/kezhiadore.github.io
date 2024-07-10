@@ -22,45 +22,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kezhi.tech","root":"/","images":"/images","scheme":"Gemini","darkmode":"auto","version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInLeft"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="年纪越大，感到时光流逝的就越快。转眼间，就已经到了2023年。比我大一届的师兄师姐们就要毕业了。这篇博客主要放照片用，没有什么太多的文字内容。 祝各位毕业的师兄师姐前程似锦，生活精彩。🎉🎉🎉">
+    <meta name="description" content="原本是不想写 latex 本地环境配置的文章的，因为网上已经有很多相关的博客和文章。但是师妹在配置 vscode 时复制了网上错误的配置导致 bib 半天编译不过，并难以定位问题。因此，写下本篇配置说明来维护一个正确的配置，避免未来再出现类似的问题。   放一盆王八在这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2023毕业快乐">
-<meta property="og:url" content="https://kezhi.tech/null.html">
+<meta property="og:title" content="vscode编译Latex配置">
+<meta property="og:url" content="https://kezhi.tech/26b82930.html">
 <meta property="og:site_name" content="Kezhi&#39;s Blog">
-<meta property="og:description" content="年纪越大，感到时光流逝的就越快。转眼间，就已经到了2023年。比我大一届的师兄师姐们就要毕业了。这篇博客主要放照片用，没有什么太多的文字内容。 祝各位毕业的师兄师姐前程似锦，生活精彩。🎉🎉🎉">
+<meta property="og:description" content="原本是不想写 latex 本地环境配置的文章的，因为网上已经有很多相关的博客和文章。但是师妹在配置 vscode 时复制了网上错误的配置导致 bib 半天编译不过，并难以定位问题。因此，写下本篇配置说明来维护一个正确的配置，避免未来再出现类似的问题。   放一盆王八在这">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131047631.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131032143.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131032204.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131033772.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131033428.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131035561.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131036370.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131036538.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306131039400.jpg?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141501108.JPG?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141450455.JPG?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141451789.JPG?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141454583.JPG?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141458146.JPG?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141456892.JPG?x-oss-process=style/webp">
-<meta property="og:image" content="https://download.kezhi.tech/img/202306141453547.JPG?x-oss-process=style/webp">
-<meta property="article:published_time" content="2023-06-13T02:43:44.000Z">
-<meta property="article:modified_time" content="2024-04-20T12:22:10.376Z">
+<meta property="article:published_time" content="2024-07-10T10:21:58.000Z">
+<meta property="article:modified_time" content="2024-07-10T10:22:23.318Z">
 <meta property="article:author" content="Yu Zhao">
-<meta property="article:tag" content="毕业">
+<meta property="article:tag" content="vscode">
+<meta property="article:tag" content="latex">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://download.kezhi.tech/img/202306131047631.jpg?x-oss-process=style/webp">
 
 
-<link rel="canonical" href="https://kezhi.tech/null.html">
+<link rel="canonical" href="https://kezhi.tech/26b82930.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://kezhi.tech/null.html","path":"null.html","title":"2023毕业快乐"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://kezhi.tech/26b82930.html","path":"26b82930.html","title":"vscode编译Latex配置"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2023毕业快乐 | Kezhi's Blog</title>
+<title>vscode编译Latex配置 | Kezhi's Blog</title>
   
 
 
@@ -73,8 +57,8 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style><link rel="alternate" href="/atom.xml" title="Kezhi's Blog" type="application/atom+xml">
-</head>
+<link rel="alternate" href="/atom.xml" title="Kezhi's Blog" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -109,7 +93,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">102</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">119</span></a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>留言板</a></li><li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fa fa-camera fa-fw"></i>相册</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>rss</a></li><li class="menu-item menu-item-anime"><a href="/banguanimemis/" rel="section"><i class="fa fa-tv fa-fw"></i>anime</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">104</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">121</span></a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>留言板</a></li><li class="menu-item menu-item-gallery"><a href="/gallery/" rel="section"><i class="fa fa-camera fa-fw"></i>相册</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>rss</a></li><li class="menu-item menu-item-anime"><a href="/banguanimemis/" rel="section"><i class="fa fa-tv fa-fw"></i>anime</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -160,7 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%88%E6%98%AF%E6%AF%95%E4%B8%9A%E6%99%9A%E4%BC%9A"><span class="nav-text">先是毕业晚会</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%8D%E6%98%AF%E5%B8%88%E5%85%84%E5%B8%88%E5%A7%90"><span class="nav-text">再是师兄师姐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E5%90%8E%E6%98%AF%E4%B8%A4%E4%BD%8D%E5%A5%BD%E5%8F%8B%E7%9A%84%E6%AF%95%E4%B8%9A%E6%8B%8D%E6%91%84"><span class="nav-text">最后是两位好友的毕业拍摄</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#latex-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-text">Latex 环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vscode-%E9%85%8D%E7%BD%AE"><span class="nav-text">vscode 配置</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -175,7 +159,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">119</span>
+          <span class="site-state-item-count">121</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -186,7 +170,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">102</span>
+        <span class="site-state-item-count">104</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -518,7 +502,7 @@ if(canvas.getContext){
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://kezhi.tech/null.html">
+    <link itemprop="mainEntityOfPage" href="https://kezhi.tech/26b82930.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/%E5%B0%8F%E5%9F%8B.jpg">
@@ -531,12 +515,12 @@ if(canvas.getContext){
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="2023毕业快乐 | Kezhi's Blog">
+      <meta itemprop="name" content="vscode编译Latex配置 | Kezhi's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2023毕业快乐
+          vscode编译Latex配置
         </h1>
 
         <div class="post-meta-container">
@@ -546,15 +530,9 @@ if(canvas.getContext){
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2023-06-13 10:43:44" itemprop="dateCreated datePublished" datetime="2023-06-13T10:43:44+08:00">2023-06-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-20 20:22:10" itemprop="dateModified" datetime="2024-04-20T20:22:10+08:00">2024-04-20</time>
+      <time title="创建时间：2024-07-10 18:21:58 / 修改时间：18:22:23" itemprop="dateCreated datePublished" datetime="2024-07-10T18:21:58+08:00">2024-07-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -562,7 +540,7 @@ if(canvas.getContext){
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Journal/" itemprop="url" rel="index"><span itemprop="name">Journal</span></a>
+          <a href="/categories/Tips/" itemprop="url" rel="index"><span itemprop="name">Tips</span></a>
         </span>
     </span>
 
@@ -582,8 +560,8 @@ if(canvas.getContext){
     </span>
     <span class="post-meta-item-text">Waline：</span>
   
-    <a title="waline" href="/null.html#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="/null.html" itemprop="commentCount"></span>
+    <a title="waline" href="/26b82930.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/26b82930.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -594,14 +572,14 @@ if(canvas.getContext){
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>250</span>
+      <span>2.5k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -611,124 +589,38 @@ if(canvas.getContext){
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>年纪越大，感到时光流逝的就越快。转眼间，就已经到了2023年。比我大一届的师兄师姐们就要毕业了。这篇博客主要放照片用，没有什么太多的文字内容。</p>
-<p>祝各位毕业的师兄师姐前程似锦，生活精彩。🎉🎉🎉</p>
-<p><img src="https://download.kezhi.tech/img/202306131047631.jpg?x-oss-process=style/webp" style="width:33%;" /></p>
+    <div class="post-body" itemprop="articleBody"><p>原本是不想写 latex
+本地环境配置的文章的，因为网上已经有很多相关的博客和文章。但是师妹在配置
+vscode 时复制了网上错误的配置导致 <code>bib</code>
+半天编译不过，并难以定位问题。因此，写下本篇配置说明来维护一个正确的配置，避免未来再出现类似的问题。</p>
+<p><img
+src="https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp" /></p>
+<center>
+放一盆王八在这
+</center>
 <span id="more"></span>
-<p>先放一首未来再见在这里作为BGM，建议边听边看。^_^</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1480344409&amp;auto=1&amp;height=66">
-</iframe>
-<h2 id="先是毕业晚会">先是毕业晚会</h2>
+<h2 id="latex-环境配置">Latex 环境配置</h2>
+<ol type="1">
+<li><p>下载 latex 编译工具，这里建议使用 <a
+target="_blank" rel="noopener" href="https://tug.org/texlive/">texlive</a></p></li>
+<li><p>安装包下载完成后点击安装即可</p></li>
+<li><p>确认安装，在 texlive 安装完成后，在命令行里输入
+<code>tex</code>，得到结果如下，则说明系统环境变量配置成功</p>
 <p><img
-src="https://download.kezhi.tech/img/202306131019051.jpg?x-oss-process=style/webp" /></p>
-<center>
-毕业晚会现场
-</center>
+src="https://download.kezhi.tech/img/202407101802066.png?x-oss-process=style/webp" /></p></li>
+</ol>
+<h2 id="vscode-配置">vscode 配置</h2>
+<ol type="1">
+<li><p>安装插件 <code>latex-workshop</code></p></li>
+<li><p><code>Ctrl+Shift+P</code> 输入 <code>open user settings</code>
+打开用户配置文件 <code>settings.json</code></p></li>
+<li><p>向用户配置文件 <code>settings.json</code> 中添加如下内容</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;latex-workshop.latex.tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-pdf&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOC%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// 这里是xelatex工具的定义 </span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xelatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xelatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOC%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;%DOC%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bibtex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bibtex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;biber&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;biber&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"><span class="comment">//设置编译链的时候使用xelatex作为默认的第一个首选编译</span></span><br><span class="line">    <span class="attr">&quot;latex-workshop.latex.recipes&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdflatex -&gt; bibtex -&gt; pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdflatex -&gt; biber -&gt; pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;biber&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xelatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;latexmk&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;latexmk&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        </span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;pdflatex -&gt; bibtex -&gt; pdflatex*2&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xelatex -&gt; bibtex -&gt; xelatex*2&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;tools&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">            <span class="string">&quot;xelatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="string">&quot;bibtex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="string">&quot;xelatex&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="string">&quot;xelatex&quot;</span></span><br><span class="line">            <span class="punctuation">]</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure></li>
+<li><p>打开一个 <code>*.tex</code> 文件，左侧出现 <code>TEX</code>
+图标说明配置成功</p>
 <p><img
-src="https://download.kezhi.tech/img/202306131021079.jpg?x-oss-process=style/webp" /></p>
-<center>
-一个人完成七个人的业绩罢了
-</center>
-<p><img
-src="https://download.kezhi.tech/img/202306131022653.jpg?x-oss-process=style/webp" /></p>
-<center>
-我一直觉得泓理楼作为显示设备效果会很不错，确实很惊艳
-</center>
-<h2 id="再是师兄师姐">再是师兄师姐</h2>
-<p><img
-src="https://download.kezhi.tech/img/202306131026431.jpg?x-oss-process=style/webp" /></p>
-<p><img
-src="https://download.kezhi.tech/img/202306131027348.jpg?x-oss-process=style/webp" /></p>
-<center>
-可爱捏~
-</center>
-<p><img
-src="https://download.kezhi.tech/img/202306131028272.png?x-oss-process=style/webp" /></p>
-<p><img
-src="https://download.kezhi.tech/img/202306131029459.png?x-oss-process=style/webp" /></p>
-<p><img
-src="https://download.kezhi.tech/img/202306131030337.jpg?x-oss-process=style/webp" /></p>
-<p><img
-src="https://download.kezhi.tech/img/202306131030062.jpg?x-oss-process=style/webp" /></p>
-<p>再就是说，谁不想和明星合影呢。</p>
-<table>
-<tr>
-<td>
-<img src="https://download.kezhi.tech/img/202306131032143.jpg?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306131032204.jpg?x-oss-process=style/webp">
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<img src="https://download.kezhi.tech/img/202306131033772.jpg?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306131033428.jpg?x-oss-process=style/webp">
-</td>
-</tr>
-</table>
-<h2 id="最后是两位好友的毕业拍摄">最后是两位好友的毕业拍摄</h2>
-<blockquote class="blockquote-center">
-<p>愿时光永驻此刻，愿明日如黄金般闪耀</p>
-
-</blockquote>
-<blockquote>
-<p>以下全是直出图，欸嘿</p>
-</blockquote>
-<table>
-<tr>
-<td>
-<img src="https://download.kezhi.tech/img/202306131035561.jpg?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306131036370.jpg?x-oss-process=style/webp">
-</td>
-</tr>
-</table>
-<p><img src="https://download.kezhi.tech/img/202306131036538.jpg?x-oss-process=style/webp" alt="IMG_20230612_122623" style="width:33%;" /></p>
-<center>
-准备了两束花和几根芍药
-</center>
-<p><img src="https://download.kezhi.tech/img/202306131039400.jpg?x-oss-process=style/webp" style="width:50%;" /></p>
-<table>
-<tr>
-<td>
-<img src="https://download.kezhi.tech/img/202306141501108.JPG?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306141450455.JPG?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306141451789.JPG?x-oss-process=style/webp">
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<img src="https://download.kezhi.tech/img/202306141454583.JPG?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306141458146.JPG?x-oss-process=style/webp">
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://download.kezhi.tech/img/202306141456892.JPG?x-oss-process=style/webp">
-</td>
-<td>
-<img src="https://download.kezhi.tech/img/202306141453547.JPG?x-oss-process=style/webp">
-</td>
-</tr>
-</table>
-<p><img
-src="https://download.kezhi.tech/img/202306141455475.JPG?x-oss-process=style/webp" /></p>
-<p><img
-src="https://download.kezhi.tech/img/202306141459684.JPG?x-oss-process=style/webp" /></p>
+src="https://download.kezhi.tech/img/202407101807402.png?x-oss-process=style/webp" /></p></li>
+</ol>
 
     </div>
 
@@ -764,7 +656,7 @@ src="https://download.kezhi.tech/img/202306141459684.JPG?x-oss-process=style/web
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://kezhi.tech/null.html" title="2023毕业快乐">https://kezhi.tech/null.html</a>
+      <a href="https://kezhi.tech/26b82930.html" title="vscode编译Latex配置">https://kezhi.tech/26b82930.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -773,21 +665,19 @@ src="https://download.kezhi.tech/img/202306141459684.JPG?x-oss-process=style/web
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E6%AF%95%E4%B8%9A/" rel="tag"><i class="fa fa-tag"></i> 毕业</a>
+              <a href="/tags/vscode/" rel="tag"><i class="fa fa-tag"></i> vscode</a>
+              <a href="/tags/latex/" rel="tag"><i class="fa fa-tag"></i> latex</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/en/48e66169.html" rel="prev" title="Happy graduation in 2023.">
-                  <i class="fa fa-angle-left"></i> Happy graduation in 2023.
+                <a href="/en/26b82930.html" rel="prev" title="vscode compile Latex configuration.">
+                  <i class="fa fa-angle-left"></i> vscode compile Latex configuration.
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/en/244334e3.html" rel="next" title="Party Mutual Recognition Issues Brief.">
-                  Party Mutual Recognition Issues Brief. <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -813,11 +703,11 @@ src="https://download.kezhi.tech/img/202306141459684.JPG?x-oss-process=style/web
     </label>
     <select class="lang-select" data-canonical="" aria-label="选择语言">
       
-        <option value="zh-CN" data-href="/null.html" selected="">
+        <option value="zh-CN" data-href="/26b82930.html" selected="">
           简体中文
         </option>
       
-        <option value="en" data-href="/en/null.html" selected="">
+        <option value="en" data-href="/en/26b82930.html" selected="">
           English
         </option>
       
@@ -841,14 +731,14 @@ src="https://download.kezhi.tech/img/202306141459684.JPG?x-oss-process=style/web
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">590k</span>
+    <span title="站点总字数">596k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">8:56</span>
+    <span title="站点阅读时长">9:02</span>
   </span>
 </div>
 <div class="busuanzi-count" style="display: inline">
@@ -921,7 +811,7 @@ src="https://download.kezhi.tech/img/202306141459684.JPG?x-oss-process=style/web
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://server.kezhi.tech:8361/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"locale":{"placeholder":"Welcome to comment"},"emoji":["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"wordLimit":0,"login":"enable","pageSize":10,"dark":"auto","el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/null.html"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://server.kezhi.tech:8361/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"locale":{"placeholder":"Welcome to comment"},"emoji":["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"wordLimit":0,"login":"enable","pageSize":10,"dark":"auto","el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/26b82930.html"}</script>
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
 <script>
 document.addEventListener('page:loaded', () => {
