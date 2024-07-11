@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>2023毕业快乐</title>
-    <url>/Infinity.html</url>
+    <url>/null.html</url>
     <content><![CDATA[<p>年纪越大，感到时光流逝的就越快。转眼间，就已经到了2023年。比我大一届的师兄师姐们就要毕业了。这篇博客主要放照片用，没有什么太多的文字内容。</p>
 <p>祝各位毕业的师兄师姐前程似锦，生活精彩。🎉🎉🎉</p>
 <p><img src="https://download.kezhi.tech/img/202306131047631.jpg?x-oss-process=style/webp" style="width:33%;" /></p>
@@ -3976,8 +3976,7 @@ src="https://download.kezhi.tech/img/20201024224545.png?x-oss-process=style/webp
 本地环境配置的文章的，因为网上已经有很多相关的博客和文章。但是师妹在配置
 vscode 时复制了网上错误的配置导致 <code>bib</code>
 半天编译不过，并难以定位问题。因此，写下本篇配置说明来维护一个正确的配置，避免未来再出现类似的问题。</p>
-<p><img
-src="https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp" /></p>
+<p><img src="https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp" style="width:66%;" /></p>
 <center>
 放一盆王八在这
 </center>
@@ -13530,8 +13529,7 @@ caused the bibliography to fail to compile for half a day and was
 difficult to locate the problem. Therefore, I wrote this configuration
 guide to maintain a correct configuration and avoid similar issues in
 the future.</p>
-<p><img
-src="https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp" /></p>
+<p><img src="https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp" style="width:66%;" /></p>
 <center>
 Put a snapping turtle here
 </center>
@@ -20142,6 +20140,250 @@ the limit.</li>
         <tag>多机器人</tag>
         <tag>覆盖问题</tag>
         <tag>算法改进</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么我并不常用大语言模型</title>
+    <url>/a4c87d5f.html</url>
+    <content><![CDATA[<p>从 <code>ChatGPT</code>
+问世带给人们惊艳的文本生成能力表现之后，各家大模型如雨后春笋般逐渐冒出。开发者们也基于大语言模型的能力，开发出来很多让大模型来赋能生活和工作的功能。然而，大语言模型究其本质，也只是一个文本概率预测模型，而非真正的通用人工智能。尽管它在很多方便表现出很强的智能能力，在一些任务上极大提升了人们的效率。但一味地信任它给出的结果也可能会工作和生活带来副作用。目前也有很多对大语言模型回答幻觉和事实性的研究。本文不从研究的角度出发，仅以个人日常生活中对大模型使用的取舍出发，给出一点使用当前水平大语言模型的一些思考。</p>
+<p><img src="https://download.kezhi.tech/img/202407112221297.jpg?x-oss-process=style/webp" style="width:66%;" /></p>
+<span id="more"></span>
+<h2 id="什么时候我会用大语言模型">什么时候我会用大语言模型</h2>
+<p>首先说一下目前使用大语言模型最多的场景以及对应的工具（按照频率从上至下）：
+1. 中英文互翻翻译（Pot） 2. 代码快速补全、注释和测试用例生成（VSCode）
+3. 论文摘要简记（Zotero） 4. 写无聊的材料（ChatBox）</p>
+<h2 id="什么时候我不用大语言模型">什么时候我不用大语言模型</h2>
+<p>接着来谈一下在什么时候我选择不使用大预言模型。这里的不用大语言模型可以从两种角度来理解：</p>
+<ol type="1">
+<li>我工作生活中除了使用大模型之外进行处理的事情之外的其他事情</li>
+<li>别人使用大模型来做但我选择在这件事上不用大模型的事情</li>
+</ol>
+<p>这可以规范化描述为：</p>
+<blockquote>
+<p>设我日常工作生活中的所有事情构成的集合为 <span
+class="math inline">\(U_{me}\)</span>，其中我使用大模型来处理的事情构成的集合标记为
+<span
+class="math inline">\(U_{me,LLM}\)</span>，其他人日常工作生活中的所有事情构成的集合为
+<span
+class="math inline">\(U_{other}\)</span>，其中他们使用大模型来处理的事情构成的子集为
+<span
+class="math inline">\(U_{other,LLM}\)</span>。则上述两种定义可以以差集的形式表示为：</p>
+<ol type="1">
+<li><span class="math inline">\(U_{me}-U_{me,LLM}\)</span></li>
+<li><span class="math inline">\(U_{other,LLM}-U_{me,LLM}\)</span></li>
+</ol>
+</blockquote>
+<p>这里主要讨论第二种理解角度，即别人会使用但我并不会使用大模型来进行处理的事情。就我在实验室的观察来看，这些事情主要包含：</p>
+<ol type="1">
+<li>提问大模型某个包中函数的作用（如 <code>pytorch</code> 中
+<code>squeeze</code> 的作用）</li>
+<li>让大模型来完成某个任务代码的编写（如写完成一段机器人控制指令的代码）</li>
+<li>让大模型解释某一段代码的作用</li>
+<li>让大模型来回答某些具体的科学问题（比如如何提升强化学习模型的泛化性）</li>
+</ol>
+<h2 id="选择使用大模型的边界是什么">选择使用大模型的边界是什么？</h2>
+<p>对上面两节中我选择使用大模型和不使用大模型的任务进行比较可以发现，选择使用大模型的任务通常具备以下属性：</p>
+<ul>
+<li>易确认：在大模型输出结果之后，我可以以较低的成本来确认结果的正确性。如在翻译软件
+<code>Pot</code> 中使用多个翻译 <code>api</code>
+（剑桥词典，必应词典，谷歌翻译，OpenAI，智谱AI）进行交叉验证</li>
+<li>良好定义：不论是翻译任务，还是代码补全，翻译等任务，任务的输出和任务的输入是高度相关且不需要太多创造性的。</li>
+<li>不重要：这一点是专门对材料生成这个任务的，dddd</li>
+</ul>
+<p>当用大语言模型来解决具备以上这些属性的任务时，我可以不用花费更多的精力来确认生成结果的正确性或事实性。从而其可以几乎没有任何耗费地提高我的生产效率。在目前这个无法保证回答正确性的大模型阶段，我认为可以寻找工作流程中具备上述属性的工作内容，让大模型来为自己提升效率。</p>
+<p>再来说说我不使用大模型的任务所具备的一些特性：</p>
+<ul>
+<li>事实性：需要回答的问题是某种事实。如提问函数的作用，某些具体的有答案的问题</li>
+<li>歧义性：给大模型的问题本身存在多种可能的理解，从而导致回答的不准确性。如提问某些函数的作用</li>
+<li>创造性：给大模型的问题解空间太大，可能的输出过多，从而导致想要得到一个好的回答需要反复提问。如让大模型写完成某个任务的代码</li>
+</ul>
+<p>现阶段的<strong>大语言模型本质上只是一个文本概率预测器</strong>，因而，对其进行事实性问题的提问得到的回答依赖于其在训练过程中是否有见过相关的语料。此外，模型经过一些数据集的微调之后可能会产生更严重的幻觉问题
+<a href="https://arxiv.org/abs/2405.05904">(Gekhman et al. 2024)</a>
+。因此，从使用角度来说，关于事实性的问题我并不建议通过提问大模型来进行解决。</p>
+<p>其次，具备上述这些特性的任务还具备一个特性就是难以确认结果的正确性。或者说确认其正确性的成本不亚于不使用大模型。例如，若要确认大模型给出的某个函数作用是否正确，那么可能需要找到相关的文档进行确认，或者写一个简单的测试代码来查看输出结果。而这个确认过程本身就足以完成这些任务。此外，若不对大模型生成的结果进行确认，其出错时候造成的后果往往很严重。例如，若不确认大模型回答的关于强化学习泛化问题的回答，就按照其所述的思路进行后续的工作。那么如果大模型给出的回答中存在谬误，可能会致使大量的无效工作产生。</p>
+<p>最后，从个人学习和成长来讲，我也十分不建议在诸如此类任务上使用大模型，其带来的危害如下：</p>
+<ol type="1">
+<li>缺乏成长性：在不用大模型的情况下，通过尝试解决这些任务可以有效提升个人能力。如查找阅读文档的能力，阅读代码的能力，查找阅读文献的能力等。从而带来个人工作效率的加速度（完成这些任务的速度会越来越快）。而一直使用大模型来完成诸如此类的任务是不能个人能力的提升从而转换为加速度的。</li>
+<li>盲目相信：尽管大模型会给出一些事实性错误，但他的语言组织能力太好了。好到会让人对对他所说的一些“谎言”信以为真。若是在自己熟悉的专业领域，那对大语言模型给出的谬误可以一眼甄别。可倘若在并非自己熟悉的领域一直使用大模型来回答问题，这样的便捷性和消息来源的单一性会逐渐导致人失去从搜索引擎得到的众多搜索结果中辨认正确结果的能力，最终只能盲目相信大语言模型回答的结果。</li>
+</ol>
+<h2 id="结语">结语</h2>
+<p>综上所述，我认为首先要摆正对大模型的认识。现阶段的<strong>大语言模型只是一种文本生成的工具</strong>，并非能够回答所有问题的“智者”。要以使用工具的态度来对待大模型，摒弃掉对大模型的神化和盲目相信。让大模型为自己所用，而不是成为大模型的奴隶。</p>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Why I dont often use large language models.</title>
+    <url>/en/a4c87d5f.html</url>
+    <content><![CDATA[<div class="note info"><p>This is an automatically translated post by LLM. The <a
+href="https://kezhi.tech/a4c87d5f.html">original post</a> is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!</p>
+</div>
+<p>After the amazing text generation capabilities brought by the
+emergence of <code>ChatGPT</code>, various large models have gradually
+emerged like mushrooms after the rain. Developers have also developed
+many functions based on the capabilities of large language models to
+empower life and work. However, at its core, a large language model is
+just a text probability prediction model, not a true general artificial
+intelligence. Although it demonstrates strong intelligence in many
+aspects and greatly improves efficiency in some tasks, blindly trusting
+its results may also bring side effects to work and life. Currently,
+there is also a lot of research on the illusion and factual nature of
+large language model responses. This article does not start from a
+research perspective, but only discusses the considerations of using
+large models in daily life.</p>
+<p><img src="https://download.kezhi.tech/img/202407112221297.jpg?x-oss-process=style/webp" style="width:66%;" /></p>
+<span id="more"></span>
+<h2 id="when-do-i-use-large-language-models">When Do I Use Large
+Language Models</h2>
+<p>First, let's talk about the most common scenarios where I currently
+use large language models and the corresponding tools (in order of
+frequency from top to bottom): 1. Chinese-English translation (Pot) 2.
+Code completion, comments, and test case generation (VSCode) 3.
+Summarizing papers (Zotero) 4. Writing boring materials (ChatBox)</p>
+<h2 id="when-do-i-not-use-large-language-models">When Do I Not Use Large
+Language Models</h2>
+<p>Next, let's discuss when I choose not to use large language models.
+Not using large language models here can be understood from two
+perspectives:</p>
+<ol type="1">
+<li>Things in my work and life other than those handled by large
+models</li>
+<li>Things that others use large models for but I choose not to use them
+for</li>
+</ol>
+<p>This can be formalized as:</p>
+<blockquote>
+<p>Let the set of all things in my daily work and life be denoted as
+<span class="math inline">\(U_{me}\)</span>, where the set of things I
+use large models to handle is denoted as <span
+class="math inline">\(U_{me,LLM}\)</span>, the set of all things in
+other people's daily work and life is denoted as <span
+class="math inline">\(U_{other}\)</span>, and the subset of things they
+use large models to handle is denoted as <span
+class="math inline">\(U_{other,LLM}\)</span>. The two definitions above
+can be represented as the difference of sets:</p>
+<ol type="1">
+<li><span class="math inline">\(U_{me}-U_{me,LLM}\)</span></li>
+<li><span class="math inline">\(U_{other,LLM}-U_{me,LLM}\)</span></li>
+</ol>
+</blockquote>
+<p>This mainly discusses the second perspective, that is, things that
+others use large models for but I choose not to use them for. From my
+observations in the lab, these things mainly include:</p>
+<ol type="1">
+<li>Asking the function of a function in a large model package (such as
+the function of <code>squeeze</code> in <code>pytorch</code>)</li>
+<li>Letting the large model write a piece of code for a specific task
+(such as writing code for a robot control command)</li>
+<li>Asking the large model to explain the function of a piece of
+code</li>
+<li>Asking the large model to answer specific scientific questions (such
+as how to improve the generalization of reinforcement learning
+models)</li>
+</ol>
+<h2 id="what-are-the-boundaries-for-choosing-to-use-large-models">What
+Are the Boundaries for Choosing to Use Large Models?</h2>
+<p>Comparing the tasks where I choose to use large models and those I
+choose not to use, we can find that tasks where I choose to use large
+models typically have the following attributes:</p>
+<ul>
+<li>Easy to confirm: After the large model outputs results, I can
+confirm the correctness of the results at a low cost. For example, in
+the translation software <code>Pot</code>, cross-validation is performed
+using multiple translation APIs (Cambridge Dictionary, Bing Dictionary,
+Google Translate, OpenAI, SmartAI).</li>
+<li>Well-defined: Whether it is a translation task or code completion,
+the output of the task is highly related to the input and does not
+require too much creativity.</li>
+<li>Not important: This is specifically for material generation tasks,
+dddd</li>
+</ul>
+<p>When using large language models to solve tasks with the above
+attributes, I can improve my productivity almost without any cost of
+confirming the correctness or factual nature of the generated results.
+In the current stage where the correctness of large models cannot be
+guaranteed, I believe it is possible to find work content in the
+workflow that has the above attributes and let the large model improve
+efficiency.</p>
+<p>Furthermore, tasks that I choose not to use large models for have
+some characteristics:</p>
+<ul>
+<li>Factual: Questions that need to be answered are facts. For example,
+asking about the function of a function, specific questions with
+answers</li>
+<li>Ambiguity: The question given to the large model itself has multiple
+possible interpretations, leading to inaccurate answers. For example,
+asking about the function of certain functions</li>
+<li>Creativity: The question given to the large model has too large a
+solution space, resulting in too many possible outputs, requiring
+repeated questioning to get a good answer. For example, letting the
+large model write code for a specific task</li>
+</ul>
+<p>At the current stage, <strong>large language models are essentially
+just text probability predictors</strong>. Therefore, asking factual
+questions to them depends on whether they have seen relevant corpus
+during training. In addition, after fine-tuning on some datasets, the
+model may produce more serious illusion problems <a
+href="https://arxiv.org/abs/2405.05904">(Gekhman et al. 2024)</a>.
+Therefore, from a practical perspective, I do not recommend using large
+models to solve factual questions.</p>
+<p>Moreover, tasks with the above characteristics are also difficult to
+confirm the correctness of the results. Or the cost of confirming their
+correctness is not less than not using large models. For example, if you
+need to confirm whether the function given by the large model is
+correct, you may need to find relevant documents for confirmation or
+write a simple test code to check the output. This confirmation process
+itself is enough to complete these tasks. In addition, if the results
+generated by the large model are not confirmed, the consequences of
+errors can be severe. For example, if you do not confirm the answer
+given by the large model about improving the generalization of
+reinforcement learning, and then proceed with the work according to its
+proposed approach. If there are errors in the answer given by the large
+model, it may lead to a lot of invalid work.</p>
+<p>Finally, from the perspective of personal learning and growth, I
+strongly do not recommend using large models for tasks like these, which
+bring the following harms:</p>
+<ol type="1">
+<li>Lack of growth: Without using large models, trying to solve these
+tasks can effectively improve personal abilities. For example, the
+ability to find and read documents, read code, find and read literature,
+etc. This will accelerate personal work efficiency (the speed of
+completing these tasks will become faster and faster). Using large
+models to complete such tasks continuously does not contribute to the
+improvement of personal abilities and the acceleration of work
+efficiency.</li>
+<li>Blind belief: Although large models may provide some factual errors,
+their language organization ability is too good. It is so good that it
+can make people believe some "lies" he says. If in a field that one is
+not familiar with, it is easy to distinguish the errors in the answers
+given by large language models. But if one keeps using large models to
+answer questions in a field that is not familiar, the convenience and
+singularity of information sources will gradually lead to the loss of
+the ability to distinguish correct results from the many search results
+obtained from search engines, and ultimately can only blindly believe in
+the results given by large language models.</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, I believe that it is important to have a correct
+understanding of large models. At the current stage, <strong>large
+language models are just a tool for text generation</strong>, not a
+"wise man" who can answer all questions. We should treat large models
+with the attitude of using tools, abandon the deification and blind
+belief in large models. Let the large models work for us, rather than
+becoming slaves to large models.</p>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>大模型</tag>
       </tags>
   </entry>
 </search>

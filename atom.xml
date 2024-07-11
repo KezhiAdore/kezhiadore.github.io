@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-07-10T10:22:23.318Z</updated>
+  <updated>2024-07-11T15:09:15.401Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -17,19 +17,76 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>为什么我并不常用大语言模型</title>
+    <link href="https://kezhi.tech/a4c87d5f.html"/>
+    <id>https://kezhi.tech/a4c87d5f.html</id>
+    <published>2024-07-11T15:05:46.000Z</published>
+    <updated>2024-07-11T15:09:15.401Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;从 &lt;code&gt;ChatGPT&lt;/code&gt;
+问世带给人们惊艳的文本生成能力表现之后，各家大模型如雨后春笋般逐渐冒出。开发者们也基于大语言模型的能力，开发出来很多让大模型来赋能生活和工作的功能。然而，大语言模型究其本质，也只是一个文本概率预测模型，而非真正的通用人工智能。尽管它在很多方便表现出很强的智能能力，在一些任务上极大提升了人们的效率。但一味地信任它给出的结果也可能会工作和生活带来副作用。目前也有很多对大语言模型回答幻觉和事实性的研究。本文不从研究的角度出发，仅以个人日常生活中对大模型使用的取舍出发，给出一点使用当前水平大语言模型的一些思考。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202407112221297.jpg?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="大模型" scheme="https://kezhi.tech/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Why I dont often use large language models.</title>
+    <link href="https://kezhi.tech/en/a4c87d5f.html"/>
+    <id>https://kezhi.tech/en/a4c87d5f.html</id>
+    <published>2024-07-11T15:05:46.000Z</published>
+    <updated>2024-07-11T15:08:24.472Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/a4c87d5f.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;After the amazing text generation capabilities brought by the
+emergence of &lt;code&gt;ChatGPT&lt;/code&gt;, various large models have gradually
+emerged like mushrooms after the rain. Developers have also developed
+many functions based on the capabilities of large language models to
+empower life and work. However, at its core, a large language model is
+just a text probability prediction model, not a true general artificial
+intelligence. Although it demonstrates strong intelligence in many
+aspects and greatly improves efficiency in some tasks, blindly trusting
+its results may also bring side effects to work and life. Currently,
+there is also a lot of research on the illusion and factual nature of
+large language model responses. This article does not start from a
+research perspective, but only discusses the considerations of using
+large models in daily life.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202407112221297.jpg?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="大模型" scheme="https://kezhi.tech/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>vscode编译Latex配置</title>
     <link href="https://kezhi.tech/26b82930.html"/>
     <id>https://kezhi.tech/26b82930.html</id>
     <published>2024-07-10T10:21:58.000Z</published>
-    <updated>2024-07-10T10:22:23.318Z</updated>
+    <updated>2024-07-11T15:10:02.769Z</updated>
     
     
     <summary type="html">&lt;p&gt;原本是不想写 latex
 本地环境配置的文章的，因为网上已经有很多相关的博客和文章。但是师妹在配置
 vscode 时复制了网上错误的配置导致 &lt;code&gt;bib&lt;/code&gt;
 半天编译不过，并难以定位问题。因此，写下本篇配置说明来维护一个正确的配置，避免未来再出现类似的问题。&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;
 &lt;center&gt;
 放一盆王八在这
 &lt;/center&gt;</summary>
@@ -50,7 +107,7 @@ src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=styl
     <link href="https://kezhi.tech/en/26b82930.html"/>
     <id>https://kezhi.tech/en/26b82930.html</id>
     <published>2024-07-10T10:21:58.000Z</published>
-    <updated>2024-07-10T10:25:12.057Z</updated>
+    <updated>2024-07-11T15:10:17.314Z</updated>
     
     
     <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
@@ -66,8 +123,7 @@ caused the bibliography to fail to compile for half a day and was
 difficult to locate the problem. Therefore, I wrote this configuration
 guide to maintain a correct configuration and avoid similar issues in
 the future.&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202407101818114.jpg?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;
 &lt;center&gt;
 Put a snapping turtle here
 &lt;/center&gt;</summary>
@@ -753,8 +809,8 @@ problem in a small game during the event, and I will record it here.&lt;/p&gt;
   
   <entry>
     <title>2023毕业快乐</title>
-    <link href="https://kezhi.tech/Infinity.html"/>
-    <id>https://kezhi.tech/Infinity.html</id>
+    <link href="https://kezhi.tech/null.html"/>
+    <id>https://kezhi.tech/null.html</id>
     <published>2023-06-13T02:43:44.000Z</published>
     <updated>2024-04-20T12:22:10.376Z</updated>
     
