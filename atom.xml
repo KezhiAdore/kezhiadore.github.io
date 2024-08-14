@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-07-11T15:09:15.401Z</updated>
+  <updated>2024-08-14T14:07:01.382Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Zotero7插件推荐及下载</title>
+    <link href="https://kezhi.tech/fa40cdb1.html"/>
+    <id>https://kezhi.tech/fa40cdb1.html</id>
+    <published>2024-08-14T14:05:38.000Z</published>
+    <updated>2024-08-14T14:07:01.382Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;之前写过一篇&lt;code&gt;Zotero6&lt;/code&gt;插件推荐和下载的文章 &lt;a
+href=&quot;https://kezhi.tech/b2344ef.html&quot;&gt;Zotero插件推荐及下载 | Kezhi&#39;s
+Blog&lt;/a&gt;。随着&lt;code&gt;Zotero&lt;/code&gt;开发组多年的不懈努力，现在终于迎来了&lt;code&gt;Zotero7&lt;/code&gt;。相比于&lt;code&gt;Zotero6&lt;/code&gt;，&lt;code&gt;Zotero7&lt;/code&gt;基于更新的&lt;code&gt;firefox&lt;/code&gt;内核，支持64位，具有更好的性能表现和更美观的界面。但是由于内核的大版本更新，过去&lt;code&gt;Zotero6&lt;/code&gt;的插件不再兼容。故再撰写一篇文章用来推荐&lt;code&gt;Zotero7&lt;/code&gt;的插件，并提供下载。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202408142204527.jpg?x-oss-process=style/webp&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Zotero" scheme="https://kezhi.tech/tags/Zotero/"/>
+    
+    <category term="插件" scheme="https://kezhi.tech/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zotero7 plugin recommendations and downloads.</title>
+    <link href="https://kezhi.tech/en/fa40cdb1.html"/>
+    <id>https://kezhi.tech/en/fa40cdb1.html</id>
+    <published>2024-08-14T14:05:38.000Z</published>
+    <updated>2024-08-14T14:07:32.446Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/fa40cdb1.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I have written an article recommending and downloading
+&lt;code&gt;Zotero6&lt;/code&gt; plugins before. With the unremitting efforts of the
+&lt;code&gt;Zotero&lt;/code&gt; development team over the years,
+&lt;code&gt;Zotero7&lt;/code&gt; has finally arrived. Compared to
+&lt;code&gt;Zotero6&lt;/code&gt;, &lt;code&gt;Zotero7&lt;/code&gt; is based on the updated
+&lt;code&gt;firefox&lt;/code&gt; kernel, supports 64-bit, has better performance and
+a more beautiful interface. However, due to the major version update of
+the kernel, the plugins for &lt;code&gt;Zotero6&lt;/code&gt; are no longer
+compatible. Therefore, I am writing another article to recommend
+&lt;code&gt;Zotero7&lt;/code&gt; plugins and provide downloads.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202408142204527.jpg?x-oss-process=style/webp&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Note" scheme="https://kezhi.tech/categories/Note/"/>
+    
+    
+    <category term="Zotero" scheme="https://kezhi.tech/tags/Zotero/"/>
+    
+    <category term="插件" scheme="https://kezhi.tech/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>为什么我并不常用大语言模型</title>
