@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-08-14T14:07:01.382Z</updated>
+  <updated>2024-08-15T15:18:01.048Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个简单的故事</title>
+    <link href="https://kezhi.tech/a0779111.html"/>
+    <id>https://kezhi.tech/a0779111.html</id>
+    <published>2024-08-15T15:17:56.000Z</published>
+    <updated>2024-08-15T15:18:01.048Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这是一个简单的故事，只有两位主人公。暂且称这两位主人公为小鱼（男）和小萍（女）吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202408152317646.jpg&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A simple story.</title>
+    <link href="https://kezhi.tech/en/a0779111.html"/>
+    <id>https://kezhi.tech/en/a0779111.html</id>
+    <published>2024-08-15T15:17:56.000Z</published>
+    <updated>2024-08-15T15:18:58.351Z</updated>
+    
+    
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/a0779111.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This is a simple story with only two protagonists. Let&#39;s call these
+two protagonists Xiao Yu (male) and Xiao Ping (female) for now.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202408152317646.jpg&quot; style=&quot;width:33%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Journal" scheme="https://kezhi.tech/categories/Journal/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Zotero7插件推荐及下载</title>
