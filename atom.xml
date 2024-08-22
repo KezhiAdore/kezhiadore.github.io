@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-08-22T04:37:59.602Z</updated>
+  <updated>2024-08-22T04:58:46.729Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -21,14 +21,17 @@
     <link href="https://kezhi.tech/763d29e2.html"/>
     <id>https://kezhi.tech/763d29e2.html</id>
     <published>2024-08-22T04:01:23.000Z</published>
-    <updated>2024-08-22T04:37:59.602Z</updated>
+    <updated>2024-08-22T04:58:46.729Z</updated>
     
     
-      
-      
     <summary type="html">&lt;p&gt;随着网络基础设施的建设和完善，现在已经有了很多远程游戏的解决方案。其主要分为两种类型：局域网串流（&lt;a
-href=&quot;https://store.steampowered.com/app/353380/Steam_Link/?l=schinese&quot;&gt;steam串流&lt;/a&gt;，</summary>
-      
+href=&quot;https://store.steampowered.com/app/353380/Steam_Link/?l=schinese&quot;&gt;steam串流&lt;/a&gt;，&lt;a
+href=&quot;https://www.playstation.com/zh-hans-hk/accessories/playstation-portal-remote-player/&quot;&gt;PlayStation
+Portal&lt;/a&gt;）和互联网云游戏（&lt;a
+href=&quot;https://mhyy.mihoyo.com/&quot;&gt;云原神&lt;/a&gt;，&lt;a
+href=&quot;https://cg.163.com/&quot;&gt;网易云游戏平台&lt;/a&gt;）。前者利用局域网下的高带宽和低延时实现同一局域网下的设备之间完成高速串流，解决了设备放在房间，人去另外一个房间（或者躺在床上）玩游戏的需求。后者利用压缩编码和延时控制技术，实现在互联网下利用中低带宽进行远程游戏，解决了在低性能终端设备上随时随地玩高性能需求游戏的问题。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202408221237678.png?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;然而，这两种解决方案也有其固有问题。局域网串流要求设备都处于同一局域网下，这对于串流的空间范围就有了限制。而云游戏存在竞争资源，账号隐私等问题。那么能不能有一个中间方案，扩大局域网串流的空间范围，同时避免云游戏存在的平台问题呢。我选择的解决方案是使用RDP在内网进行远程游戏。&lt;/p&gt;</summary>
     
     
     
