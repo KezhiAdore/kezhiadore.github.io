@@ -20695,7 +20695,9 @@ href="https://www.playstation.com/zh-hans-hk/accessories/playstation-portal-remo
 Portal</a>）和互联网云游戏（<a
 href="https://mhyy.mihoyo.com/">云原神</a>，<a
 href="https://cg.163.com/">网易云游戏平台</a>）。前者利用局域网下的高带宽和低延时实现同一局域网下的设备之间完成高速串流，解决了设备放在房间，人去另外一个房间（或者躺在床上）玩游戏的需求。后者利用压缩编码和延时控制技术，实现在互联网下利用中低带宽进行远程游戏，解决了在低性能终端设备上随时随地玩高性能需求游戏的问题。</p>
+<p><img src="https://download.kezhi.tech/img/202408221237678.png?x-oss-process=style/webp" style="width:66%;" /></p>
 <p>然而，这两种解决方案也有其固有问题。局域网串流要求设备都处于同一局域网下，这对于串流的空间范围就有了限制。而云游戏存在竞争资源，账号隐私等问题。那么能不能有一个中间方案，扩大局域网串流的空间范围，同时避免云游戏存在的平台问题呢。我选择的解决方案是使用RDP在内网进行远程游戏。</p>
+<p>&lt;--more--&gt;</p>
 <h2 id="准备">准备</h2>
 <p>要实现RDP远程游戏，需要准备：</p>
 <ul>
@@ -20792,6 +20794,7 @@ control technology to enable remote gaming over the Internet using
 medium to low bandwidth, solving the problem of playing high-performance
 demanding games anytime, anywhere on low-performance terminal
 devices.</p>
+<p><img src="https://download.kezhi.tech/img/202408221237678.png?x-oss-process=style/webp" style="width:66%;" /></p>
 <p>However, these two solutions also have their inherent problems. LAN
 streaming requires devices to be on the same LAN, limiting the spatial
 range of streaming. Cloud gaming faces issues such as competition for
@@ -20799,6 +20802,7 @@ resources and account privacy. So, is there a middle ground solution
 that expands the spatial range of LAN streaming while avoiding the
 platform issues of cloud gaming? The solution I choose is to use RDP for
 remote gaming within the LAN.</p>
+<span id="more"></span>
 <h2 id="preparation">Preparation</h2>
 <p>To implement RDP remote gaming, you need to prepare:</p>
 <ul>

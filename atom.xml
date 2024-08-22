@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-08-22T04:02:47.889Z</updated>
+  <updated>2024-08-22T04:37:59.602Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://kezhi.tech/763d29e2.html"/>
     <id>https://kezhi.tech/763d29e2.html</id>
     <published>2024-08-22T04:01:23.000Z</published>
-    <updated>2024-08-22T04:02:47.889Z</updated>
+    <updated>2024-08-22T04:37:59.602Z</updated>
     
     
       
@@ -46,14 +46,39 @@ href=&quot;https://store.steampowered.com/app/353380/Steam_Link/?l=schinese&quot
     <link href="https://kezhi.tech/en/763d29e2.html"/>
     <id>https://kezhi.tech/en/763d29e2.html</id>
     <published>2024-08-22T04:01:23.000Z</published>
-    <updated>2024-08-22T04:04:34.729Z</updated>
+    <updated>2024-08-22T04:38:31.258Z</updated>
     
     
-      
-      
     <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
-href=&quot;https://kezhi.tech/763d29e2.html&quot;&gt;original post&lt;/a&gt;</summary>
-      
+href=&quot;https://kezhi.tech/763d29e2.html&quot;&gt;original post&lt;/a&gt; is in Chinese.
+If you find any translation errors, please leave a comment to help me
+improve the translation. Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;With the construction and improvement of network infrastructure,
+there are now many solutions for remote gaming. They are mainly divided
+into two types: LAN streaming (&lt;a
+href=&quot;https://store.steampowered.com/app/353380/Steam_Link/?l=schinese&quot;&gt;Steam
+Link&lt;/a&gt;, &lt;a
+href=&quot;https://www.playstation.com/zh-hans-hk/accessories/playstation-portal-remote-player/&quot;&gt;PlayStation
+Portal&lt;/a&gt;) and Internet cloud gaming (&lt;a
+href=&quot;https://mhyy.mihoyo.com/&quot;&gt;Genshin Impact Cloud&lt;/a&gt;, &lt;a
+href=&quot;https://cg.163.com/&quot;&gt;NetEase Cloud Gaming Platform&lt;/a&gt;). The
+former uses high bandwidth and low latency in the LAN to achieve
+high-speed streaming between devices in the same LAN, solving the need
+to play games in a different room (or lying in bed) when the device is
+in another room. The latter uses compression encoding and latency
+control technology to enable remote gaming over the Internet using
+medium to low bandwidth, solving the problem of playing high-performance
+demanding games anytime, anywhere on low-performance terminal
+devices.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://download.kezhi.tech/img/202408221237678.png?x-oss-process=style/webp&quot; style=&quot;width:66%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;However, these two solutions also have their inherent problems. LAN
+streaming requires devices to be on the same LAN, limiting the spatial
+range of streaming. Cloud gaming faces issues such as competition for
+resources and account privacy. So, is there a middle ground solution
+that expands the spatial range of LAN streaming while avoiding the
+platform issues of cloud gaming? The solution I choose is to use RDP for
+remote gaming within the LAN.&lt;/p&gt;</summary>
     
     
     

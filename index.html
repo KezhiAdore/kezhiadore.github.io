@@ -527,7 +527,7 @@ if(canvas.getContext){
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-08-22 12:01:23 / 修改时间：12:02:47" itemprop="dateCreated datePublished" datetime="2024-08-22T12:01:23+08:00">2024-08-22</time>
+      <time title="创建时间：2024-08-22 12:01:23 / 修改时间：12:37:59" itemprop="dateCreated datePublished" datetime="2024-08-22T12:01:23+08:00">2024-08-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -584,7 +584,9 @@ target="_blank" rel="noopener" href="https://www.playstation.com/zh-hans-hk/acce
 Portal</a>）和互联网云游戏（<a
 target="_blank" rel="noopener" href="https://mhyy.mihoyo.com/">云原神</a>，<a
 target="_blank" rel="noopener" href="https://cg.163.com/">网易云游戏平台</a>）。前者利用局域网下的高带宽和低延时实现同一局域网下的设备之间完成高速串流，解决了设备放在房间，人去另外一个房间（或者躺在床上）玩游戏的需求。后者利用压缩编码和延时控制技术，实现在互联网下利用中低带宽进行远程游戏，解决了在低性能终端设备上随时随地玩高性能需求游戏的问题。</p>
+<p><img src="https://download.kezhi.tech/img/202408221237678.png?x-oss-process=style/webp" style="width:66%;" /></p>
 <p>然而，这两种解决方案也有其固有问题。局域网串流要求设备都处于同一局域网下，这对于串流的空间范围就有了限制。而云游戏存在竞争资源，账号隐私等问题。那么能不能有一个中间方案，扩大局域网串流的空间范围，同时避免云游戏存在的平台问题呢。我选择的解决方案是使用RDP在内网进行远程游戏。</p>
+<p>&lt;--more--&gt;</p>
 <h2 id="准备">准备</h2>
 <p>要实现RDP远程游戏，需要准备：</p>
 <ul>
@@ -703,7 +705,7 @@ microsoft/RdpGamepad: Remote Desktop Plugin for Xbox Gamepads</a></li>
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-08-22 12:01:23 / 修改时间：12:04:34" itemprop="dateCreated datePublished" datetime="2024-08-22T12:01:23+08:00">2024-08-22</time>
+      <time title="创建时间：2024-08-22 12:01:23 / 修改时间：12:38:31" itemprop="dateCreated datePublished" datetime="2024-08-22T12:01:23+08:00">2024-08-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -776,6 +778,7 @@ control technology to enable remote gaming over the Internet using
 medium to low bandwidth, solving the problem of playing high-performance
 demanding games anytime, anywhere on low-performance terminal
 devices.</p>
+<p><img src="https://download.kezhi.tech/img/202408221237678.png?x-oss-process=style/webp" style="width:66%;" /></p>
 <p>However, these two solutions also have their inherent problems. LAN
 streaming requires devices to be on the same LAN, limiting the spatial
 range of streaming. Cloud gaming faces issues such as competition for
@@ -783,120 +786,14 @@ resources and account privacy. So, is there a middle ground solution
 that expands the spatial range of LAN streaming while avoiding the
 platform issues of cloud gaming? The solution I choose is to use RDP for
 remote gaming within the LAN.</p>
-<h2 id="preparation">Preparation</h2>
-<p>To implement RDP remote gaming, you need to prepare:</p>
-<ul>
-<li>A high-configured PC host to actually run the game (referred to as
-the server host).</li>
-<li>A portable device capable of running the RDP protocol, usually a
-Windows laptop (referred to as the client host).</li>
-<li>An internal network connection between the server host and client
-host, or the server host has a public IP or internal penetration (to
-ensure that the client host can access the server host via IP or domain
-name).</li>
-</ul>
-<h2 id="open-and-test-rdp-connectivity">Open and Test RDP
-Connectivity</h2>
-<ol type="1">
-<li><p>Enable Remote Desktop feature on the server host</p>
-<figure>
-<img
-src="https://download.kezhi.tech/img/202408221157284.png?x-oss-process=style/webp"
-alt="Remote Desktop Feature" />
-<figcaption aria-hidden="true">Remote Desktop Feature</figcaption>
-</figure></li>
-<li><p>Using a Windows computer as an example, open Remote Desktop
-Connection on the client host, enter the IP:port of the server host for
-connection, usually port 3389. Enter the login username of the server
-host.</p>
-<figure>
-<img
-src="https://download.kezhi.tech/img/202408221158944.png?x-oss-process=style/webp"
-alt="Remote Desktop Connection" />
-<figcaption aria-hidden="true">Remote Desktop Connection</figcaption>
-</figure></li>
-<li><p>Click connect, enter the login password of the server host, and
-if you can successfully log in to the desktop, it's a success.</p></li>
-</ol>
-<h2 id="enhance-rdp-performance">Enhance RDP Performance</h2>
-<p>RDP is point-to-point and does not have bandwidth bottlenecks like <a
-target="_blank" rel="noopener" href="https://sunlogin.oray.com/">Sunlogin</a> or <a
-target="_blank" rel="noopener" href="https://www.todesk.com/">ToDesk</a> remote desktops, so
-theoretically, it can run at the peak speed of network bandwidth.
-However, to ensure user experience, Windows default Remote Desktop
-settings have some performance limitations. Next, adjust the settings on
-the server host to improve the performance of RDP screen
-transmission.</p>
-<p>First, open Group Policy on the remote host (search and find or press
-Win+R to open Run, enter gpedit.msc to access).</p>
-<p>Navigate to Computer Configuration -&gt; Administrative Templates
--&gt; Windows Components -&gt; Remote Desktop Services -&gt; Remote
-Desktop Session Host -&gt; Remote Session Environment</p>
-<figure>
-<img
-src="https://download.kezhi.tech/img/202408221158969.png?x-oss-process=style/webp"
-alt="Group Policy" />
-<figcaption aria-hidden="true">Group Policy</figcaption>
-</figure>
-<p>Next, adjust the performance of Remote Desktop:</p>
-<ul>
-<li><p>Enable GPU Acceleration</p>
-<p>Open Apply hardware graphics adapters to all Remote Desktop Services
-sessions, change from Not Configured to Enabled</p>
-<figure>
-<img
-src="https://download.kezhi.tech/img/202408221202111.png?x-oss-process=style/webp"
-alt="GPU Acceleration" />
-<figcaption aria-hidden="true">GPU Acceleration</figcaption>
-</figure></li>
-<li><p>Configure Image Transmission Quality and Compression Encoding</p>
-<p>Open Set the priority of H.264/AVC444 graphics mode for Remote
-Desktop connections, change from Not Configured to Enabled</p>
-<p>Open Configure H.264/AVC hardware encoding for Remote Desktop
-connections, change from Not Configured to Enabled</p>
-<p>Open Configure compression of RemoteFX data, change from Not
-Configured to Enabled, select RDP compression algorithm optimized to use
-less network bandwidth</p>
-<p>Open Configure image quality for RemoteFX adaptive graphics, change
-from Not Configured to Enabled, select image quality as medium or high
-based on network bandwidth</p></li>
-<li><p>Change Graphics Display Driver</p>
-<p>Open Use WDDM graphics display driver for Remote Desktop connections,
-change from Not Configured to Enabled</p></li>
-<li><p>Increase Frame Rate Limit</p>
-<ol type="1">
-<li><p>Open Registry Editor</p></li>
-<li><p>Navigate to HKEY_LOCAL_MACHINEServer</p></li>
-<li><p>Create a new DWORD (32-bit) item named DWMFRAMEINTERVAL</p></li>
-<li><p>Double-click to modify the value of DWMFRAMEINTERVAL, select
-Decimal, and the value corresponds to the frame rate limit as
-follows:</p>
-<p>15 -&gt; 60fps, 8 -&gt; 120fps</p></li>
-</ol></li>
-</ul>
-<h2 id="resolve-gamepad-mapping-issue">Resolve Gamepad Mapping
-Issue</h2>
-<p>When playing games, using a gamepad is preferred. However, RDP itself
-does not support the transmission of gamepad signals. Fortunately, there
-are patches available to solve this issue. Solution: <a
-target="_blank" rel="noopener" href="https://github.com/microsoft/RdpGamepad">GitHub -
-microsoft/RdpGamepad: Remote Desktop Plugin for Xbox Gamepads</a></p>
-<h2 id="references">References</h2>
-<ol type="1">
-<li><a
-target="_blank" rel="noopener" href="https://blog.csdn.net/csdn_life18/article/details/108250846">RDP
-Optimization Operations Microsoft Remote Desktop Enable GPU
-Acceleration, 60FPS, USB Device Redirection - CSDN Blog</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv19980358/">Microsoft Remote
-Desktop (RDP) Optimization Process - Bilibili</a></li>
-<li><a
-target="_blank" rel="noopener" href="https://blog.csdn.net/skyew/article/details/136534913">Windows
-Remote Desktop RDP mstsc Performance Optimization for Playing Games
-Remotely with Graphics Card - CSDN Blog</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/microsoft/RdpGamepad">GitHub -
-microsoft/RdpGamepad: Remote Desktop Plugin for Xbox Gamepads</a></li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/en/763d29e2.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
