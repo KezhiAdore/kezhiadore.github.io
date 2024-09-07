@@ -20209,6 +20209,11 @@ class="math inline">\(U_{other,LLM}\)</span>。则上述两种定义可以以差
 </ol>
 <h2 id="结语">结语</h2>
 <p>综上所述，我认为首先要摆正对大模型的认识。现阶段的<strong>大语言模型只是一种文本生成的工具</strong>，并非能够回答所有问题的“智者”。要以使用工具的态度来对待大模型，摒弃掉对大模型的神化和盲目相信。让大模型为自己所用，而不是成为大模型的奴隶。</p>
+<blockquote>
+<p>PS:
+最近看到一篇文章，也是分享作者如何使用ChatGPT的，提供了一个和本文不一样的视角，可以参考阅读。<a
+href="https://kenengba.com/post/3800.html">那么，我是如何使用ChatGPT的</a></p>
+</blockquote>
 ]]></content>
       <categories>
         <category>Note</category>
