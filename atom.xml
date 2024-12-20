@@ -6,7 +6,7 @@
   <link href="https://kezhi.tech/atom.xml" rel="self"/>
   
   <link href="https://kezhi.tech/"/>
-  <updated>2024-08-22T04:58:46.729Z</updated>
+  <updated>2024-12-20T12:44:18.325Z</updated>
   <id>https://kezhi.tech/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用代理配置</title>
+    <link href="https://kezhi.tech/278ab762.html"/>
+    <id>https://kezhi.tech/278ab762.html</id>
+    <published>2024-12-20T12:43:42.000Z</published>
+    <updated>2024-12-20T12:44:18.325Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在开发过程中，由于众所周知的原因，不可避免的要使用代理，而各个软件使用代理的方式不尽相同，本文对常用软件的代理设置进行简单的整理。&lt;/p&gt;
+&lt;h2 id=&quot;shell&quot;&gt;Shell&lt;/h2&gt;
+&lt;p&gt;最方便的就是直接在命令行里面设置代理，这样设置后大部分在命令行里执行的程</summary>
+      
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="docker" scheme="https://kezhi.tech/tags/docker/"/>
+    
+    <category term="代理" scheme="https://kezhi.tech/tags/%E4%BB%A3%E7%90%86/"/>
+    
+    <category term="shell" scheme="https://kezhi.tech/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Common proxy configuration.</title>
+    <link href="https://kezhi.tech/en/278ab762.html"/>
+    <id>https://kezhi.tech/en/278ab762.html</id>
+    <published>2024-12-20T12:43:42.000Z</published>
+    <updated>2024-12-20T12:44:50.885Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;This is an automatically translated post by LLM. The &lt;a
+href=&quot;https://kezhi.tech/278ab762.html&quot;&gt;original post&lt;/a&gt;</summary>
+      
+    
+    
+    
+    <category term="Tips" scheme="https://kezhi.tech/categories/Tips/"/>
+    
+    
+    <category term="docker" scheme="https://kezhi.tech/tags/docker/"/>
+    
+    <category term="代理" scheme="https://kezhi.tech/tags/%E4%BB%A3%E7%90%86/"/>
+    
+    <category term="shell" scheme="https://kezhi.tech/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>使用RDP在内网远程游戏思路</title>
